@@ -15,7 +15,7 @@
   var DEFAULTS = {
     weddingDate: "2027-03-12T09:00:00+05:30",
     music: {
-      src: "https://pub-717179bab2d447a1a4a8b832b13d0e04.r2.dev/template-assets/hindu-invite/music.mp3",
+      src: "assets/audio/music.mp3",
       volume: 0.7,
       autoplay: true
     },
@@ -33,10 +33,10 @@
     ],
     frameSlider: {
       images: [
-        "https://saveourdate.in/templates/meenakshi-mandir/invite/assets/img/mpTuXe92kxp4o8MtgrakEGpuQPA.jpeg",
-        "https://saveourdate.in/templates/meenakshi-mandir/invite/assets/img/123OKdea8oPhNCq0uetsHB8OcDw.jpeg",
-        "https://saveourdate.in/templates/meenakshi-mandir/invite/assets/img/Hroe8U2N75359CjJrk9AA0WAFk.jpeg",
-        "https://saveourdate.in/templates/meenakshi-mandir/invite/assets/img/HHhvRybKYYn0bwE2ivhhQVsGc5A.jpeg"
+        "assets/img/mpTuXe92kxp4o8MtgrakEGpuQPA.jpeg",
+        "assets/img/123OKdea8oPhNCq0uetsHB8OcDw.jpeg",
+        "assets/img/Hroe8U2N75359CjJrk9AA0WAFk.jpeg",
+        "assets/img/HHhvRybKYYn0bwE2ivhhQVsGc5A.jpeg"
       ],
       seconds: 2
     }
