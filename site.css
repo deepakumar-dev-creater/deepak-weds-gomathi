@@ -1,3 +1,8 @@
+
+/* Instant sky-blue backdrop - eliminate any white screen flash */
+html, body, #main {
+  background-color: #0a72db !important;
+}
 /* Extra styles for the widgets rendered by site.js */
 
 /* Inside the PC view (pc.html) the invite scrolls like a phone: no scrollbar */
@@ -489,67 +494,45 @@ html.rsvp-open { overflow: hidden; }
   }
 }
 
-
+/* ===================================================================
+ *  Watermark Attribution (Page 4)
+ * =================================================================== */
+.card-watermark {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: rgba(45, 20, 10, 0.78);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9), 0 0 4px rgba(255, 255, 255, 0.6);
+}
 
 /* ===================================================================
- *  Footer Attribution & Copyright
+ *  Hero Tagline ("ARE GETTING MARRIED") Typography Boost
  * =================================================================== */
-.wedding-footer {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  background: linear-gradient(180deg, #1c110a 0%, #110905 100%);
-  color: #f7ecd6;
-  padding: 30px 24px 80px;
-  text-align: center;
-  border-top: 1px solid rgba(215, 162, 42, 0.35);
-  box-shadow: 0 -12px 30px rgba(0, 0, 0, 0.4);
+[data-framer-name="TAG LINE"] p,
+.framer-64h8lc p {
+  font-size: 16px !important;
+  letter-spacing: 0.16em !important;
+  color: rgb(255, 240, 205) !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4) !important;
+  font-weight: 500 !important;
 }
-.wf-inner {
-  max-width: 340px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 7px;
+[data-framer-name="TAG LINE"] p span,
+.framer-64h8lc p span {
+  font-size: inherit !important;
 }
-.wf-flower {
-  margin-bottom: 2px;
-}
-.wf-names {
-  margin: 0;
-  font-family: "Philosopher", "Philosopher-Bold", Georgia, serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: #ffe4b0;
-  letter-spacing: 0.03em;
-}
-.wf-tag {
-  margin: 0;
-  font-family: Inter, sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(215, 162, 42, 0.85);
-}
-.wf-divider {
-  width: 60px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #d7a22a, transparent);
-  margin: 4px 0;
-}
-.wf-copy {
-  margin: 0;
-  font-family: Inter, sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  color: #ffffff;
-  letter-spacing: 0.02em;
-}
-.wf-rights {
-  margin: 0;
-  font-family: Inter, sans-serif;
-  font-size: 10.5px;
-  color: rgba(255, 255, 255, 0.55);
-  letter-spacing: 0.02em;
+
+@media (min-width: 810px) {
+  [data-framer-name="TAG LINE"] p,
+  .framer-64h8lc p {
+    font-size: 20px !important;
+    letter-spacing: 0.18em !important;
+  }
 }

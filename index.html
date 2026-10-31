@@ -62,7 +62,7 @@
       border: 0;
       display: block;
       margin: 0 auto;
-      background: rgb(0, 0, 0);
+      background: #0a72db;
       box-shadow: rgba(255, 230, 179, 0.18) 0px 0px 0px 1px, rgba(0, 0, 0, 0.6) 0px 30px 80px;
     }
     @media (max-width: 600px) {
@@ -77,7 +77,24 @@
 </head>
 <body>
   <div class="hinv-root" style="--hinv-bg: url('assets/img/backdrop.webp');">
-    <iframe class="hinv-frame" src="invite.html?v=6" title="Wedding invitation" allow="autoplay; fullscreen"></iframe>
+    <iframe class="hinv-frame" style="background-color: #0a72db;" src="invite.html?v=6" title="Wedding invitation" allow="autoplay; fullscreen"></iframe>
   </div>
+
+  <script>
+    (function () {
+      var events = ["click", "pointerdown", "touchstart", "touchend", "touchmove", "scroll", "keydown", "wheel"];
+      var forwarded = false;
+      var forward = function () {
+        if (forwarded) return;
+        forwarded = true;
+        var iframe = document.querySelector('iframe');
+        if (iframe && iframe.contentWindow) {
+          iframe.contentWindow.postMessage({ type: 'invite-kick' }, '*');
+        }
+        events.forEach(function (ev) { window.removeEventListener(ev, forward, true); });
+      };
+      events.forEach(function (ev) { window.addEventListener(ev, forward, { capture: true, passive: true }); });
+    })();
+  </script>
 </body>
 </html>

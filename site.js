@@ -323,19 +323,19 @@
 
     // Autoplay: try right away; browsers usually block it until the guest interacts,
     // so also start on the first tap/click/key anywhere on the page (except the button itself).
-    if (CONFIG.music.autoplay && saved.wasPlaying !== false) {
+    if (CONFIG.music.autoplay) {
       play();
       var kicked = false;
       var remove = function () {
         kicked = true;
-        ["pointerdown", "keydown", "touchstart"].forEach(function (t) { document.removeEventListener(t, kick, true); });
+        ["click", "pointerdown", "touchstart", "touchend", "touchmove", "scroll", "keydown", "wheel"].forEach(function (t) { document.removeEventListener(t, kick, true); });
       };
       var kick = function (e) {
         if (root.contains(e.target)) return remove();
         if (audio.paused) play();
         remove();
       };
-      ["pointerdown", "keydown", "touchstart"].forEach(function (t) { document.addEventListener(t, kick, true); });
+      ["click", "pointerdown", "touchstart", "touchend", "touchmove", "scroll", "keydown", "wheel"].forEach(function (t) { document.addEventListener(t, kick, true); });
       // PC view (pc.html): a click on the side background also counts as the first tap
       window.addEventListener("message", function (e) {
         if (e.data && e.data.type === "invite-kick" && !kicked) {

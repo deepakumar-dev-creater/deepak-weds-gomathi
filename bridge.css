@@ -1,6 +1,7 @@
 /* Hidden until the parent's content has been applied, so guests never see the
    demo couple's names flash before their own. bridge.js removes the class. */
-html.inv-pending body { visibility: hidden; }
+/* instant render - no white screen barrier */
+html.inv-pending body { visibility: visible !important; }
 
 /* Same strip the rest of the site ends with. */
 .inv-badge {

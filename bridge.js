@@ -560,8 +560,8 @@
       try { api.music(); } catch (err) { console.error("music failed:", err); }
       mountWidgets();
       lastSig = sig;
-      if (document.fonts && document.fonts.ready) document.fonts.ready.then(reveal); else window.addEventListener("load", reveal);
-      setTimeout(reveal, 2500); // never stay hidden if a font stalls
+      reveal(); // reveal instantly - no 2.5s delay or white screen!
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(refit);
       var rt;
       window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(refit, 200); });
       return;
