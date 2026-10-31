@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Deepak Kumar &amp; Gomathi — Wedding Invitation | 12 March 2027 • Chennai</title>
+  
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta name="description" content="With the divine blessings of the Almighty and our beloved elders, Deepak Kumar and Gomathi cordially invite you to celebrate their wedding on 12th March 2027 (Reception on 11th March) in Chennai. #DeepakKumarWedsGomathi">
+  <meta property="og:title" content="Deepak Kumar &amp; Gomathi — Wedding Invitation">
+  <meta property="og:description" content="We cordially invite you to celebrate our Reception on 11th March &amp; Wedding Ceremony on 12th March 2027 in Chennai. #DeepakKumarWedsGomathi">
+  <meta property="og:image" content="assets/img/wedding.jpg">
+  <meta property="og:type" content="website">
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: rgb(43, 29, 20);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .hinv-root {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      background: rgb(43, 29, 20);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 0;
+    }
+    .hinv-root::before {
+      content: "";
+      position: absolute;
+      inset: -60px;
+      background: var(--hinv-bg, url("assets/img/backdrop.webp")) center / cover no-repeat;
+      filter: blur(28px) brightness(0.55) saturate(1.1);
+      z-index: 0;
+    }
+    .hinv-root::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.65) 100%);
+      z-index: 0;
+    }
+    .hinv-frame {
+      position: relative;
+      z-index: 1;
+      width: min(100%, 620px, max(360px, 56.25dvh));
+      height: 100%;
+      height: 100dvh;
+      border: 0;
+      display: block;
+      margin: 0 auto;
+      background: rgb(0, 0, 0);
+      box-shadow: rgba(255, 230, 179, 0.18) 0px 0px 0px 1px, rgba(0, 0, 0, 0.6) 0px 30px 80px;
+    }
+    @media (max-width: 600px) {
+      .hinv-frame {
+        width: 100%;
+        height: 100%;
+        height: 100dvh;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hinv-root" style="--hinv-bg: url('assets/img/backdrop.webp');">
+    <iframe class="hinv-frame" src="invite.html?v=6" title="Wedding invitation" allow="autoplay; fullscreen"></iframe>
+  </div>
+</body>
+</html>

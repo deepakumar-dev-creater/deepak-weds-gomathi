@@ -1,0 +1,1497 @@
+/* ==========================================================================
+   MEENAKSHI MANDIR WEDDING INVITATION - STYLESHEET
+   Authentic South Indian Temple Aesthetic | Karthik & Kavya
+   ========================================================================== */
+
+:root {
+  /* Royal Temple Palette */
+  --color-maroon-dark: #32050c;
+  --color-maroon: #580b1a;
+  --color-maroon-rich: #781024;
+  --color-maroon-light: #941e34;
+  --color-gold-deep: #9d7722;
+  --color-gold: #c9a24a;
+  --color-gold-light: #edd38c;
+  --color-gold-shimmer: #fff1c5;
+  --color-ivory: #fffbf2;
+  --color-ivory-warm: #f7ecd5;
+  --color-sand: #ebd7b5;
+  --color-ink: #322214;
+  --color-ink-light: #6e543c;
+  --color-navy: #0b2559;
+  --color-navy-light: #16408f;
+
+  /* Gradients */
+  --grad-gold: linear-gradient(135deg, #9d7722 0%, #edd38c 35%, #c9a24a 65%, #ffd978 100%);
+  --grad-gold-soft: linear-gradient(180deg, #edd38c 0%, #c9a24a 100%);
+  --grad-maroon: linear-gradient(180deg, #580b1a 0%, #32050c 100%);
+  --grad-maroon-btn: linear-gradient(180deg, #8f2634 0%, #580b1a 100%);
+  --grad-card: radial-gradient(circle at 50% 0%, #ffffff 0%, var(--color-ivory) 45%, #f6e8cc 100%);
+  --grad-hero: radial-gradient(circle at 50% 20%, rgba(120, 16, 36, 0.92) 0%, rgba(50, 5, 12, 0.98) 75%, #200207 100%);
+
+  /* Typography */
+  --font-title: 'Cinzel Decorative', 'Cinzel', serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-temple: 'Philosopher', serif;
+  --font-script: 'Luxurious Script', cursive;
+  --font-sans: 'Jost', system-ui, sans-serif;
+  --font-shloka: 'Yatra One', 'Playfair Display', serif;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 12px rgba(35, 5, 10, 0.15);
+  --shadow-md: 0 10px 30px rgba(35, 5, 10, 0.25);
+  --shadow-lg: 0 20px 50px rgba(25, 3, 7, 0.45);
+  --shadow-gold: 0 0 25px rgba(201, 162, 74, 0.35);
+
+  /* Container */
+  --max-width: 820px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-serif);
+  color: var(--color-ink);
+  background-color: var(--color-maroon-dark);
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(148, 30, 52, 0.35) 0%, transparent 60%),
+    url('assets/img/backdrop.webp');
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Background Temple Arch Texture Overlay */
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 50%, rgba(40, 4, 10, 0.3) 0%, rgba(20, 2, 5, 0.75) 100%);
+  z-index: 0;
+}
+
+/* Falling Petals Canvas */
+#petals-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Main Container Frame */
+.invite-container {
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 16px 120px;
+  z-index: 10;
+}
+
+@media (min-width: 640px) {
+  .invite-container {
+    padding: 40px 24px 140px;
+  }
+}
+
+/* ==========================================================================
+   SACRED TOP BANNER / SHLOKA
+   ========================================================================== */
+.sacred-header {
+  text-align: center;
+  padding: 20px 10px 10px;
+  animation: fadeInDown 1.2s ease-out;
+}
+
+.shloka-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 22px;
+  background: rgba(30, 3, 7, 0.75);
+  border: 1px solid var(--color-gold);
+  border-radius: 999px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(201, 162, 74, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.shloka-text {
+  font-family: var(--font-shloka);
+  font-size: 1.05rem;
+  color: var(--color-gold-light);
+  letter-spacing: 0.08em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.diya-icon {
+  width: 22px;
+  height: 22px;
+  fill: var(--color-gold);
+  filter: drop-shadow(0 0 6px rgba(237, 211, 140, 0.8));
+  animation: flicker 2.4s infinite alternate ease-in-out;
+}
+
+@keyframes flicker {
+  0% { transform: scale(0.95); opacity: 0.85; filter: drop-shadow(0 0 4px #edd38c); }
+  50% { transform: scale(1.05); opacity: 1; filter: drop-shadow(0 0 10px #ffea9f); }
+  100% { transform: scale(0.98); opacity: 0.9; filter: drop-shadow(0 0 6px #edd38c); }
+}
+
+/* ==========================================================================
+   SECTION CARDS (Templesque Ornate Cards)
+   ========================================================================== */
+.temple-card {
+  position: relative;
+  background: var(--grad-card);
+  border-radius: 28px;
+  padding: 36px 20px;
+  margin-top: 30px;
+  box-shadow: 
+    inset 0 0 0 2px rgba(255, 255, 255, 0.9),
+    inset 0 0 0 4px var(--color-gold),
+    inset 0 0 0 7px rgba(88, 11, 26, 0.25),
+    var(--shadow-lg);
+  border: 1px solid var(--color-gold-light);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (min-width: 640px) {
+  .temple-card {
+    padding: 50px 36px;
+    border-radius: 36px;
+  }
+}
+
+/* Temple Card Corner & Border Accents */
+.card-corners::before,
+.card-corners::after {
+  content: "✦";
+  position: absolute;
+  font-size: 16px;
+  color: var(--color-gold);
+  line-height: 1;
+}
+.card-corners::before { top: 14px; left: 16px; }
+.card-corners::after { top: 14px; right: 16px; }
+
+/* Kolam / Floral Divider */
+.ornate-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 18px auto;
+  color: var(--color-gold);
+  width: 100%;
+  max-width: 280px;
+}
+
+.ornate-divider::before,
+.ornate-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+}
+
+.lotus-icon {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
+
+/* ==========================================================================
+   HERO INVITATION SECTION
+   ========================================================================== */
+.hero-card {
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background: radial-gradient(circle at 50% 0%, #ffffff 0%, var(--color-ivory) 50%, #f5e4c4 100%);
+}
+
+.auspicious-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-maroon);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.family-blessings {
+  font-size: 0.98rem;
+  font-style: italic;
+  color: var(--color-ink-light);
+  max-width: 520px;
+  margin: 0 auto 20px;
+  line-height: 1.55;
+}
+
+.family-tree {
+  margin: 20px auto 26px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px dashed rgba(201, 162, 74, 0.55);
+  border-radius: 18px;
+  max-width: 540px;
+}
+
+.family-group {
+  margin: 8px 0;
+}
+
+.grandparents-names {
+  font-family: var(--font-temple);
+  font-size: 0.95rem;
+  color: var(--color-ink-light);
+}
+
+.together-text {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold-deep);
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.parents-names {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-maroon);
+}
+
+.invite-lead {
+  font-size: 0.94rem;
+  color: var(--color-ink-light);
+  font-style: italic;
+  margin: 14px 0 8px;
+}
+
+/* Couple Names Display */
+.couple-hero {
+  position: relative;
+  margin: 28px 0 20px;
+}
+
+.couple-pretitle {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--color-gold-deep);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.couple-names-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.couple-name {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-maroon-dark);
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+  text-shadow: 0 2px 4px rgba(88, 11, 26, 0.15);
+}
+
+@media (min-width: 640px) {
+  .couple-name {
+    font-size: 3.4rem;
+  }
+}
+
+.couple-amp {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--color-gold-deep);
+  line-height: 0.9;
+  margin: 4px 0;
+}
+
+.getting-married-text {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--color-navy);
+  font-weight: 600;
+  margin-top: 14px;
+}
+
+.hashtag-pill {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 6px 18px;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--color-maroon);
+  background: rgba(201, 162, 74, 0.15);
+  border: 1px solid var(--color-gold);
+  border-radius: 999px;
+}
+
+/* ==========================================================================
+   COUNTDOWN TIMER SECTION ("Counting the Days")
+   ========================================================================== */
+.countdown-section {
+  text-align: center;
+  background: radial-gradient(circle at 50% 10%, #3a0610 0%, #24030a 100%);
+  color: var(--color-ivory);
+  border: 1px solid var(--color-gold);
+  box-shadow: inset 0 0 0 2px rgba(201, 162, 74, 0.4), var(--shadow-lg);
+}
+
+.countdown-kicker {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--color-gold-light);
+  font-weight: 600;
+}
+
+.countdown-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff4db;
+  margin: 6px 0 22px;
+}
+
+@media (min-width: 640px) {
+  .countdown-title {
+    font-size: 2.2rem;
+  }
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  max-width: 480px;
+  margin: 0 auto 24px;
+}
+
+@media (min-width: 480px) {
+  .countdown-grid {
+    gap: 14px;
+  }
+}
+
+.countdown-box {
+  background: rgba(15, 2, 4, 0.65);
+  border: 1px solid var(--color-gold);
+  border-radius: 16px;
+  padding: 14px 6px;
+  box-shadow: inset 0 0 12px rgba(201, 162, 74, 0.15), 0 6px 16px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.countdown-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--grad-gold);
+}
+
+.countdown-num {
+  font-family: var(--font-title);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fffaea;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-shadow: 0 0 10px rgba(237, 211, 140, 0.4);
+}
+
+@media (min-width: 640px) {
+  .countdown-num {
+    font-size: 2.3rem;
+  }
+}
+
+.countdown-label {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-gold-light);
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.countdown-date-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-temple);
+  font-size: 1.1rem;
+  color: var(--color-gold-light);
+  margin-bottom: 6px;
+}
+
+.countdown-cheer {
+  font-size: 0.94rem;
+  font-style: italic;
+  color: rgba(255, 251, 242, 0.85);
+  margin-bottom: 20px;
+}
+
+.calendar-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: var(--grad-gold);
+  color: var(--color-maroon-dark);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201, 162, 74, 0.5);
+}
+
+.btn-gold svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* ==========================================================================
+   "MEET THE BRIDE & GROOM" FRAME SECTION
+   ========================================================================== */
+.couple-frame-section {
+  text-align: center;
+}
+
+.section-kicker {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--color-gold-deep);
+  font-weight: 600;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-maroon);
+  margin-top: 4px;
+}
+
+@media (min-width: 640px) {
+  .section-title {
+    font-size: 2.4rem;
+  }
+}
+
+.frame-container {
+  position: relative;
+  width: 280px;
+  height: 380px;
+  margin: 30px auto 20px;
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(40, 5, 12, 0.4);
+}
+
+@media (min-width: 640px) {
+  .frame-container {
+    width: 320px;
+    height: 430px;
+  }
+}
+
+/* Slides Container */
+.frame-slider-track {
+  position: absolute;
+  inset: 12px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #33050d;
+}
+
+.frame-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), transform 1.2s ease;
+  transform: scale(1.05);
+}
+
+.frame-slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.frame-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+
+/* Golden Ornate Frame Overlay */
+.gold-frame-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+  z-index: 5;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.slider-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(201, 162, 74, 0.35);
+  border: none;
+  cursor: pointer;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.slider-dot.active {
+  width: 22px;
+  border-radius: 999px;
+  background: var(--color-maroon);
+}
+
+/* ==========================================================================
+   OUR STORY SECTION
+   ========================================================================== */
+.story-section {
+  text-align: center;
+  background: radial-gradient(circle at 50% 0%, #ffffff 0%, var(--color-ivory) 45%, #f4e3c1 100%);
+}
+
+.story-quote-symbol {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  line-height: 1;
+  color: var(--color-gold);
+  margin-bottom: -15px;
+  opacity: 0.65;
+}
+
+.story-narrative {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--color-ink);
+  max-width: 620px;
+  margin: 0 auto 20px;
+  font-style: italic;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  .story-narrative {
+    font-size: 1.15rem;
+  }
+}
+
+/* ==========================================================================
+   THE CELEBRATIONS / WEDDING EVENTS SECTION
+   ========================================================================== */
+.events-section {
+  text-align: center;
+}
+
+/* Event Tabs */
+.event-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin: 24px auto 26px;
+  max-width: 650px;
+}
+
+.event-tab {
+  padding: 8px 14px;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--color-gold);
+  border-radius: 999px;
+  color: var(--color-maroon);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.event-tab:hover {
+  background: var(--color-gold-light);
+  color: var(--color-maroon-dark);
+}
+
+.event-tab.active {
+  background: var(--color-maroon);
+  color: var(--color-gold-shimmer);
+  border-color: var(--color-maroon);
+  box-shadow: 0 4px 12px rgba(88, 11, 26, 0.35);
+}
+
+/* Featured Event Card */
+.event-card {
+  position: relative;
+  background: radial-gradient(circle at 50% 0%, #ffffff 0%, var(--color-ivory) 45%, #f6ecd6 100%);
+  border: 1.5px solid var(--color-gold);
+  border-radius: 28px;
+  padding: 30px 20px 24px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 
+    inset 0 0 0 6px var(--color-ivory),
+    inset 0 0 0 8px rgba(10, 48, 127, 0.2),
+    var(--shadow-md);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+@media (min-width: 640px) {
+  .event-card {
+    padding: 36px 30px 30px;
+    border-radius: 36px;
+  }
+}
+
+.event-counter {
+  display: inline-block;
+  padding: 4px 14px;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  letter-spacing: 0.2em;
+  color: var(--color-navy);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--color-gold);
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+/* Event Stage with Arch Photo */
+.event-photo-stage {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 4 / 4.4;
+  margin: 0 auto 20px;
+  border-radius: 160px 160px 16px 16px;
+  overflow: hidden;
+  border: 2px solid var(--color-gold);
+  box-shadow: 
+    0 0 0 4px var(--color-ivory),
+    0 0 0 6px rgba(10, 48, 127, 0.35),
+    0 12px 28px rgba(0, 0, 0, 0.25);
+  background: #ecd9ba;
+}
+
+.event-photo-stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.event-photo-stage:hover img {
+  transform: scale(1.04);
+}
+
+/* Event Prev/Next Arrow Buttons */
+.event-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--color-ivory);
+  border: 1px solid var(--color-gold);
+  color: var(--color-navy);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.event-arrow:hover {
+  transform: translateY(-50%) scale(1.1);
+  background: #ffffff;
+}
+
+.event-arrow:active {
+  transform: translateY(-50%) scale(0.92);
+}
+
+.event-arrow svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.event-arrow.prev { left: -8px; }
+.event-arrow.next { right: -8px; }
+
+@media (min-width: 540px) {
+  .event-arrow.prev { left: -18px; }
+  .event-arrow.next { right: -18px; }
+}
+
+.event-title {
+  font-family: var(--font-temple);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 8px;
+}
+
+.event-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 18px;
+  margin: 12px auto;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--color-ink);
+}
+
+.event-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.event-meta-item svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-gold-deep);
+}
+
+.event-desc {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #55402c;
+  margin: 12px auto 20px;
+  max-width: 400px;
+}
+
+.event-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-navy {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: linear-gradient(180deg, #18479e 0%, var(--color-navy) 100%);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-gold);
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(11, 37, 89, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-navy:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(11, 37, 89, 0.5);
+}
+
+.btn-navy svg {
+  width: 15px;
+  height: 15px;
+  fill: var(--color-gold-light);
+}
+
+/* ==========================================================================
+   DRESS CODE SECTION
+   ========================================================================== */
+.dresscode-section {
+  text-align: center;
+}
+
+.dresscode-intro {
+  font-size: 1rem;
+  color: var(--color-ink-light);
+  max-width: 540px;
+  margin: 12px auto 28px;
+  line-height: 1.6;
+}
+
+.dresscode-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 500px;
+  margin: 0 auto 20px;
+}
+
+.attire-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--color-gold);
+  border-radius: 20px;
+  padding: 14px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease;
+}
+
+.attire-card:hover {
+  transform: translateY(-4px);
+}
+
+.attire-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--color-gold-light);
+  background: #f0e2ca;
+  margin-bottom: 10px;
+}
+
+.attire-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.attire-label {
+  font-family: var(--font-temple);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-maroon);
+}
+
+.attire-hint {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-ink-light);
+  margin-top: 2px;
+}
+
+/* Color Palette Swatches */
+.palette-swatches {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.swatch-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.swatch-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.swatch-name {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  color: var(--color-ink-light);
+}
+
+/* ==========================================================================
+   RSVP SECTION & MODAL
+   ========================================================================== */
+.rsvp-section {
+  text-align: center;
+  background: radial-gradient(circle at 50% 0%, #ffffff 0%, var(--color-ivory) 50%, #f4e3c1 100%);
+}
+
+.rsvp-lead {
+  font-size: 1.05rem;
+  color: var(--color-ink);
+  max-width: 520px;
+  margin: 12px auto 20px;
+  line-height: 1.6;
+}
+
+.rsvp-deadline {
+  display: inline-block;
+  padding: 6px 18px;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-maroon);
+  background: rgba(88, 11, 26, 0.08);
+  border: 1px dashed var(--color-gold);
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.btn-rsvp-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 34px;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff3d6;
+  background: var(--grad-maroon-btn);
+  border: 1px solid var(--color-gold);
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 
+    inset 0 0 0 3px var(--color-maroon),
+    inset 0 0 0 4px rgba(217, 178, 94, 0.7),
+    0 8px 24px rgba(88, 11, 26, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-rsvp-hero:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 
+    inset 0 0 0 3px var(--color-maroon),
+    inset 0 0 0 4px var(--color-gold),
+    0 12px 30px rgba(88, 11, 26, 0.55);
+}
+
+.btn-rsvp-hero svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Modal Overlay & Sheet */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(25, 3, 7, 0.75);
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-sheet {
+  position: relative;
+  width: min(460px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  background: linear-gradient(170deg, var(--color-ivory), var(--color-ivory-warm));
+  border: 1px solid var(--color-gold);
+  border-radius: 26px;
+  padding: 28px 20px 24px;
+  box-shadow: 
+    inset 0 0 0 5px var(--color-ivory),
+    inset 0 0 0 6px rgba(201, 162, 74, 0.6),
+    0 24px 60px rgba(0, 0, 0, 0.5);
+  transform: translateY(30px) scale(0.96);
+  transition: transform 0.35s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.modal-overlay.open .modal-sheet {
+  transform: translateY(0) scale(1);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(88, 11, 26, 0.08);
+  color: var(--color-maroon);
+  font-size: 20px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.2s ease;
+}
+
+.modal-close-btn:hover {
+  background: rgba(88, 11, 26, 0.16);
+}
+
+.rsvp-form-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rsvp-form-header h3 {
+  font-family: var(--font-temple);
+  font-size: 1.7rem;
+  color: var(--color-maroon);
+}
+
+.rsvp-form-header p {
+  font-size: 0.88rem;
+  color: var(--color-ink-light);
+  font-style: italic;
+  margin-top: 4px;
+}
+
+/* Form Controls */
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-gold-deep);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--color-ink);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(201, 162, 74, 0.6);
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--color-maroon);
+  box-shadow: 0 0 0 3px rgba(88, 11, 26, 0.12);
+}
+
+.attendance-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.toggle-btn {
+  padding: 10px 8px;
+  text-align: center;
+  border: 1px solid var(--color-gold);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn.selected {
+  background: var(--color-maroon);
+  border-color: var(--color-maroon);
+  color: #fff4dc;
+  box-shadow: 0 4px 12px rgba(88, 11, 26, 0.3);
+}
+
+/* Event Checkboxes */
+.ceremonies-check-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(201, 162, 74, 0.4);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.check-item input[type="checkbox"] {
+  accent-color: var(--color-maroon);
+  width: 16px;
+  height: 16px;
+}
+
+.btn-submit-rsvp {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #fff3d6;
+  background: var(--grad-maroon-btn);
+  border: 1px solid var(--color-gold);
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(88, 11, 26, 0.35);
+  transition: transform 0.2s ease;
+  margin-top: 18px;
+}
+
+.btn-submit-rsvp:hover {
+  transform: translateY(-2px);
+}
+
+/* RSVP Success State */
+.rsvp-success-card {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.rsvp-success-card .success-lotus {
+  width: 50px;
+  height: 50px;
+  fill: var(--color-gold);
+  margin-bottom: 12px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.rsvp-success-card h4 {
+  font-family: var(--font-temple);
+  font-size: 1.7rem;
+  color: var(--color-maroon);
+  margin-bottom: 8px;
+}
+
+.rsvp-success-card p {
+  font-size: 0.96rem;
+  color: var(--color-ink);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.btn-whatsapp-share {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: #25d366;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+}
+
+.btn-whatsapp-share svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+/* ==========================================================================
+   VENUE & LOCATION SECTION
+   ========================================================================== */
+.venue-section {
+  text-align: center;
+}
+
+.venue-name {
+  font-family: var(--font-title);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--color-maroon);
+  margin: 8px 0 4px;
+}
+
+.venue-address {
+  font-size: 1rem;
+  color: var(--color-ink-light);
+  margin-bottom: 12px;
+}
+
+.venue-landmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--color-navy);
+  font-weight: 600;
+  background: rgba(11, 37, 89, 0.08);
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+}
+
+.map-embed-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  height: 300px;
+  margin: 0 auto 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid var(--color-gold);
+  box-shadow: 
+    inset 0 0 0 4px var(--color-ivory),
+    var(--shadow-md);
+}
+
+.map-embed-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ==========================================================================
+   FOOTER / COMPLIMENTS
+   ========================================================================== */
+.footer-section {
+  text-align: center;
+  padding: 30px 16px;
+  color: var(--color-ivory);
+}
+
+.footer-compliments {
+  font-family: var(--font-temple);
+  font-size: 1.15rem;
+  color: var(--color-gold-light);
+  margin-bottom: 6px;
+}
+
+.footer-families {
+  font-size: 0.95rem;
+  color: rgba(255, 251, 242, 0.85);
+  margin-bottom: 16px;
+}
+
+.footer-shloka {
+  font-family: var(--font-shloka);
+  font-size: 1.1rem;
+  color: var(--color-gold-shimmer);
+  letter-spacing: 0.08em;
+  margin: 18px 0;
+}
+
+/* ==========================================================================
+   FLOATING MUSIC PLAYER
+   ========================================================================== */
+.music-toggle-btn {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 1000;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 2px solid var(--color-gold);
+  background: radial-gradient(circle at 35% 30%, #8f2a3b, #6a1723 60%, #4d0f1a);
+  box-shadow: 0 0 0 4px rgba(201, 162, 74, 0.3), 0 8px 24px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  outline: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.music-toggle-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 6px rgba(201, 162, 74, 0.45), 0 10px 28px rgba(0, 0, 0, 0.6);
+}
+
+.music-toggle-btn:active {
+  transform: scale(0.94);
+}
+
+.music-bars {
+  display: flex;
+  align-items: center;
+  gap: 3.5px;
+  height: 20px;
+}
+
+.music-bars span {
+  display: block;
+  width: 3.5px;
+  height: 40%;
+  border-radius: 2px;
+  background: var(--color-gold-light);
+  transform-origin: bottom;
+}
+
+.music-bars span:nth-child(2) { height: 100%; }
+.music-bars span:nth-child(3) { height: 75%; }
+.music-bars span:nth-child(4) { height: 45%; }
+
+.music-toggle-btn.playing .music-bars span {
+  animation: barBounce 0.9s infinite alternate ease-in-out;
+}
+
+.music-toggle-btn.playing .music-bars span:nth-child(2) { animation-delay: -0.3s; }
+.music-toggle-btn.playing .music-bars span:nth-child(3) { animation-delay: -0.6s; }
+.music-toggle-btn.playing .music-bars span:nth-child(4) { animation-delay: -0.15s; }
+
+@keyframes barBounce {
+  from { transform: scaleY(0.3); }
+  to { transform: scaleY(1.2); }
+}
+
+/* Floating Audio Prompt Pill */
+.audio-hint-pill {
+  position: fixed;
+  bottom: 84px;
+  right: 22px;
+  z-index: 1000;
+  background: rgba(35, 4, 10, 0.92);
+  color: var(--color-gold-light);
+  border: 1px solid var(--color-gold);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+.audio-hint-pill.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   ANIMATIONS & KEYFRAMES
+   ========================================================================== */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+/* Reveal on Scroll class */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
