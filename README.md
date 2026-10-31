@@ -20,3 +20,4 @@ A digital wedding invitation website for **Deepak Kumar & Gomathi**.
 - `site.css`: Stylesheet with countdown and glassmorphism styling.
 - `site.js`: Animation, audio player, and countdown timer logic.
 - `assets/`: Media assets (music, images, dress code).
+
