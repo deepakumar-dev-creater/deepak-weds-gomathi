@@ -32,12 +32,7 @@
       { title: "Wedding Ceremony (Muhurtham)", date: "12 March 2027", time: "9:00 AM", venue: "En Sesha Mahal, Royapettah, Chennai", description: "Witness the sacred vows, Mangalya Dharanam, and Saptapadi as Deepak Kumar and Gomathi unite.", image: "assets/img/couple_muhurtham.jpg", mapLink: "https://share.google/9cDnaaYRR4evNU4Ec" }
     ],
     frameSlider: {
-      images: [
-        "assets/img/mpTuXe92kxp4o8MtgrakEGpuQPA.jpeg",
-        "assets/img/123OKdea8oPhNCq0uetsHB8OcDw.jpeg",
-        "assets/img/Hroe8U2N75359CjJrk9AA0WAFk.jpeg",
-        "assets/img/HHhvRybKYYn0bwE2ivhhQVsGc5A.jpeg"
-      ],
+      images: [],
       seconds: 2
     }
   };
