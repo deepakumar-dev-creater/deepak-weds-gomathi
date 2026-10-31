@@ -490,3 +490,66 @@ html.rsvp-open { overflow: hidden; }
 }
 
 
+
+/* ===================================================================
+ *  Footer Attribution & Copyright
+ * =================================================================== */
+.wedding-footer {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background: linear-gradient(180deg, #1c110a 0%, #110905 100%);
+  color: #f7ecd6;
+  padding: 30px 24px 80px;
+  text-align: center;
+  border-top: 1px solid rgba(215, 162, 42, 0.35);
+  box-shadow: 0 -12px 30px rgba(0, 0, 0, 0.4);
+}
+.wf-inner {
+  max-width: 340px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+.wf-flower {
+  margin-bottom: 2px;
+}
+.wf-names {
+  margin: 0;
+  font-family: "Philosopher", "Philosopher-Bold", Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffe4b0;
+  letter-spacing: 0.03em;
+}
+.wf-tag {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(215, 162, 42, 0.85);
+}
+.wf-divider {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d7a22a, transparent);
+  margin: 4px 0;
+}
+.wf-copy {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+}
+.wf-rights {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: 10.5px;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.02em;
+}
