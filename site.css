@@ -1,7 +1,37 @@
 
-/* Instant sky-blue backdrop - eliminate any white screen flash */
-html, body, #main {
+/* Instant sky-blue backdrop & strict horizontal overflow lockdown */
+html, body {
   background-color: #0a72db !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  position: relative !important;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+#main,
+.framer-m7ulU,
+.framer-ji2yub {
+  background-color: #0a72db !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+[data-framer-name^="PAGE "],
+.framer-1v6qekl,
+.framer-djxj6a,
+.framer-1q8leab,
+.framer-1w4t66g {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
 }
 /* Extra styles for the widgets rendered by site.js */
 
@@ -497,6 +527,60 @@ html.rsvp-open { overflow: hidden; }
 /* ===================================================================
  *  Watermark Attribution (Page 4)
  * =================================================================== */
+/* Compliments (Page 2, directly above 'On the following events') */
+.card-compliments {
+  position: absolute;
+  top: 80.5% !important;
+  bottom: auto !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 20;
+  width: min(92%, 440px);
+  max-width: 92%;
+  text-align: center;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.card-compliments-title {
+  font-family: 'Philosopher', 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 700;
+  color: #7b1322;
+  letter-spacing: 0.04em;
+  margin-bottom: 2px;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.95), 0 0 8px rgba(255, 255, 255, 0.8);
+  white-space: nowrap;
+}
+.card-compliments-names {
+  font-family: 'Philosopher', 'Abhaya Libre', Georgia, serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #2e1a22;
+  letter-spacing: 0.03em;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.95), 0 0 6px rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+  .card-compliments-title {
+    font-size: 11.5px;
+  }
+  .card-compliments-names {
+    font-size: 10.5px;
+    letter-spacing: 0.02em;
+  }
+}
+@media (max-width: 360px) {
+  .card-compliments-title {
+    font-size: 10.5px;
+  }
+  .card-compliments-names {
+    font-size: 9.5px;
+    letter-spacing: 0.01em;
+  }
+}
+
 .card-watermark {
   position: absolute;
   bottom: 6px;
@@ -534,5 +618,352 @@ html.rsvp-open { overflow: hidden; }
   .framer-64h8lc p {
     font-size: 20px !important;
     letter-spacing: 0.18em !important;
+  }
+}
+
+/* ===================================================================
+ *  Page 2 Invitation Typography & Alignment Fix (Groom & Bride Families)
+ * =================================================================== */
+/* Invite: perfectly centered horizontally and lifted for generous breathing room */
+.framer-iyex8o,
+.framer-z74mwu {
+  left: 50% !important;
+  top: 37.8% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+/* Groom Family text block: centered horizontally and balanced vertically */
+.framer-o31tru,
+.framer-qq17fj {
+  overflow: visible !important;
+  left: 50% !important;
+  top: 46.8% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.framer-o31tru foreignObject,
+.framer-qq17fj foreignObject {
+  overflow: visible !important;
+  transform: scale(0.60) !important;
+  transform-origin: center center !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.framer-o31tru p,
+.framer-qq17fj p {
+  font-family: "Abhaya Libre", Georgia, serif !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  line-height: 1.5em !important;
+  color: rgb(85, 78, 72) !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.framer-o31tru p span,
+.framer-o31tru p strong,
+.framer-qq17fj p span,
+.framer-qq17fj p strong {
+  font-size: inherit !important;
+  font-family: inherit !important;
+}
+
+.framer-o31tru p strong,
+.framer-qq17fj p strong {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  color: rgb(50, 40, 35) !important;
+  display: inline-block !important;
+  margin: 3px 0 !important;
+}
+
+/* Ensure the long invitation line wraps gracefully without touching the pillars */
+.framer-o31tru p:last-child,
+.framer-qq17fj p:last-child {
+  max-width: 320px !important;
+  margin: 4px auto 0 !important;
+  font-size: 13px !important;
+  line-height: 1.4em !important;
+  color: rgb(90, 82, 76) !important;
+  white-space: normal !important;
+}
+
+/* Couple Names: Fix letter spacing and size so it never hits the arch pillars */
+.framer-kjvwux,
+.framer-wuej87 {
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.framer-kjvwux {
+  top: 55.5% !important;
+}
+
+.framer-f0n6ls {
+  left: 50% !important;
+  top: 61.5% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.framer-wuej87 {
+  top: 67.5% !important;
+}
+
+.framer-kjvwux h1,
+.framer-wuej87 h1 {
+  letter-spacing: 0.03em !important;
+  font-size: 28px !important;
+  white-space: nowrap !important;
+  color: rgb(215, 175, 105) !important;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4) !important;
+}
+
+.framer-f0n6ls h1 {
+  font-size: 20px !important;
+  color: rgb(41, 134, 196) !important;
+}
+
+/* Bride Family: symmetric centering and vertical balance */
+.framer-19me4mh,
+.framer-1jawtcx {
+  overflow: visible !important;
+  left: 50% !important;
+  top: 76.5% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.framer-19me4mh foreignObject,
+.framer-1jawtcx foreignObject {
+  overflow: visible !important;
+  transform: scale(0.60) !important;
+  transform-origin: center center !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.framer-19me4mh p,
+.framer-1jawtcx p {
+  font-family: "Abhaya Libre", Georgia, serif !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  line-height: 1.5em !important;
+  color: rgb(85, 78, 72) !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.framer-19me4mh p span,
+.framer-19me4mh p strong,
+.framer-1jawtcx p span,
+.framer-1jawtcx p strong {
+  font-size: inherit !important;
+  font-family: inherit !important;
+}
+
+.framer-19me4mh p strong,
+.framer-1jawtcx p strong {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  color: rgb(50, 40, 35) !important;
+  display: inline-block !important;
+  margin: 3px 0 !important;
+}
+
+/* Timeline navigation link */
+.framer-1jsww7o {
+  left: 50% !important;
+  top: 84.8% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+/* ===================================================================
+ *  Laptop & Desktop Full Screen Responsive Styles (>= 810px)
+ * =================================================================== */
+@media (min-width: 810px) {
+  /* Ensure root container fills the entire laptop screen */
+  html, body, #main {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* Page 1: Hero Names & Tagline on Laptop */
+  [data-framer-name="PAGE 1"] .framer-qqlkw5 p,
+  [data-framer-name="PAGE 1"] .framer-1jgx9kw p {
+    font-size: 64px !important;
+    letter-spacing: 0.05em !important;
+    line-height: 1.1em !important;
+  }
+  [data-framer-name="PAGE 1"] .framer-1pwvksq p {
+    font-size: 20px !important;
+  }
+  [data-framer-name="PAGE 1"] .framer-64h8lc {
+    top: 610px !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: auto !important;
+    min-width: 320px !important;
+    white-space: nowrap !important;
+    z-index: 10 !important;
+  }
+  [data-framer-name="PAGE 1"] .framer-64h8lc p {
+    font-size: 20px !important;
+    letter-spacing: 0.18em !important;
+    color: rgb(255, 240, 205) !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45) !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+    margin: 0 !important;
+  }
+
+  /* Page 2: Desktop Invite Header */
+  .framer-z74mwu {
+    left: 50% !important;
+    top: 37.8% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+  .framer-z74mwu h1 {
+    font-size: 110px !important;
+  }
+
+  /* Page 2: Desktop Groom Family Invitation Block */
+  .framer-qq17fj {
+    left: 50% !important;
+    top: 46.8% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 58% !important;
+    overflow: visible !important;
+  }
+  .framer-qq17fj foreignObject {
+    transform: scale(1.0) !important;
+    width: 100% !important;
+    overflow: visible !important;
+    text-align: center !important;
+  }
+  .framer-qq17fj p {
+    font-family: "Abhaya Libre", Georgia, serif !important;
+    font-size: 22px !important;
+    line-height: 1.55em !important;
+    color: rgb(75, 68, 62) !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+  .framer-qq17fj p strong {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: rgb(45, 35, 30) !important;
+    display: inline-block !important;
+    margin: 5px 0 !important;
+  }
+  .framer-qq17fj p:last-child {
+    font-size: 19px !important;
+    line-height: 1.45em !important;
+    max-width: 580px !important;
+    margin: 6px auto 0 !important;
+    color: rgb(85, 78, 72) !important;
+    white-space: normal !important;
+  }
+
+  /* Page 2: Desktop Couple Names */
+  .framer-kjvwux {
+    left: 50% !important;
+    top: 55.5% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+  .framer-f0n6ls {
+    left: 50% !important;
+    top: 61.5% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+  .framer-wuej87 {
+    left: 50% !important;
+    top: 67.5% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+  .framer-kjvwux h1,
+  .framer-wuej87 h1 {
+    font-size: 52px !important;
+    letter-spacing: 0.04em !important;
+    white-space: nowrap !important;
+    color: rgb(215, 175, 105) !important;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4) !important;
+  }
+  .framer-f0n6ls h1 {
+    font-size: 32px !important;
+    color: rgb(41, 134, 196) !important;
+  }
+
+  /* Page 2: Desktop Bride Family */
+  .framer-1jawtcx {
+    left: 50% !important;
+    top: 76.5% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 58% !important;
+    overflow: visible !important;
+  }
+  .framer-1jawtcx foreignObject {
+    transform: scale(1.0) !important;
+    width: 100% !important;
+    overflow: visible !important;
+    text-align: center !important;
+  }
+  .framer-1jawtcx p {
+    font-family: "Abhaya Libre", Georgia, serif !important;
+    font-size: 22px !important;
+    line-height: 1.55em !important;
+    color: rgb(75, 68, 62) !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+  .framer-1jawtcx p strong {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: rgb(45, 35, 30) !important;
+    display: inline-block !important;
+    margin: 5px 0 !important;
+  }
+
+  /* Page 4: Couple Illustration Cutout & Countdown on Laptop */
+  .framer-6k3h5w .page4-countdown {
+    top: 28px !important;
+  }
+  .framer-6k3h5w .p4c-title {
+    font-size: 46px !important;
+  }
+  .framer-6k3h5w .p4c-box {
+    width: 62px !important;
+    height: 66px !important;
+  }
+  .framer-6k3h5w .p4c-num {
+    font-size: 26px !important;
+  }
+
+  /* Ensure Couple Garland Illustration Cutout is Prominently Centered */
+  .framer-yaux2a {
+    position: absolute !important;
+    top: 490px !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: auto !important;
+    height: clamp(380px, 48vh, 520px) !important;
+    z-index: 15 !important;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.28)) !important;
+  }
+  .framer-yaux2a [data-framer-background-image-wrapper="true"] {
+    position: relative !important;
+    width: auto !important;
+    height: 100% !important;
+  }
+  .framer-yaux2a img {
+    width: auto !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    display: block !important;
   }
 }

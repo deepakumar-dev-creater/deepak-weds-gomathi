@@ -13,7 +13,7 @@
   //  CONFIG – edit these
   // ===================================================================
   var DEFAULTS = {
-    weddingDate: "2027-03-12T09:00:00+05:30",
+    weddingDate: "2027-03-12T06:00:00+05:30",
     music: {
       src: "assets/audio/music.mp3",
       volume: 0.7,
@@ -28,8 +28,24 @@
     eventsHeading: "The Celebrations",
     coupleNames: "Deepak Kumar & Gomathi",
         events: [
-      { title: "Wedding Reception", date: "11 March 2027", time: "7:00 PM", venue: "En Sesha Mahal, Royapettah, Chennai", description: "Celebrate the eve of the wedding with musical blessings, dinner banquet, and toasts.", image: "assets/img/reception_blue.jpg", mapLink: "https://share.google/9cDnaaYRR4evNU4Ec" },
-      { title: "Wedding Ceremony (Muhurtham)", date: "12 March 2027", time: "9:00 AM", venue: "En Sesha Mahal, Royapettah, Chennai", description: "Witness the sacred vows, Mangalya Dharanam, and Saptapadi as Deepak Kumar and Gomathi unite.", image: "assets/img/couple_muhurtham.jpg", mapLink: "https://share.google/9cDnaaYRR4evNU4Ec" }
+      {
+        title: "Wedding Reception",
+        date: "Thursday, 11 March 2027",
+        time: "6:30 PM onwards",
+        venue: "En Sesha Mahal, Royapettah, Chennai - 600014",
+        description: "Celebrate the eve of the wedding with musical blessings, dinner banquet, and toasts.",
+        image: "assets/img/reception_blue.jpg",
+        mapLink: "https://share.google/9cDnaaYRR4evNU4Ec"
+      },
+      {
+        title: "Wedding Ceremony (Muhurtham)",
+        date: "Friday, 12 March 2027",
+        time: "6:00 AM to 7:30 AM",
+        venue: "En Sesha Mahal, Royapettah, Chennai - 600014",
+        description: "Witness the sacred vows, Mangalya Dharanam, and Saptapadi as Deepak Kumar and Gomathi unite.",
+        image: "assets/img/couple_muhurtham.jpg",
+        mapLink: "https://share.google/9cDnaaYRR4evNU4Ec"
+      }
     ],
     frameSlider: {
       images: [],
@@ -743,6 +759,13 @@
 
 //  Boot
   // ===================================================================
+  // Handle smooth scroll forwarding from parent window (laptop / desktop view)
+  window.addEventListener('message', function (e) {
+    if (e.data && e.data.type === 'scroll-by') {
+      window.scrollBy({ top: e.data.deltaY, behavior: 'auto' });
+    }
+  });
+
   B.register({
     CONFIG: CONFIG,
     DEFAULTS: DEFAULTS,
