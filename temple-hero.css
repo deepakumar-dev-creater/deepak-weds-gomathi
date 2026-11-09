@@ -1,0 +1,47 @@
+/* New-section artwork, scoped to the entrance. The remaining invitation is unchanged. */
+@font-face{font-family:Temple Tamil;src:url('assets/fonts/NotoSerifTamil.ttf') format('truetype');font-weight:100 900;font-display:swap}
+.temple-entrance{position:relative!important;width:100%!important;height:auto!important;aspect-ratio:10/16.8;overflow:hidden;isolation:isolate;container-type:inline-size;background:#078fe9;color:#ffe3a0}
+.temple-entrance *{box-sizing:border-box}
+.entrance-atmosphere{position:absolute;inset:0;pointer-events:none}
+.temple-entrance .entrance-sky{position:absolute;inset:-5%;background:url('assets/img/xZKlIX9XaacbmAvyKmu8rqVXE.webp') center/cover;animation:entrance-clouds 24s ease-in-out infinite alternate;will-change:transform}
+@keyframes entrance-clouds{from{transform:translate(-2%,-.5%) scale(1.08)}to{transform:translate(2%,.5%) scale(1.08)}}
+.entrance-copy{position:absolute;inset:0;display:contents;text-align:center;pointer-events:none}
+.entrance-art{position:absolute;left:50%;transform:translateX(-50%);z-index:3;overflow:hidden}
+.entrance-art svg{display:block;width:100%;height:100%}
+.entrance-ganesha{top:1cqw;width:5.5cqw;height:6.3cqw}
+.entrance-blessing{position:absolute;top:7.5cqw;left:20%;width:60%;margin:0!important;z-index:3;color:#ffe6a1;font:400 clamp(7px,1.6cqw,9px)/1.4 "Temple Tamil",serif;text-align:center;text-shadow:none}
+.entrance-name-layer{position:absolute;inset:0;z-index:2;pointer-events:none}
+.entrance-couple-name{position:absolute;z-index:3;left:5%;width:90%;margin:0!important;text-align:center;line-height:1.25!important}
+.entrance-groom{top:15cqw}
+.entrance-ribbon{top:29cqw;width:26cqw;height:9.8cqw}
+.entrance-bride{top:39cqw}
+.entrance-english{display:block;font:500 clamp(9px,2.2cqw,12px)/1.3 Georgia,serif;letter-spacing:.2em;color:#f6d47f;text-shadow:0 2px 3px #003b65}
+.entrance-tamil{display:block;font:400 8cqw/1.25 'Temple Tamil',serif;letter-spacing:-.045em;background:linear-gradient(#fff2af 12%,#e7ba55 40%,#ffea98 53%,#ac7325 82%);background-clip:text;-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 1px 0 #896325) drop-shadow(0 2px 2px #003c6080)}
+.entrance-invitation{position:absolute;top:54cqw;left:5%;width:90%;margin:0!important;color:#ffe4a1;font:500 clamp(10px,2.5cqw,14px)/1.5 "Temple Tamil",serif;text-align:center;text-shadow:0 1px 2px #004b75}
+.entrance-temple,.entrance-trees{position:absolute;left:0;width:100%;height:auto;pointer-events:none;object-fit:contain}
+.entrance-temple{top:53cqw;z-index:4;transform-origin:center bottom}
+.entrance-trees{bottom:-42cqw;z-index:5}
+.entrance-next{position:absolute;bottom:4cqw;left:50%;transform:translateX(-50%);z-index:6;display:grid;place-items:center;width:44px;height:44px;color:#ffe6a0;border-radius:50%;background:#004b6970;text-decoration:none;box-shadow:0 0 0 1px #ffe6a050}
+.entrance-next svg{width:25px;height:25px}
+.entrance-next:focus-visible{outline:3px solid #fff3ce;outline-offset:4px}
+.entrance-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.temple-entrance.is-offscreen .entrance-sky{animation-play-state:paused}
+@supports(animation-timeline:scroll(root block)){
+ @media(prefers-reduced-motion:no-preference){
+  html.entrance-depth .entrance-name-layer{animation:entrance-name-depth linear both;animation-timeline:scroll(root block);animation-range:0px var(--entrance-distance,450px)}
+  html.entrance-depth .entrance-atmosphere{animation:entrance-sky-depth linear both;animation-timeline:scroll(root block);animation-range:0px var(--entrance-distance,450px)}
+  html.entrance-depth .entrance-temple{animation:entrance-temple-depth linear both;animation-timeline:scroll(root block);animation-range:0px var(--entrance-distance,1000px)}
+  html.entrance-depth .entrance-trees{animation:entrance-tree-depth linear both;animation-timeline:scroll(root block);animation-range:0px var(--entrance-distance,1000px)}
+ }
+}
+@keyframes entrance-name-depth{from{transform:translateY(0)}to{transform:translateY(var(--entrance-name-shift,300px))}}
+@keyframes entrance-sky-depth{from{transform:translateY(0)}to{transform:translateY(var(--entrance-sky-shift,18px))}}
+@keyframes entrance-temple-depth{from{transform:translateY(0)}to{transform:translateY(var(--entrance-temple-shift,-50px))}}
+@keyframes entrance-tree-depth{from{transform:translateY(0)}to{transform:translateY(var(--entrance-tree-shift,-30px))}}
+@media(prefers-reduced-motion:reduce){.temple-entrance .entrance-sky{animation:none;transform:scale(1.08)}.entrance-name-layer,.entrance-atmosphere,.entrance-temple,.entrance-trees{animation:none!important;transform:none!important}}
+@font-face{font-family:Temple Calligraphy;src:url('assets/fonts/TiroTamil-Italic.ttf') format('truetype');font-style:italic;font-display:swap}
+.entrance-tamil{font-family:Temple Calligraphy,Temple Tamil,serif;font-style:italic;font-weight:400;font-size:8cqw;line-height:1.25}
+#temple-music{position:fixed!important;inset:auto 0 0 auto!important;width:0!important;height:0!important;z-index:9999!important;transform:none!important}
+
+/* Keep the persistent player accessible without competing with the temple. */
+#temple-music .mp-btn{background:#6b2535;border:1px solid #c8a761;box-shadow:0 3px 10px #10272f40}

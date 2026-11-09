@@ -1,0 +1,98 @@
+[
+  {
+    "outer": 320,
+    "iframe": 320,
+    "overflow": false,
+    "sealed": true,
+    "blossomFill": "rgb(255, 243, 225)",
+    "petals": 0,
+    "credit": "6px",
+    "sections": [
+      {
+        "section": ".formal-invitation",
+        "paper": "rgb(241, 237, 229)"
+      },
+      {
+        "section": ".celebrations",
+        "paper": "rgb(241, 237, 229)"
+      },
+      {
+        "section": ".wedding-closing",
+        "paper": "rgb(241, 237, 229)"
+      }
+    ],
+    "audio": 1
+  },
+  {
+    "outer": 390,
+    "iframe": 390,
+    "overflow": false,
+    "sealed": true,
+    "blossomFill": "rgb(255, 243, 225)",
+    "petals": 0,
+    "credit": "6px",
+    "sections": [
+      {
+        "section": ".formal-invitation",
+        "paper": "rgb(241, 237, 229)"
+      },
+      {
+        "section": ".celebrations",
+        "paper": "rgb(241, 237, 229)"
+      },
+      {
+        "section": ".wedding-closing",
+        "paper": "rgb(241, 237, 229)"
+      }
+    ],
+    "audio": 1
+  },
+  {
+    "outer": 768,
+    "iframe": 576,
+    "overflow": false,
+    "sealed": true,
+    "blossomFill": "rgb(255, 243, 225)",
+    "petals": 0,
+    "credit": "6px",
+    "sections": [
+      {
+        "section": ".formal-invitation",
+        "paper": "rgb(241, 237, 229)"
+      },
+      {
+        "section": ".celebrations",
+        "paper": "rgb(241, 237, 229)"
+      },
+      {
+        "section": ".wedding-closing",
+        "paper": "rgb(241, 237, 229)"
+      }
+    ],
+    "audio": 1
+  },
+  {
+    "outer": 1440,
+    "iframe": 506,
+    "overflow": false,
+    "sealed": true,
+    "blossomFill": "rgb(255, 243, 225)",
+    "petals": 0,
+    "credit": "6px",
+    "sections": [
+      {
+        "section": ".formal-invitation",
+        "paper": "rgb(241, 237, 229)"
+      },
+      {
+        "section": ".celebrations",
+        "paper": "rgb(241, 237, 229)"
+      },
+      {
+        "section": ".wedding-closing",
+        "paper": "rgb(241, 237, 229)"
+      }
+    ],
+    "audio": 1
+  }
+]

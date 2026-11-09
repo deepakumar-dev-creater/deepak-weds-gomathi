@@ -1,0 +1,2137 @@
+{
+  "views": [
+    {
+      "viewport": [
+        320,
+        844
+      ],
+      "reception": {
+        "frame": 320,
+        "section": {
+          "x": 0,
+          "y": 77.28125,
+          "width": 320,
+          "height": 653.296875,
+          "top": 77.28125,
+          "right": 320,
+          "bottom": 730.578125,
+          "left": 0
+        },
+        "card": {
+          "x": 40,
+          "y": 149.28884887695312,
+          "width": 240,
+          "height": 509.2968444824219,
+          "top": 149.28884887695312,
+          "right": 280,
+          "bottom": 658.585693359375,
+          "left": 40
+        },
+        "title": {
+          "text": "Wedding Reception",
+          "font": "Philosopher, serif",
+          "size": 22.8,
+          "width": 211.625,
+          "height": 25.0625,
+          "top": 464.1169738769531,
+          "left": 54.1875,
+          "right": 265.8125,
+          "bottom": 489.1794738769531,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "meta": {
+          "text": "Thursday, 11 March 20276:30 PM onwardsEn Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 9.36,
+          "width": 211.625,
+          "height": 40.296875,
+          "top": 513.163818359375,
+          "left": 54.1875,
+          "right": 265.8125,
+          "bottom": 553.460693359375,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "date": {
+          "text": "Thursday, 11 March 2027",
+          "font": "Jost, sans-serif",
+          "size": 9.36,
+          "width": 113.46875,
+          "height": 12.15625,
+          "top": 513.163818359375,
+          "left": 55.875,
+          "right": 169.34375,
+          "bottom": 525.320068359375,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "time": {
+          "text": "6:30 PM onwards",
+          "font": "Jost, sans-serif",
+          "size": 9.36,
+          "width": 83.96875,
+          "height": 12.15625,
+          "top": 513.163818359375,
+          "left": 180.140625,
+          "right": 264.109375,
+          "bottom": 525.320068359375,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "venue": {
+          "text": "En Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 9.36,
+          "width": 211.625,
+          "height": 24.3125,
+          "top": 529.148193359375,
+          "left": 54.1875,
+          "right": 265.8125,
+          "bottom": 553.460693359375,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "cta": {
+          "text": "View Location",
+          "font": "Jost, sans-serif",
+          "size": 8.16,
+          "width": 125.171875,
+          "height": 26.453125,
+          "top": 601.882568359375,
+          "left": 97.40625,
+          "right": 222.578125,
+          "bottom": 628.335693359375,
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "kicker": {
+          "text": "The Celebrations",
+          "font": "Jost, sans-serif",
+          "size": 6.96,
+          "width": 211.625,
+          "height": 8.34375,
+          "top": 164.67947387695312,
+          "left": 54.1875,
+          "right": 265.8125,
+          "bottom": 173.02322387695312,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "couple": {
+          "text": "Deepak Kumar & Gomathi",
+          "font": "\"Luxurious Script\", cursive",
+          "size": 21.6,
+          "width": 211.625,
+          "height": 23.75,
+          "top": 175.41384887695312,
+          "left": 54.1875,
+          "right": 265.8125,
+          "bottom": 199.16384887695312,
+          "color": "rgb(168, 120, 31)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "arrow": {
+          "text": "",
+          "font": "sans-serif",
+          "size": 12,
+          "width": 24,
+          "height": 24,
+          "top": 330.6013488769531,
+          "left": 249,
+          "right": 273,
+          "bottom": 354.6013488769531,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgb(255, 250, 242)"
+        },
+        "dots": [
+          {
+            "rect": {
+              "x": 147.171875,
+              "y": 639.132568359375,
+              "width": 15.59375,
+              "height": 5.265625,
+              "top": 639.132568359375,
+              "right": 162.765625,
+              "bottom": 644.398193359375,
+              "left": 147.171875
+            },
+            "selected": null,
+            "label": "Wedding Reception"
+          },
+          {
+            "rect": {
+              "x": 167.5625,
+              "y": 639.132568359375,
+              "width": 5.265625,
+              "height": 5.265625,
+              "top": 639.132568359375,
+              "right": 172.828125,
+              "bottom": 644.398193359375,
+              "left": 167.5625
+            },
+            "selected": null,
+            "label": "Wedding Ceremony (Muhurtham)"
+          }
+        ],
+        "buttonLabels": [
+          "Previous event",
+          "Next event",
+          "Wedding Reception",
+          "Wedding Ceremony (Muhurtham)"
+        ],
+        "liveRegions": 0,
+        "ta": 0,
+        "fonts": [
+          {
+            "family": "Instrument Serif",
+            "status": "unloaded"
+          },
+          {
+            "family": "Instrument Serif",
+            "status": "loaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "loaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "loaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "loaded"
+          }
+        ],
+        "overflow": false,
+        "cardPastSection": false,
+        "cardOverNext": false
+      },
+      "wedding": {
+        "frame": 320,
+        "section": {
+          "x": 0,
+          "y": 77.28125,
+          "width": 320,
+          "height": 694.34375,
+          "top": 77.28125,
+          "right": 320,
+          "bottom": 771.625,
+          "left": 0
+        },
+        "card": {
+          "x": 40,
+          "y": 149.28125,
+          "width": 240,
+          "height": 550.34375,
+          "top": 149.28125,
+          "right": 280,
+          "bottom": 699.625,
+          "left": 40
+        },
+        "title": {
+          "text": "Wedding Ceremony (Muhurtham)",
+          "font": "Philosopher, serif",
+          "size": 22.8,
+          "width": 211.625,
+          "height": 50.125,
+          "top": 464.109375,
+          "left": 54.1875,
+          "right": 265.8125,
+          "bottom": 514.234375,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "meta": {
+          "text": "Friday, 12 March 20276:00 AM to 7:30 AMEn Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 9.36,
+          "width": 211.625,
+          "height": 56.28125,
+          "top": 538.21875,
+          "left": 54.1875,
+          "right": 265.8125,
+          "bottom": 594.5,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "date": {
+          "text": "Friday, 12 March 2027",
+          "font": "Jost, sans-serif",
+          "size": 9.36,
+          "width": 103.578125,
+          "height": 12.15625,
+          "top": 538.21875,
+          "left": 108.203125,
+          "right": 211.78125,
+          "bottom": 550.375,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "time": {
+          "text": "6:00 AM to 7:30 AM",
+          "font": "Jost, sans-serif",
+          "size": 9.36,
+          "width": 97.515625,
+          "height": 12.15625,
+          "top": 554.203125,
+          "left": 111.234375,
+          "right": 208.75,
+          "bottom": 566.359375,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "venue": {
+          "text": "En Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 9.36,
+          "width": 211.625,
+          "height": 24.3125,
+          "top": 570.1875,
+          "left": 54.1875,
+          "right": 265.8125,
+          "bottom": 594.5,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "cta": {
+          "text": "View Location",
+          "font": "Jost, sans-serif",
+          "size": 8.16,
+          "width": 125.171875,
+          "height": 26.453125,
+          "top": 642.921875,
+          "left": 97.40625,
+          "right": 222.578125,
+          "bottom": 669.375,
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "kicker": {
+          "text": "The Celebrations",
+          "font": "Jost, sans-serif",
+          "size": 6.96,
+          "width": 211.625,
+          "height": 8.34375,
+          "top": 164.671875,
+          "left": 54.1875,
+          "right": 265.8125,
+          "bottom": 173.015625,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "couple": {
+          "text": "Deepak Kumar & Gomathi",
+          "font": "\"Luxurious Script\", cursive",
+          "size": 21.6,
+          "width": 211.625,
+          "height": 23.75,
+          "top": 175.40625,
+          "left": 54.1875,
+          "right": 265.8125,
+          "bottom": 199.15625,
+          "color": "rgb(168, 120, 31)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "arrow": {
+          "text": "",
+          "font": "sans-serif",
+          "size": 12,
+          "width": 25.919998168945312,
+          "height": 25.920013427734375,
+          "top": 329.6337585449219,
+          "left": 248.0399932861328,
+          "right": 273.9599914550781,
+          "bottom": 355.55377197265625,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgb(255, 250, 242)"
+        },
+        "dots": [
+          {
+            "rect": {
+              "x": 147.171875,
+              "y": 680.171875,
+              "width": 5.265625,
+              "height": 5.265625,
+              "top": 680.171875,
+              "right": 152.4375,
+              "bottom": 685.4375,
+              "left": 147.171875
+            },
+            "selected": null,
+            "label": "Wedding Reception"
+          },
+          {
+            "rect": {
+              "x": 157.234375,
+              "y": 680.171875,
+              "width": 15.59375,
+              "height": 5.265625,
+              "top": 680.171875,
+              "right": 172.828125,
+              "bottom": 685.4375,
+              "left": 157.234375
+            },
+            "selected": null,
+            "label": "Wedding Ceremony (Muhurtham)"
+          }
+        ],
+        "buttonLabels": [
+          "Previous event",
+          "Next event",
+          "Wedding Reception",
+          "Wedding Ceremony (Muhurtham)"
+        ],
+        "liveRegions": 0,
+        "ta": 0,
+        "fonts": [
+          {
+            "family": "Instrument Serif",
+            "status": "unloaded"
+          },
+          {
+            "family": "Instrument Serif",
+            "status": "loaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "loaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "loaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "loaded"
+          }
+        ],
+        "overflow": false,
+        "cardPastSection": false,
+        "cardOverNext": false
+      },
+      "reducedMotionAnimations": [
+        {
+          "name": "Web Animation",
+          "duration": 200
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 700
+        },
+        {
+          "name": "Web Animation",
+          "duration": 200
+        }
+      ],
+      "errors": []
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "reception": {
+        "frame": 390,
+        "section": {
+          "x": 0,
+          "y": 3.59375,
+          "width": 390,
+          "height": 801.4375,
+          "top": 3.59375,
+          "right": 390,
+          "bottom": 805.03125,
+          "left": 0
+        },
+        "card": {
+          "x": 40,
+          "y": 75.60127258300781,
+          "width": 310,
+          "height": 657.4375,
+          "top": 75.60127258300781,
+          "right": 350,
+          "bottom": 733.0387725830078,
+          "left": 40
+        },
+        "title": {
+          "text": "Wedding Reception",
+          "font": "Philosopher, serif",
+          "size": 29.45,
+          "width": 273.90625,
+          "height": 32.390625,
+          "top": 482.63250732421875,
+          "left": 58.046875,
+          "right": 331.953125,
+          "bottom": 515.0231323242188,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "meta": {
+          "text": "Thursday, 11 March 20276:30 PM onwardsEn Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 12.09,
+          "width": 273.90625,
+          "height": 52.109375,
+          "top": 546.0075073242188,
+          "left": 58.046875,
+          "right": 331.953125,
+          "bottom": 598.1168823242188,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "date": {
+          "text": "Thursday, 11 March 2027",
+          "font": "Jost, sans-serif",
+          "size": 12.09,
+          "width": 146.65625,
+          "height": 15.71875,
+          "top": 546.0075073242188,
+          "left": 60.4375,
+          "right": 207.09375,
+          "bottom": 561.7262573242188,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "time": {
+          "text": "6:30 PM onwards",
+          "font": "Jost, sans-serif",
+          "size": 12.09,
+          "width": 108.53125,
+          "height": 15.71875,
+          "top": 546.0075073242188,
+          "left": 221.03125,
+          "right": 329.5625,
+          "bottom": 561.7262573242188,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "venue": {
+          "text": "En Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 12.09,
+          "width": 273.90625,
+          "height": 31.4375,
+          "top": 566.6793823242188,
+          "left": 58.046875,
+          "right": 331.953125,
+          "bottom": 598.1168823242188,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "cta": {
+          "text": "View Location",
+          "font": "Jost, sans-serif",
+          "size": 10.54,
+          "width": 161.046875,
+          "height": 33.578125,
+          "top": 660.6637573242188,
+          "left": 114.46875,
+          "right": 275.515625,
+          "bottom": 694.2418823242188,
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "kicker": {
+          "text": "The Celebrations",
+          "font": "Jost, sans-serif",
+          "size": 8.99,
+          "width": 273.90625,
+          "height": 10.78125,
+          "top": 95.19502258300781,
+          "left": 58.046875,
+          "right": 331.953125,
+          "bottom": 105.97627258300781,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "couple": {
+          "text": "Deepak Kumar & Gomathi",
+          "font": "\"Luxurious Script\", cursive",
+          "size": 27.9,
+          "width": 273.90625,
+          "height": 30.6875,
+          "top": 109.07002258300781,
+          "left": 58.046875,
+          "right": 331.953125,
+          "bottom": 139.7575225830078,
+          "color": "rgb(168, 120, 31)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "arrow": {
+          "text": "",
+          "font": "sans-serif",
+          "size": 12,
+          "width": 31,
+          "height": 31,
+          "top": 309.88250732421875,
+          "left": 310.25,
+          "right": 341.25,
+          "bottom": 340.88250732421875,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgb(255, 250, 242)"
+        },
+        "dots": [
+          {
+            "rect": {
+              "x": 178.421875,
+              "y": 708.1793823242188,
+              "width": 20.140625,
+              "height": 6.8125,
+              "top": 708.1793823242188,
+              "right": 198.5625,
+              "bottom": 714.9918823242188,
+              "left": 178.421875
+            },
+            "selected": null,
+            "label": "Wedding Reception"
+          },
+          {
+            "rect": {
+              "x": 204.75,
+              "y": 708.1793823242188,
+              "width": 6.8125,
+              "height": 6.8125,
+              "top": 708.1793823242188,
+              "right": 211.5625,
+              "bottom": 714.9918823242188,
+              "left": 204.75
+            },
+            "selected": null,
+            "label": "Wedding Ceremony (Muhurtham)"
+          }
+        ],
+        "buttonLabels": [
+          "Previous event",
+          "Next event",
+          "Wedding Reception",
+          "Wedding Ceremony (Muhurtham)"
+        ],
+        "liveRegions": 0,
+        "ta": 0,
+        "fonts": [
+          {
+            "family": "Instrument Serif",
+            "status": "unloaded"
+          },
+          {
+            "family": "Instrument Serif",
+            "status": "loaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "loaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "loaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "loaded"
+          }
+        ],
+        "overflow": false,
+        "cardPastSection": false,
+        "cardOverNext": false
+      },
+      "wedding": {
+        "frame": 390,
+        "section": {
+          "x": 0,
+          "y": 3.59375,
+          "width": 390,
+          "height": 833.828125,
+          "top": 3.59375,
+          "right": 390,
+          "bottom": 837.421875,
+          "left": 0
+        },
+        "card": {
+          "x": 40,
+          "y": 75.59375,
+          "width": 310,
+          "height": 689.828125,
+          "top": 75.59375,
+          "right": 350,
+          "bottom": 765.421875,
+          "left": 40
+        },
+        "title": {
+          "text": "Wedding Ceremony (Muhurtham)",
+          "font": "Philosopher, serif",
+          "size": 29.45,
+          "width": 273.90625,
+          "height": 64.78125,
+          "top": 482.625,
+          "left": 58.046875,
+          "right": 331.953125,
+          "bottom": 547.40625,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "meta": {
+          "text": "Friday, 12 March 20276:00 AM to 7:30 AMEn Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 12.09,
+          "width": 273.90625,
+          "height": 52.109375,
+          "top": 578.390625,
+          "left": 58.046875,
+          "right": 331.953125,
+          "bottom": 630.5,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "date": {
+          "text": "Friday, 12 March 2027",
+          "font": "Jost, sans-serif",
+          "size": 12.09,
+          "width": 133.859375,
+          "height": 15.71875,
+          "top": 578.390625,
+          "left": 58.078125,
+          "right": 191.9375,
+          "bottom": 594.109375,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "time": {
+          "text": "6:00 AM to 7:30 AM",
+          "font": "Jost, sans-serif",
+          "size": 12.09,
+          "width": 126.046875,
+          "height": 15.71875,
+          "top": 578.390625,
+          "left": 205.875,
+          "right": 331.921875,
+          "bottom": 594.109375,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "venue": {
+          "text": "En Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 12.09,
+          "width": 273.90625,
+          "height": 31.4375,
+          "top": 599.0625,
+          "left": 58.046875,
+          "right": 331.953125,
+          "bottom": 630.5,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "cta": {
+          "text": "View Location",
+          "font": "Jost, sans-serif",
+          "size": 10.54,
+          "width": 161.046875,
+          "height": 33.578125,
+          "top": 693.046875,
+          "left": 114.46875,
+          "right": 275.515625,
+          "bottom": 726.625,
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "kicker": {
+          "text": "The Celebrations",
+          "font": "Jost, sans-serif",
+          "size": 8.99,
+          "width": 273.90625,
+          "height": 10.78125,
+          "top": 95.1875,
+          "left": 58.046875,
+          "right": 331.953125,
+          "bottom": 105.96875,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "couple": {
+          "text": "Deepak Kumar & Gomathi",
+          "font": "\"Luxurious Script\", cursive",
+          "size": 27.9,
+          "width": 273.90625,
+          "height": 30.6875,
+          "top": 109.0625,
+          "left": 58.046875,
+          "right": 331.953125,
+          "bottom": 139.75,
+          "color": "rgb(168, 120, 31)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "arrow": {
+          "text": "",
+          "font": "sans-serif",
+          "size": 12,
+          "width": 33.47998046875,
+          "height": 33.47998046875,
+          "top": 308.635009765625,
+          "left": 309.010009765625,
+          "right": 342.489990234375,
+          "bottom": 342.114990234375,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgb(255, 250, 242)"
+        },
+        "dots": [
+          {
+            "rect": {
+              "x": 178.421875,
+              "y": 740.5625,
+              "width": 6.8125,
+              "height": 6.8125,
+              "top": 740.5625,
+              "right": 185.234375,
+              "bottom": 747.375,
+              "left": 178.421875
+            },
+            "selected": null,
+            "label": "Wedding Reception"
+          },
+          {
+            "rect": {
+              "x": 191.421875,
+              "y": 740.5625,
+              "width": 20.140625,
+              "height": 6.8125,
+              "top": 740.5625,
+              "right": 211.5625,
+              "bottom": 747.375,
+              "left": 191.421875
+            },
+            "selected": null,
+            "label": "Wedding Ceremony (Muhurtham)"
+          }
+        ],
+        "buttonLabels": [
+          "Previous event",
+          "Next event",
+          "Wedding Reception",
+          "Wedding Ceremony (Muhurtham)"
+        ],
+        "liveRegions": 0,
+        "ta": 0,
+        "fonts": [
+          {
+            "family": "Instrument Serif",
+            "status": "unloaded"
+          },
+          {
+            "family": "Instrument Serif",
+            "status": "loaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "loaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "loaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "loaded"
+          }
+        ],
+        "overflow": false,
+        "cardPastSection": false,
+        "cardOverNext": false
+      },
+      "reducedMotionAnimations": [
+        {
+          "name": "Web Animation",
+          "duration": 200
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 700
+        },
+        {
+          "name": "Web Animation",
+          "duration": 200
+        }
+      ],
+      "errors": []
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "reception": {
+        "frame": 576,
+        "section": {
+          "x": 0,
+          "y": -103.40625,
+          "width": 576,
+          "height": 1194.984375,
+          "top": -103.40625,
+          "right": 576,
+          "bottom": 1091.578125,
+          "left": 0
+        },
+        "card": {
+          "x": 40,
+          "y": -31.398685455322266,
+          "width": 496,
+          "height": 1050.984375,
+          "top": -31.398685455322266,
+          "right": 536,
+          "bottom": 1019.5856895446777,
+          "left": 40
+        },
+        "title": {
+          "text": "Wedding Reception",
+          "font": "Philosopher, serif",
+          "size": 47.12,
+          "width": 439.46875,
+          "height": 51.828125,
+          "top": 620.663818359375,
+          "left": 68.265625,
+          "right": 507.734375,
+          "bottom": 672.491943359375,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "meta": {
+          "text": "Thursday, 11 March 20276:30 PM onwardsEn Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 19.344,
+          "width": 439.46875,
+          "height": 83.34375,
+          "top": 722.070068359375,
+          "left": 68.265625,
+          "right": 507.734375,
+          "bottom": 805.413818359375,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "date": {
+          "text": "Thursday, 11 March 2027",
+          "font": "Jost, sans-serif",
+          "size": 19.344,
+          "width": 234.703125,
+          "height": 25.140625,
+          "top": 722.070068359375,
+          "left": 72.65625,
+          "right": 307.359375,
+          "bottom": 747.210693359375,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "time": {
+          "text": "6:30 PM onwards",
+          "font": "Jost, sans-serif",
+          "size": 19.344,
+          "width": 173.671875,
+          "height": 25.140625,
+          "top": 722.070068359375,
+          "left": 329.671875,
+          "right": 503.34375,
+          "bottom": 747.210693359375,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "venue": {
+          "text": "En Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 19.344,
+          "width": 439.46875,
+          "height": 50.28125,
+          "top": 755.132568359375,
+          "left": 68.265625,
+          "right": 507.734375,
+          "bottom": 805.413818359375,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "cta": {
+          "text": "View Location",
+          "font": "Jost, sans-serif",
+          "size": 16.864,
+          "width": 256.578125,
+          "height": 52.5625,
+          "top": 905.538818359375,
+          "left": 159.703125,
+          "right": 416.28125,
+          "bottom": 958.101318359375,
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "kicker": {
+          "text": "The Celebrations",
+          "font": "Jost, sans-serif",
+          "size": 14.384,
+          "width": 439.46875,
+          "height": 17.265625,
+          "top": -0.6486854553222656,
+          "left": 68.265625,
+          "right": 507.734375,
+          "bottom": 16.616939544677734,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "couple": {
+          "text": "Deepak Kumar & Gomathi",
+          "font": "\"Luxurious Script\", cursive",
+          "size": 44.64,
+          "width": 439.46875,
+          "height": 49.093753814697266,
+          "top": 21.570064544677734,
+          "left": 68.265625,
+          "right": 507.734375,
+          "bottom": 70.663818359375,
+          "color": "rgb(168, 120, 31)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "arrow": {
+          "text": "",
+          "font": "sans-serif",
+          "size": 12,
+          "width": 49.59375,
+          "height": 49.59375,
+          "top": 343.648193359375,
+          "left": 473.015625,
+          "right": 522.609375,
+          "bottom": 393.241943359375,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgb(255, 250, 242)"
+        },
+        "dots": [
+          {
+            "rect": {
+              "x": 261.46875,
+              "y": 980.413818359375,
+              "width": 32.234375,
+              "height": 10.90625,
+              "top": 980.413818359375,
+              "right": 293.703125,
+              "bottom": 991.320068359375,
+              "left": 261.46875
+            },
+            "selected": null,
+            "label": "Wedding Reception"
+          },
+          {
+            "rect": {
+              "x": 303.609375,
+              "y": 980.413818359375,
+              "width": 10.90625,
+              "height": 10.90625,
+              "top": 980.413818359375,
+              "right": 314.515625,
+              "bottom": 991.320068359375,
+              "left": 303.609375
+            },
+            "selected": null,
+            "label": "Wedding Ceremony (Muhurtham)"
+          }
+        ],
+        "buttonLabels": [
+          "Previous event",
+          "Next event",
+          "Wedding Reception",
+          "Wedding Ceremony (Muhurtham)"
+        ],
+        "liveRegions": 0,
+        "ta": 0,
+        "fonts": [
+          {
+            "family": "Instrument Serif",
+            "status": "unloaded"
+          },
+          {
+            "family": "Instrument Serif",
+            "status": "loaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "loaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "loaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "loaded"
+          }
+        ],
+        "overflow": false,
+        "cardPastSection": false,
+        "cardOverNext": false
+      },
+      "wedding": {
+        "frame": 576,
+        "section": {
+          "x": 0,
+          "y": -103.40625,
+          "width": 576,
+          "height": 1246.8125,
+          "top": -103.40625,
+          "right": 576,
+          "bottom": 1143.40625,
+          "left": 0
+        },
+        "card": {
+          "x": 40,
+          "y": -31.40625,
+          "width": 496,
+          "height": 1102.8125,
+          "top": -31.40625,
+          "right": 536,
+          "bottom": 1071.40625,
+          "left": 40
+        },
+        "title": {
+          "text": "Wedding Ceremony (Muhurtham)",
+          "font": "Philosopher, serif",
+          "size": 47.12,
+          "width": 439.46875,
+          "height": 103.65625,
+          "top": 620.65625,
+          "left": 68.265625,
+          "right": 507.734375,
+          "bottom": 724.3125,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "meta": {
+          "text": "Friday, 12 March 20276:00 AM to 7:30 AMEn Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 19.344,
+          "width": 439.46875,
+          "height": 83.34375,
+          "top": 773.890625,
+          "left": 68.265625,
+          "right": 507.734375,
+          "bottom": 857.234375,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "date": {
+          "text": "Friday, 12 March 2027",
+          "font": "Jost, sans-serif",
+          "size": 19.344,
+          "width": 214.234375,
+          "height": 25.140625,
+          "top": 773.890625,
+          "left": 68.875,
+          "right": 283.109375,
+          "bottom": 799.03125,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "time": {
+          "text": "6:00 AM to 7:30 AM",
+          "font": "Jost, sans-serif",
+          "size": 19.344,
+          "width": 201.703125,
+          "height": 25.140625,
+          "top": 773.890625,
+          "left": 305.421875,
+          "right": 507.125,
+          "bottom": 799.03125,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "venue": {
+          "text": "En Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 19.344,
+          "width": 439.46875,
+          "height": 50.28125,
+          "top": 806.953125,
+          "left": 68.265625,
+          "right": 507.734375,
+          "bottom": 857.234375,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "cta": {
+          "text": "View Location",
+          "font": "Jost, sans-serif",
+          "size": 16.864,
+          "width": 256.578125,
+          "height": 52.5625,
+          "top": 957.359375,
+          "left": 159.703125,
+          "right": 416.28125,
+          "bottom": 1009.921875,
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "kicker": {
+          "text": "The Celebrations",
+          "font": "Jost, sans-serif",
+          "size": 14.384,
+          "width": 439.46875,
+          "height": 17.265625,
+          "top": -0.65625,
+          "left": 68.265625,
+          "right": 507.734375,
+          "bottom": 16.609375,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "couple": {
+          "text": "Deepak Kumar & Gomathi",
+          "font": "\"Luxurious Script\", cursive",
+          "size": 44.64,
+          "width": 439.46875,
+          "height": 49.09375,
+          "top": 21.5625,
+          "left": 68.265625,
+          "right": 507.734375,
+          "bottom": 70.65625,
+          "color": "rgb(168, 120, 31)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "arrow": {
+          "text": "",
+          "font": "sans-serif",
+          "size": 12,
+          "width": 53.561279296875,
+          "height": 53.561279296875,
+          "top": 341.6568603515625,
+          "left": 471.0318603515625,
+          "right": 524.5931396484375,
+          "bottom": 395.2181396484375,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgb(255, 250, 242)"
+        },
+        "dots": [
+          {
+            "rect": {
+              "x": 261.46875,
+              "y": 1032.234375,
+              "width": 10.90625,
+              "height": 10.90625,
+              "top": 1032.234375,
+              "right": 272.375,
+              "bottom": 1043.140625,
+              "left": 261.46875
+            },
+            "selected": null,
+            "label": "Wedding Reception"
+          },
+          {
+            "rect": {
+              "x": 282.28125,
+              "y": 1032.234375,
+              "width": 32.234375,
+              "height": 10.90625,
+              "top": 1032.234375,
+              "right": 314.515625,
+              "bottom": 1043.140625,
+              "left": 282.28125
+            },
+            "selected": null,
+            "label": "Wedding Ceremony (Muhurtham)"
+          }
+        ],
+        "buttonLabels": [
+          "Previous event",
+          "Next event",
+          "Wedding Reception",
+          "Wedding Ceremony (Muhurtham)"
+        ],
+        "liveRegions": 0,
+        "ta": 0,
+        "fonts": [
+          {
+            "family": "Instrument Serif",
+            "status": "unloaded"
+          },
+          {
+            "family": "Instrument Serif",
+            "status": "loaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "loaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "loaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "loaded"
+          }
+        ],
+        "overflow": false,
+        "cardPastSection": false,
+        "cardOverNext": false
+      },
+      "reducedMotionAnimations": [
+        {
+          "name": "Web Animation",
+          "duration": 200
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 700
+        },
+        {
+          "name": "Web Animation",
+          "duration": 200
+        }
+      ],
+      "errors": []
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "reception": {
+        "frame": 506,
+        "section": {
+          "x": 0,
+          "y": -91.484375,
+          "width": 506,
+          "height": 1046.796875,
+          "top": -91.484375,
+          "right": 506,
+          "bottom": 955.3125,
+          "left": 0
+        },
+        "card": {
+          "x": 40,
+          "y": -19.453624725341797,
+          "width": 426,
+          "height": 902.796875,
+          "top": -19.453624725341797,
+          "right": 466,
+          "bottom": 883.3432502746582,
+          "left": 40
+        },
+        "title": {
+          "text": "Wedding Reception",
+          "font": "Philosopher, serif",
+          "size": 40.47,
+          "width": 377.15625,
+          "height": 44.515625,
+          "top": 540.39013671875,
+          "left": 64.421875,
+          "right": 441.578125,
+          "bottom": 584.90576171875,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "meta": {
+          "text": "Thursday, 11 March 20276:30 PM onwardsEn Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 16.614,
+          "width": 377.15625,
+          "height": 71.546875,
+          "top": 627.46826171875,
+          "left": 64.421875,
+          "right": 441.578125,
+          "bottom": 699.01513671875,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "date": {
+          "text": "Thursday, 11 March 2027",
+          "font": "Jost, sans-serif",
+          "size": 16.614,
+          "width": 201.65625,
+          "height": 21.578125,
+          "top": 627.46826171875,
+          "left": 67.984375,
+          "right": 269.640625,
+          "bottom": 649.04638671875,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "time": {
+          "text": "6:30 PM onwards",
+          "font": "Jost, sans-serif",
+          "size": 16.614,
+          "width": 149.21875,
+          "height": 21.578125,
+          "top": 627.46826171875,
+          "left": 288.796875,
+          "right": 438.015625,
+          "bottom": 649.04638671875,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "venue": {
+          "text": "En Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 16.614,
+          "width": 377.15625,
+          "height": 43.15625,
+          "top": 655.85888671875,
+          "left": 64.421875,
+          "right": 441.578125,
+          "bottom": 699.01513671875,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "cta": {
+          "text": "View Location",
+          "font": "Jost, sans-serif",
+          "size": 14.484,
+          "width": 220.578125,
+          "height": 45.4375,
+          "top": 784.96826171875,
+          "left": 142.703125,
+          "right": 363.28125,
+          "bottom": 830.40576171875,
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "kicker": {
+          "text": "The Celebrations",
+          "font": "Jost, sans-serif",
+          "size": 12.354,
+          "width": 377.15625,
+          "height": 14.828125,
+          "top": 7.093250274658203,
+          "left": 64.421875,
+          "right": 441.578125,
+          "bottom": 21.921375274658203,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "couple": {
+          "text": "Deepak Kumar & Gomathi",
+          "font": "\"Luxurious Script\", cursive",
+          "size": 38.34,
+          "width": 377.15625,
+          "height": 42.171878814697266,
+          "top": 26.171375274658203,
+          "left": 64.421875,
+          "right": 441.578125,
+          "bottom": 68.34325408935547,
+          "color": "rgb(168, 120, 31)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "arrow": {
+          "text": "",
+          "font": "sans-serif",
+          "size": 12,
+          "width": 42.59375,
+          "height": 42.59375,
+          "top": 302.60888671875,
+          "left": 411.75,
+          "right": 454.34375,
+          "bottom": 345.20263671875,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgb(255, 250, 242)"
+        },
+        "dots": [
+          {
+            "rect": {
+              "x": 230.21875,
+              "y": 849.56201171875,
+              "width": 27.6875,
+              "height": 9.359375,
+              "top": 849.56201171875,
+              "right": 257.90625,
+              "bottom": 858.92138671875,
+              "left": 230.21875
+            },
+            "selected": null,
+            "label": "Wedding Reception"
+          },
+          {
+            "rect": {
+              "x": 266.421875,
+              "y": 849.56201171875,
+              "width": 9.359375,
+              "height": 9.359375,
+              "top": 849.56201171875,
+              "right": 275.78125,
+              "bottom": 858.92138671875,
+              "left": 266.421875
+            },
+            "selected": null,
+            "label": "Wedding Ceremony (Muhurtham)"
+          }
+        ],
+        "buttonLabels": [
+          "Previous event",
+          "Next event",
+          "Wedding Reception",
+          "Wedding Ceremony (Muhurtham)"
+        ],
+        "liveRegions": 0,
+        "ta": 0,
+        "fonts": [
+          {
+            "family": "Instrument Serif",
+            "status": "unloaded"
+          },
+          {
+            "family": "Instrument Serif",
+            "status": "loaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "loaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "loaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "loaded"
+          }
+        ],
+        "overflow": false,
+        "cardPastSection": false,
+        "cardOverNext": false
+      },
+      "wedding": {
+        "frame": 506,
+        "section": {
+          "x": 0,
+          "y": -91.484375,
+          "width": 506,
+          "height": 1091.3125,
+          "top": -91.484375,
+          "right": 506,
+          "bottom": 999.828125,
+          "left": 0
+        },
+        "card": {
+          "x": 40,
+          "y": -19.484375,
+          "width": 426,
+          "height": 947.3125,
+          "top": -19.484375,
+          "right": 466,
+          "bottom": 927.828125,
+          "left": 40
+        },
+        "title": {
+          "text": "Wedding Ceremony (Muhurtham)",
+          "font": "Philosopher, serif",
+          "size": 40.47,
+          "width": 377.15625,
+          "height": 89.03125,
+          "top": 540.359375,
+          "left": 64.421875,
+          "right": 441.578125,
+          "bottom": 629.390625,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "meta": {
+          "text": "Friday, 12 March 20276:00 AM to 7:30 AMEn Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 16.614,
+          "width": 377.15625,
+          "height": 71.546875,
+          "top": 671.953125,
+          "left": 64.421875,
+          "right": 441.578125,
+          "bottom": 743.5,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "date": {
+          "text": "Friday, 12 March 2027",
+          "font": "Jost, sans-serif",
+          "size": 16.614,
+          "width": 184.078125,
+          "height": 21.578125,
+          "top": 671.953125,
+          "left": 64.71875,
+          "right": 248.796875,
+          "bottom": 693.53125,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "time": {
+          "text": "6:00 AM to 7:30 AM",
+          "font": "Jost, sans-serif",
+          "size": 16.614,
+          "width": 173.3125,
+          "height": 21.578125,
+          "top": 671.953125,
+          "left": 267.953125,
+          "right": 441.265625,
+          "bottom": 693.53125,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "venue": {
+          "text": "En Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+          "font": "Jost, sans-serif",
+          "size": 16.614,
+          "width": 377.15625,
+          "height": 43.15625,
+          "top": 700.34375,
+          "left": 64.421875,
+          "right": 441.578125,
+          "bottom": 743.5,
+          "color": "rgb(58, 45, 28)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "cta": {
+          "text": "View Location",
+          "font": "Jost, sans-serif",
+          "size": 14.484,
+          "width": 220.578125,
+          "height": 45.4375,
+          "top": 829.453125,
+          "left": 142.703125,
+          "right": 363.28125,
+          "bottom": 874.890625,
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "kicker": {
+          "text": "The Celebrations",
+          "font": "Jost, sans-serif",
+          "size": 12.354,
+          "width": 377.15625,
+          "height": 14.828125,
+          "top": 7.0625,
+          "left": 64.421875,
+          "right": 441.578125,
+          "bottom": 21.890625,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "couple": {
+          "text": "Deepak Kumar & Gomathi",
+          "font": "\"Luxurious Script\", cursive",
+          "size": 38.34,
+          "width": 377.15625,
+          "height": 42.171875,
+          "top": 26.140625,
+          "left": 64.421875,
+          "right": 441.578125,
+          "bottom": 68.3125,
+          "color": "rgb(168, 120, 31)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        "arrow": {
+          "text": "",
+          "font": "sans-serif",
+          "size": 12,
+          "width": 46.001251220703125,
+          "height": 46.001220703125,
+          "top": 300.8743896484375,
+          "left": 410.0462646484375,
+          "right": 456.0475158691406,
+          "bottom": 346.8756103515625,
+          "color": "rgb(10, 48, 127)",
+          "bg": "rgb(255, 250, 242)"
+        },
+        "dots": [
+          {
+            "rect": {
+              "x": 230.21875,
+              "y": 894.046875,
+              "width": 9.359375,
+              "height": 9.359375,
+              "top": 894.046875,
+              "right": 239.578125,
+              "bottom": 903.40625,
+              "left": 230.21875
+            },
+            "selected": null,
+            "label": "Wedding Reception"
+          },
+          {
+            "rect": {
+              "x": 248.09375,
+              "y": 894.046875,
+              "width": 27.6875,
+              "height": 9.359375,
+              "top": 894.046875,
+              "right": 275.78125,
+              "bottom": 903.40625,
+              "left": 248.09375
+            },
+            "selected": null,
+            "label": "Wedding Ceremony (Muhurtham)"
+          }
+        ],
+        "buttonLabels": [
+          "Previous event",
+          "Next event",
+          "Wedding Reception",
+          "Wedding Ceremony (Muhurtham)"
+        ],
+        "liveRegions": 0,
+        "ta": 0,
+        "fonts": [
+          {
+            "family": "Instrument Serif",
+            "status": "unloaded"
+          },
+          {
+            "family": "Instrument Serif",
+            "status": "loaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "unloaded"
+          },
+          {
+            "family": "Jost",
+            "status": "loaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "unloaded"
+          },
+          {
+            "family": "Philosopher",
+            "status": "loaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "unloaded"
+          },
+          {
+            "family": "Luxurious Script",
+            "status": "loaded"
+          }
+        ],
+        "overflow": false,
+        "cardPastSection": false,
+        "cardOverNext": false
+      },
+      "reducedMotionAnimations": [
+        {
+          "name": "Web Animation",
+          "duration": 200
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 300
+        },
+        {
+          "name": "Web Animation",
+          "duration": 700
+        },
+        {
+          "name": "Web Animation",
+          "duration": 200
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "focusAutoplay": {
+    "first": "Wedding Reception",
+    "after": "Wedding Ceremony (Muhurtham)",
+    "focusStayed": true
+  },
+  "noJS": {
+    "text": "Krishna & Radha\n‹\n›\nMehendi Night\n15 December 2026\n7:00 PM\nMRC CENTRE CHENNAI\n\nAn evening of mehendi artistry, music, and family celebration.\n\nView Location",
+    "visibleText": [
+      "Mehendi Night",
+      "An evening of mehendi artistry, music, and family celebration.",
+      "View Location"
+    ],
+    "visibility": [
+      {
+        "text": "Mehendi Night",
+        "visible": false,
+        "hiddenBy": [
+          {
+            "tag": "DIV",
+            "class": "",
+            "opacity": "0",
+            "display": "block"
+          }
+        ]
+      },
+      {
+        "text": "An evening of mehendi artistry, music, and family celebration.",
+        "visible": false,
+        "hiddenBy": [
+          {
+            "tag": "DIV",
+            "class": "",
+            "opacity": "0",
+            "display": "block"
+          }
+        ]
+      },
+      {
+        "text": "View Location",
+        "visible": false,
+        "hiddenBy": [
+          {
+            "tag": "DIV",
+            "class": "",
+            "opacity": "0",
+            "display": "block"
+          }
+        ]
+      },
+      {
+        "text": "Mehendi Night",
+        "visible": false,
+        "hiddenBy": [
+          {
+            "tag": "DIV",
+            "class": "",
+            "opacity": "0",
+            "display": "block"
+          },
+          {
+            "tag": "DIV",
+            "class": "ssr-variant hidden-1fqmtcv hidden-1lmndnn hidden-ayqnlw hidden-72rtr7",
+            "opacity": "1",
+            "display": "none"
+          }
+        ]
+      },
+      {
+        "text": "An evening of mehendi artistry, music, and family celebration.",
+        "visible": false,
+        "hiddenBy": [
+          {
+            "tag": "DIV",
+            "class": "",
+            "opacity": "0",
+            "display": "block"
+          },
+          {
+            "tag": "DIV",
+            "class": "ssr-variant hidden-1fqmtcv hidden-1lmndnn hidden-ayqnlw hidden-72rtr7",
+            "opacity": "1",
+            "display": "none"
+          }
+        ]
+      },
+      {
+        "text": "View Location",
+        "visible": false,
+        "hiddenBy": [
+          {
+            "tag": "DIV",
+            "class": "",
+            "opacity": "0",
+            "display": "block"
+          },
+          {
+            "tag": "DIV",
+            "class": "ssr-variant hidden-1fqmtcv hidden-1lmndnn hidden-ayqnlw hidden-72rtr7",
+            "opacity": "1",
+            "display": "none"
+          }
+        ]
+      }
+    ]
+  }
+}

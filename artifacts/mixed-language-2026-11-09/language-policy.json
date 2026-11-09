@@ -1,0 +1,114 @@
+[
+  {
+    "width": 320,
+    "heroTamilNames": 2,
+    "tamilWelcome": "அன்புடன் அழைக்கிறோம்",
+    "closingTamil": "உங்கள் வருகையும் வாழ்த்தும் எங்கள் மகிழ்ச்சி.",
+    "practicalTamil": 0,
+    "sectionHeights": [
+      {
+        "section": "formal-invitation",
+        "height": 802
+      },
+      {
+        "section": "celebrations",
+        "height": 978
+      },
+      {
+        "section": "wedding-closing",
+        "height": 965
+      }
+    ],
+    "musicLabel": "Pause music",
+    "names": [
+      "N.G. Deepak Kumar",
+      "S. Gomathi"
+    ],
+    "credit": "6px",
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "heroTamilNames": 2,
+    "tamilWelcome": "அன்புடன் அழைக்கிறோம்",
+    "closingTamil": "உங்கள் வருகையும் வாழ்த்தும் எங்கள் மகிழ்ச்சி.",
+    "practicalTamil": 0,
+    "sectionHeights": [
+      {
+        "section": "formal-invitation",
+        "height": 857
+      },
+      {
+        "section": "celebrations",
+        "height": 945
+      },
+      {
+        "section": "wedding-closing",
+        "height": 1052
+      }
+    ],
+    "musicLabel": "Pause music",
+    "names": [
+      "N.G. Deepak Kumar",
+      "S. Gomathi"
+    ],
+    "credit": "6px",
+    "overflow": false
+  },
+  {
+    "width": 506,
+    "heroTamilNames": 2,
+    "tamilWelcome": "அன்புடன் அழைக்கிறோம்",
+    "closingTamil": "உங்கள் வருகையும் வாழ்த்தும் எங்கள் மகிழ்ச்சி.",
+    "practicalTamil": 0,
+    "sectionHeights": [
+      {
+        "section": "formal-invitation",
+        "height": 989
+      },
+      {
+        "section": "celebrations",
+        "height": 999
+      },
+      {
+        "section": "wedding-closing",
+        "height": 1260
+      }
+    ],
+    "musicLabel": "Pause music",
+    "names": [
+      "N.G. Deepak Kumar",
+      "S. Gomathi"
+    ],
+    "credit": "6px",
+    "overflow": false
+  },
+  {
+    "width": 576,
+    "heroTamilNames": 2,
+    "tamilWelcome": "அன்புடன் அழைக்கிறோம்",
+    "closingTamil": "உங்கள் வருகையும் வாழ்த்தும் எங்கள் மகிழ்ச்சி.",
+    "practicalTamil": 0,
+    "sectionHeights": [
+      {
+        "section": "formal-invitation",
+        "height": 1020
+      },
+      {
+        "section": "celebrations",
+        "height": 1049
+      },
+      {
+        "section": "wedding-closing",
+        "height": 1379
+      }
+    ],
+    "musicLabel": "Pause music",
+    "names": [
+      "N.G. Deepak Kumar",
+      "S. Gomathi"
+    ],
+    "credit": "6px",
+    "overflow": false
+  }
+]

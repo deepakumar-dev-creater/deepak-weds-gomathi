@@ -1,0 +1,40 @@
+/* Essential event information is static HTML; both events remain in normal document flow. */
+.celebrations{position:relative!important;display:block!important;flex:none;width:100%!important;height:auto!important;aspect-ratio:auto!important;container-type:inline-size;box-sizing:border-box;padding:32px clamp(18px,5cqw,32px) 36px;background:#fff3e1;color:#493335;border-block:1px solid #ba87384d;font:400 clamp(14px,3.6cqw,16px)/1.6 'Temple Tamil',Georgia,serif;scroll-margin-top:12px;--ce-maroon:#6b1730;--ce-gold:#ba8738}
+.celebrations *{box-sizing:border-box}
+.celebrations :where(h2,h3,p){margin:0}
+.celebrations [lang="ta"]{font-family:'Temple Tamil',serif;line-height:1.7}
+.ce-header{text-align:center;margin-bottom:30px}
+.ce-header h2,.ce-event h3,.ce-venue h3{display:grid;gap:3px;color:var(--ce-maroon);font-weight:600}
+.ce-header h2 [lang="en"]{font-size:clamp(22px,5.4cqw,28px);line-height:1.4}
+.ce-zone{display:grid;gap:2px;margin-top:9px!important;font-size:12px;color:#70564a}
+.ce-timeline{list-style:none;margin:0 0 28px 10px;padding:0 0 0 22px;border-left:1px solid #ba873880}
+.ce-event{position:relative;padding:0 0 26px}
+.ce-event:last-child{padding-bottom:2px}
+.ce-number{position:absolute;left:-34px;top:3px;display:grid;place-items:center;width:23px;height:23px;border:1px solid var(--ce-gold);border-radius:50%;background:#fff3e1;color:var(--ce-maroon);font:500 11px/1 'Temple Tamil',serif}
+.ce-event h3 [lang="en"]{font-size:clamp(18px,4.4cqw,22px);line-height:1.45}
+.ce-event-body{display:grid;grid-template-columns:minmax(0,1fr) clamp(68px,21cqw,112px);align-items:start;gap:clamp(10px,3cqw,18px);margin-top:12px}
+.ce-details{display:grid;gap:13px;min-width:0}
+.ce-date,.ce-time,.ce-description{display:grid;gap:4px;overflow-wrap:break-word}
+.ce-date{font-size:clamp(14px,3.4cqw,16px)}
+.ce-time>span:first-child{color:var(--ce-maroon);font-weight:600;font-size:clamp(16px,4.2cqw,21px);line-height:1.5}
+.ce-ist{font-size:12px;font-weight:400}
+.ce-illustration{display:block;width:100%;height:auto;border-radius:40px 40px 8px 8px;background:#f5e8d4}
+.ce-description{margin-top:12px!important;font-size:14px;color:#624b41}
+.ce-venue{display:grid;gap:12px;padding:22px 18px;background:#fff9ef;border:1px solid #ba873866;border-radius:10px;text-align:center}
+.ce-venue h3{font-size:clamp(16px,3.8cqw,20px);line-height:1.5}
+.ce-address{font-size:clamp(14px,3.5cqw,16px);font-style:normal;line-height:1.7;overflow-wrap:break-word}
+.ce-address strong{color:var(--ce-maroon);font-weight:600}
+.ce-directions{display:flex;align-items:center;justify-content:center;gap:10px;justify-self:center;width:100%;max-width:300px;min-height:54px;margin-top:3px;padding:9px 16px;border:1px solid var(--ce-gold);border-radius:5px;background:var(--ce-maroon);color:#fff3e1;text-decoration:none;font-size:14px;line-height:1.45}
+.ce-directions>span:not(.entrance-sr){display:grid;gap:1px}
+.ce-directions svg{width:20px;height:20px;flex:none}
+.ce-directions:hover{background:#541125}
+.ce-directions:focus-visible{outline:3px solid var(--ce-maroon);outline-offset:4px}
+
+/* Secondary calendar actions sit with their event, without competing with directions. */
+.ce-calendar{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:320px;min-height:54px;margin-top:15px;padding:10px 12px;border:1px solid var(--ce-gold);border-radius:5px;background:#fff9ef;color:var(--ce-maroon);text-decoration:none;font-size:14px;line-height:1.5}
+.ce-calendar>span:not(.entrance-sr){display:grid;gap:2px}
+.ce-calendar svg{width:21px;height:21px;flex:none}
+.ce-calendar:hover{background:#f8e7cf}
+.ce-calendar:focus-visible{outline:3px solid var(--ce-maroon);outline-offset:4px}
+.ce-calendar-note{display:flex;flex-wrap:wrap;gap:3px 8px;margin-top:7px!important;color:#70564a;font-size:12px;line-height:1.6}
+.ce-calendar[hidden],.ce-calendar-note[hidden]{display:none}

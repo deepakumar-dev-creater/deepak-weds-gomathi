@@ -1,0 +1,56 @@
+/* Shared ceremonial language; artwork, content and scroll geometry stay independent. */
+:root{--w-ivory:#fff3e1;--w-paper:#f1ede5;--w-maroon:#6b1730;--w-gold:#ba8738;--w-ink:#493335;--w-line:#ba87385c;--w-display:Georgia,serif;--w-body:'Temple Tamil',Georgia,serif}
+.wedding-symbols{position:absolute;overflow:hidden;pointer-events:none}
+.wedding-thread{display:block;flex:none;width:clamp(106px,29cqw,148px);height:auto;margin:0 auto 15px;color:var(--w-gold);stroke:currentColor;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
+.formal-invitation{--fi-paper:var(--w-paper);--fi-maroon:var(--w-maroon);--fi-ink:var(--w-ink)}
+.fi-header .wedding-thread{width:84px;margin:7px auto 0}
+.fi-couple{border-color:var(--w-line)}
+.fi-name{font-style:italic}
+.fi-and{display:flex;align-items:center;justify-content:center;gap:10px}
+.fi-and::before,.fi-and::after{content:"";width:24px;height:1px;background:var(--w-line)}
+.fi-events-link{border:1px solid var(--w-line);border-radius:30px;background:var(--w-ivory);padding:10px 7px}
+.celebrations{background:var(--w-paper);--ce-maroon:var(--w-maroon);--ce-gold:var(--w-gold);border:0;padding-top:36px}
+.ce-header h2 [lang=en],.closing-header h2 [lang=en]{font:italic 400 clamp(25px,6.2cqw,34px)/1.35 var(--w-display);letter-spacing:-.025em}
+.ce-timeline{border-color:var(--w-line);margin-left:9px;padding-left:23px}
+.ce-event{padding-bottom:32px}
+.ce-event article{padding-top:2px}
+.ce-number{background:var(--w-maroon);color:var(--w-ivory);border-color:var(--w-gold);width:25px;height:25px;left:-36px;box-shadow:0 0 0 4px var(--w-paper);font-family:var(--w-display)}
+.ce-event h3{font-family:var(--w-display);font-weight:400}
+.ce-event h3 [lang=en]{font-size:clamp(19px,4.7cqw,24px)}
+.ce-illustration{border-radius:70px 70px 5px 5px;outline:1px solid var(--w-line);outline-offset:4px}
+.ce-calendar,.ce-directions{border-radius:28px;font-family:var(--w-display)}
+.ce-calendar{background:var(--w-ivory)}
+.ce-venue{position:relative;gap:14px;padding:27px 16px 25px;background:var(--w-ivory);border-color:var(--w-gold);border-radius:90px 90px 8px 8px;isolation:isolate}
+.ce-venue::before{content:"";position:absolute;inset:7px;border:1px solid var(--w-line);border-radius:83px 83px 4px 4px;z-index:-1;pointer-events:none}
+.ce-venue .wedding-thread{width:96px;margin-bottom:0}
+.ce-venue h3{font-family:var(--w-display);font-weight:400}
+.ce-directions{margin-bottom:0}
+.wedding-closing{background:var(--w-paper);border-color:var(--w-line)}
+.closing-header{padding-top:31px}
+.closing-number{background:var(--w-ivory);border-color:var(--w-line);border-radius:40px 40px 5px 5px;min-height:71px}
+.closing-unit-label{color:var(--w-ink)}
+.closing-scene{padding-top:26px;background:radial-gradient(ellipse at 50% 12%,#914652 0,transparent 58%),linear-gradient(160deg,#632638,#451b2b)}
+.closing-scene::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle,#e3c08038 1px,transparent 1.5px);background-size:28px 28px;mask-image:linear-gradient(to right,#000,transparent 15%,transparent 85%,#000)}
+.closing-garland{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:#e3c080;stroke-width:.7;pointer-events:none}
+.closing-garland g{fill:#fff3e1;stroke:#ddbd7c}
+.closing-signature{font-family:var(--w-display)}
+.closing-seal{gap:12px;margin:14px auto;max-width:260px}
+.closing-seal svg{width:82px;height:82px}
+.seal-orbit{stroke-dasharray:1 5;stroke-linecap:round;opacity:.6}
+.seal-blossoms{fill:#6d2d3f;stroke:#caa36a;stroke-width:.8}
+.seal-blossoms use{transform-box:fill-box;transform-origin:center}
+.has-blessing .seal-blossoms{fill:#fff3e1;stroke:#e8c47c}
+.has-blessing .seal-blossoms use{animation:seal-bloom 550ms ease-out both}
+.has-blessing .seal-blossoms use:nth-child(2n){animation-delay:90ms}
+.has-blessing .seal-blossoms use:nth-child(3n){animation-delay:180ms}
+@keyframes seal-bloom{from{opacity:.3;transform:scale(.7)}to{opacity:1;transform:scale(1)}}
+.wedding-thread.thread-arriving{animation:thread-arrive 650ms ease-out both}
+@keyframes thread-arrive{from{opacity:.25;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.closing-credit{background:var(--w-paper)}
+.entrance-next{background:#6b1730bd;box-shadow:0 0 0 1px #e3c08080}
+#temple-music .mp-btn:focus-visible{outline:3px solid #fff3e1;outline-offset:3px;box-shadow:0 0 0 7px #6b1730}
+/* The desktop surround carries the same stationery colors as the invitation. */
+.hinv-root::before{inset:0;background:radial-gradient(ellipse at 50% 0,#414c65 0,transparent 60%),linear-gradient(125deg,#381c2b,#6b303e 50%,#301827);filter:none}
+.hinv-root::after{background:radial-gradient(ellipse,transparent 25%,#190e1c70)}
+.hinv-frame{box-shadow:0 0 0 1px #ba873866,0 12px 70px #160c2059}
+@media(prefers-reduced-motion:reduce){.wedding-thread.thread-arriving,.has-blessing .seal-blossoms use{animation:none}}

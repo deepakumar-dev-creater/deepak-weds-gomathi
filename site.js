@@ -29,20 +29,26 @@
     coupleNames: "Deepak Kumar & Gomathi",
         events: [
       {
+        id: "reception",
+        start: "2027-03-11T18:30:00+05:30",
+        end: null,
         title: "Wedding Reception",
         date: "Thursday, 11 March 2027",
         time: "6:30 PM onwards",
-        venue: "En Sesha Mahal, Royapettah, Chennai - 600014",
-        description: "Celebrate the eve of the wedding with musical blessings, dinner banquet, and toasts.",
+        venue: "En Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+        description: "An evening with family and friends.",
         image: "assets/img/reception_blue.jpg",
         mapLink: "https://share.google/9cDnaaYRR4evNU4Ec"
       },
       {
+        id: "wedding",
+        start: "2027-03-12T06:00:00+05:30",
+        end: "2027-03-12T07:30:00+05:30",
         title: "Wedding Ceremony (Muhurtham)",
         date: "Friday, 12 March 2027",
         time: "6:00 AM to 7:30 AM",
-        venue: "En Sesha Mahal, Royapettah, Chennai - 600014",
-        description: "Witness the sacred vows, Mangalya Dharanam, and Saptapadi as Deepak Kumar and Gomathi unite.",
+        venue: "En Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+        description: "Celebrate the beginning of their married life.",
         image: "assets/img/couple_muhurtham.jpg",
         mapLink: "https://share.google/9cDnaaYRR4evNU4Ec"
       }
@@ -57,7 +63,7 @@
   // Which Framer boxes hold which widget (don't change unless the page layout changes)
   var SLOTS = {
     music: ".framer-fwz7u-container",
-    events: ".framer-hofxkl-container",
+    events: "#wedding-celebrations",
     frameSlider: "",
     rsvp: "",
     location: "",
@@ -80,11 +86,11 @@
 
   var EFFECTS = {
     // [selector, speed%] – element moves at speed% of the scroll speed
-    parallax: [[".framer-1pwvksq",35],[".framer-1jgx9kw",35],[".framer-64h8lc",35],[".framer-qqlkw5",35],[".framer-zrqetc",110],[".framer-k9a895",70],[".framer-yaux2a",70]],
+    parallax: [[".framer-1pwvksq",35],[".framer-1jgx9kw",35],[".framer-64h8lc",35],[".framer-qqlkw5",35],[".framer-zrqetc",110],[".framer-k9a895",70]],
     // [selector, target {x,y,rotate,scale}, seconds, repeatType, delay] – endless back-and-forth motion
     loops: [[".framer-uhifu",{"x":299,"y":0,"rotate":0,"scale":1},7,"mirror",0],[".framer-j3lu80",{"x":299,"y":0,"rotate":0,"scale":1},7,"mirror",0],[".framer-3wh34t",{"x":200,"y":0,"rotate":0,"scale":1},7,"mirror",0],[".framer-wtw5t7",{"x":200,"y":0,"rotate":0,"scale":1},7,"mirror",0],[".framer-k8o81x",{"x":299,"y":0,"rotate":0,"scale":1},7,"mirror",0]],
-    // [selector, extra transform] – fixed nudges on top of the original design
-    nudges: [[".framer-yaux2a", "translateY(70%)"]] // couple cut-out: moved down to stand in front of the temple steps
+    // No fixed nudges; the closing illustration now stays inside its own scene.
+    nudges: []
   };
 
   // ===================================================================
@@ -368,7 +374,7 @@
   });
 
   // ===================================================================
-  //  Event cards (Haldi / Mehendi / …) – ivory card, arch photo, gold frame
+  //  Celebrations – enhance the static bilingual event details
   // ===================================================================
   var ICONS = {
     calendar: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>',
@@ -379,112 +385,60 @@
     diamond: '<svg viewBox="0 0 80 12"><path d="M0 6h32M48 6h32" stroke="currentColor" stroke-width="1"/><path d="M40 1l5 5-5 5-5-5z" fill="currentColor"/></svg>'
   };
 
-  function initEvents() {
-    var slides = CONFIG.events;
-    if (!slides.length) { $$(SLOTS.events).forEach(function (h) { h.innerHTML = ""; }); return; }
-    slides.forEach(function (s) { new Image().src = s.image; });
-    $$(SLOTS.events).forEach(function (host) {
-      host.innerHTML =
-        '<div class="evc" tabindex="0" aria-roledescription="carousel" aria-label="Wedding events">' +
-        '<div class="evc-head"><p class="evc-kicker">' + esc(CONFIG.eventsHeading || "The Celebrations") + "</p>" +
-        (CONFIG.coupleNames ? '<p class="evc-couple">' + esc(CONFIG.coupleNames) + "</p>" : "") + "</div>" +
-        '<div class="evc-stage"><div class="evc-photo"><img alt=""><span class="evc-count"></span></div>' +
-        '<button type="button" class="evc-arrow evc-prev" aria-label="Previous event">' + ICONS.left + "</button>" +
-        '<button type="button" class="evc-arrow evc-next" aria-label="Next event">' + ICONS.right + "</button></div>" +
-        '<div class="evc-body"><div class="evc-text">' +
-        '<h3 class="evc-title"></h3><div class="evc-rule">' + ICONS.diamond + "</div>" +
-        '<div class="evc-meta"><span class="evc-date"><i>' + ICONS.calendar + '</i><b></b></span>' +
-        '<span class="evc-time"><i>' + ICONS.clock + '</i><b></b></span>' +
-        '<span class="evc-venue"><i>' + ICONS.pin + '</i><b></b></span></div>' +
-        '<p class="evc-desc"></p></div>' +
-        '<a class="evc-cta" target="_blank" rel="noopener"><i>' + ICONS.pin + "</i>View Location</a>" +
-        '<div class="evc-dots"></div></div></div>';
-
-      var card = host.firstChild, photo = card.querySelector(".evc-photo"), img = photo.querySelector("img");
-      var text = card.querySelector(".evc-text"), cta = card.querySelector(".evc-cta"), dotsBox = card.querySelector(".evc-dots");
-      var dots = slides.map(function (s, i) {
-        var b = document.createElement("button");
-        b.type = "button";
-        b.setAttribute("aria-label", s.title);
-        b.addEventListener("click", function () { user(); go(i); });
-        dotsBox.appendChild(b);
-        return b;
-      });
-      var index = Math.min(B.state.evIndex || 0, slides.length - 1), busy = false, visible = false, hover = false, pausedUntil = 0;
-
-      function setPhoto(fade) {
-        var s = slides[index];
-        photo.querySelector(".evc-count").textContent = String(index + 1).padStart(2, "0") + " / " + String(slides.length).padStart(2, "0");
-        dots.forEach(function (d, k) { d.classList.toggle("on", k === index); });
-        cta.href = s.mapLink || CONFIG.mapsLink || "#";
-        // No map link at all: hide the button rather than leave one that goes nowhere.
-        cta.style.display = cta.getAttribute("href") === "#" ? "none" : "";
-        if (!fade) { img.src = s.image; img.alt = s.title; return; }
-        var old = img;
-        img = old.cloneNode();
-        img.src = s.image;
-        img.alt = s.title;
-        img.className = "evc-img-in";
-        photo.insertBefore(img, photo.querySelector(".evc-count"));
-        var a = img.animate([{ opacity: 0, transform: "scale(1.06)" }, { opacity: 1, transform: "scale(1)" }], { duration: 700, easing: "cubic-bezier(.22,1,.36,1)" });
-        var done = function () { img.className = ""; if (old.parentNode) old.remove(); };
-        a.onfinish = done;
-        setTimeout(done, 900); // in case animations are paused
-      }
-      function setText() {
-        var s = slides[index];
-        card.querySelector(".evc-title").textContent = s.title;
-        [["date", s.date], ["time", s.time], ["venue", s.venue]].forEach(function (f) {
-          var el = card.querySelector(".evc-" + f[0]);
-          el.style.display = f[1] ? "" : "none";
-          el.querySelector("b").textContent = f[1] || "";
-        });
-        var d = card.querySelector(".evc-desc");
-        d.textContent = s.description || "";
-        d.style.display = s.description ? "" : "none";
-      }
-      function go(target) {
-        var next = target === "next" ? (index + 1) % slides.length
-          : target === "prev" ? (index - 1 + slides.length) % slides.length : target;
-        if (next === index || busy) return;
-        busy = true;
-        var dir = target === "prev" || (next < index && target !== "next") ? -1 : 1;
-        index = next;
-        B.state.evIndex = index;
-        setPhoto(true);
-        var out = text.animate([{ opacity: 1, transform: "translateX(0)" }, { opacity: 0, transform: "translateX(" + (-12 * dir) + "px)" }], { duration: 200, easing: "ease-in", fill: "forwards" });
-        var swap = function () {
-          if (!busy) return;
-          setText();
-          text.animate([{ opacity: 0, transform: "translateX(" + (12 * dir) + "px)" }, { opacity: 1, transform: "translateX(0)" }], { duration: 480, easing: "cubic-bezier(.22,1,.36,1)", fill: "forwards" });
-          busy = false;
-        };
-        out.onfinish = swap;
-        setTimeout(swap, 260);
-      }
-      function user() { pausedUntil = Date.now() + 15000; }
-
-      card.querySelector(".evc-prev").addEventListener("click", function () { user(); go("prev"); });
-      card.querySelector(".evc-next").addEventListener("click", function () { user(); go("next"); });
-      card.addEventListener("keydown", function (e) {
-        if (e.key === "ArrowRight") { e.preventDefault(); user(); go("next"); }
-        if (e.key === "ArrowLeft") { e.preventDefault(); user(); go("prev"); }
-      });
-      card.addEventListener("mouseenter", function () { hover = true; });
-      card.addEventListener("mouseleave", function () { hover = false; });
-      var sx = null, sy = null;
-      photo.addEventListener("touchstart", function (e) { sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, { passive: true });
-      photo.addEventListener("touchend", function (e) {
-        if (sx === null) return;
-        var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy;
-        sx = null;
-        if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) { user(); go(dx < 0 ? "next" : "prev"); }
-      });
-      onScreen(card, 0.25, function (v) { visible = v; if (v) card.classList.add("in"); });
-      if (!reducedMotion) setInterval(function () { if (visible && !hover && Date.now() > pausedUntil) go("next"); }, 5000);
-      setPhoto(false);
-      setText();
+  // UTC timestamps keep the same moment for guests in every timezone.
+  // A missing end is deliberately a zero-duration start-time reminder.
+  function googleCalendarLink(event) {
+    var start = Date.parse(event.start);
+    var end = event.end == null ? start : Date.parse(event.end);
+    if (!Number.isFinite(start) || !Number.isFinite(end) || end < start) return null;
+    var stamp = function (value) { return new Date(value).toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z'); };
+    var reminder = event.end == null;
+    var details = CONFIG.coupleNames + '\n' + event.title + '\n' + event.date + ' · ' + event.time + ' IST';
+    if (reminder) details += '\nStart-time reminder; no fixed end time.';
+    details += '\nDirections: ' + (event.mapLink || CONFIG.mapsLink);
+    var params = new URLSearchParams({
+      action: 'TEMPLATE', text: CONFIG.coupleNames + ' — ' + event.title,
+      dates: stamp(start) + '/' + stamp(end), ctz: 'Asia/Kolkata',
+      location: event.venue, details: details
     });
+    return 'https://calendar.google.com/calendar/render?' + params.toString();
+  }
+
+  // Enhance existing event text without replacing the static, bilingual section.
+  function initEvents() {
+    var section = document.querySelector(SLOTS.events);
+    if (!section) return;
+    var events = CONFIG.events || [];
+    function write(root, selector, value) {
+      var node = root.querySelector(selector);
+      if (node && typeof value === "string" && value.trim() && node.textContent.trim() !== value.trim()) node.textContent = value;
+    }
+    write(section, "[data-ce-heading]", CONFIG.eventsHeading);
+    $$("[data-event-key]", section).forEach(function (article, index) {
+      var key = article.getAttribute("data-event-key");
+      var event = events.find(function (item) { return item.id === key; }) || events[index];
+      if (!event) return;
+      write(article, "[data-ce-title]", event.title);
+      write(article, "[data-ce-date]", event.date);
+      write(article, "[data-ce-time]", event.time);
+      write(article, "[data-ce-description]", event.description);
+      var calendar = article.querySelector('[data-ce-calendar]');
+      var calendarUrl = googleCalendarLink(event);
+      if (calendar) {
+        calendar.hidden = !calendarUrl;
+        if (calendarUrl) calendar.href = calendarUrl;
+        else calendar.removeAttribute('href');
+        var calendarNote = article.querySelector('.ce-calendar-note');
+        if (calendarNote) calendarNote.hidden = !calendarUrl;
+      }
+      var img = article.querySelector("[data-ce-image]");
+      if (img && event.image && img.getAttribute("src") !== event.image) img.src = event.image;
+    });
+    var first = events[0];
+    if (first) write(section, "[data-ce-venue]", first.venue);
+    var directions = section.querySelector("[data-ce-directions]");
+    var link = (first && first.mapLink) || CONFIG.mapsLink;
+    if (directions && link) directions.href = link;
   }
 
   // ===================================================================
@@ -732,29 +686,43 @@
   // ===================================================================
   
   // ===================================================================
-  //  Hero Temple Countdown ("Counting the Days")
+  //  Closing countdown; Tamil blessing and English practical information
   // ===================================================================
-    function initHeroCountdown() {
-    var dEls = document.querySelectorAll(".thc-d");
-    var hEls = document.querySelectorAll(".thc-h");
-    var mEls = document.querySelectorAll(".thc-m");
-    var sEls = document.querySelectorAll(".thc-s");
-    if (!dEls.length) return;
-    var pad = function (n) { return String(n).padStart(2, "0"); };
-    var target = new Date(CONFIG.weddingDate).getTime();
+  function initClosingCountdown() {
+    var root = document.querySelector('.wedding-closing');
+    if (!root) return;
+    var target = Date.parse(CONFIG.weddingDate);
+    var timer = root.querySelector('.closing-timer');
+    var arrival = root.querySelector('.closing-arrival');
+    var date = root.querySelector('.closing-date time');
+    var fields = ['days', 'hours', 'minutes', 'seconds'].map(function (unit) {
+      return root.querySelector('[data-closing-unit="' + unit + '"]');
+    });
+    // The static date remains readable if configuration or JavaScript is unavailable.
+    if (!Number.isFinite(target)) return;
+    date.dateTime = CONFIG.weddingDate;
+    var day = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Kolkata', day: 'numeric', month: 'long', year: 'numeric' }).format(target);
+    var time = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Kolkata', hour: 'numeric', minute: '2-digit', hour12: true }).format(target);
+    date.querySelector('[lang="en"]').textContent = day + ' · ' + time + ' IST';
     function render() {
       var diff = Math.max(0, target - Date.now());
-      var d = pad(Math.floor(diff / 864e5));
-      var h = pad(Math.floor((diff / 36e5) % 24));
-      var m = pad(Math.floor((diff / 6e4) % 60));
-      var s = pad(Math.floor((diff / 1e3) % 60));
-      dEls.forEach(function (el) { el.textContent = d; });
-      hEls.forEach(function (el) { el.textContent = h; });
-      mEls.forEach(function (el) { el.textContent = m; });
-      sEls.forEach(function (el) { el.textContent = s; });
+      var values = [Math.floor(diff / 864e5), Math.floor(diff / 36e5 % 24), Math.floor(diff / 6e4 % 60), Math.floor(diff / 1e3 % 60)];
+      fields.forEach(function (el, index) {
+        var value = String(values[index]).padStart(2, '0');
+        if (el.textContent !== value) el.textContent = value;
+      });
+      timer.hidden = diff === 0;
+      arrival.hidden = diff > 0;
+      var title = diff === 0 ? 'Our wedding day' : 'Counting the days';
+      var heading = root.querySelector('#closing-title [lang="en"]');
+      if (heading.textContent !== title) heading.textContent = title;
+      return diff > 0;
     }
-    render();
-    setInterval(render, 1000);
+    if (render()) {
+      var interval = setInterval(function () {
+        if (!render()) clearInterval(interval);
+      }, 1000);
+    }
   }
 
 //  Boot
@@ -771,7 +739,7 @@
     DEFAULTS: DEFAULTS,
     statics: [initAppear, initMotion, initTextEffects],
     music: initMusic,
-    widgets: [initEvents, initFrameSlider, initCountdown, initHeroCountdown, initRsvp, initLocationButton, initCountdownNote],
+    widgets: [initEvents, initFrameSlider, initCountdown, initClosingCountdown, initRsvp, initLocationButton, initCountdownNote],
     fitTexts: fitTexts
   });
 

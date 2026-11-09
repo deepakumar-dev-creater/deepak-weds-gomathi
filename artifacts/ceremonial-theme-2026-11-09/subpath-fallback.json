@@ -1,0 +1,34 @@
+[
+  {
+    "javaScript": true,
+    "projectSubpath": true,
+    "reducedMotion": true,
+    "state": {
+      "signature": "Deepak&Gomathi",
+      "css": 11,
+      "rootGold": "#ba8738",
+      "threadAnimation": "none",
+      "bloomAnimation": "none",
+      "overflow": false,
+      "controlsVisible": true,
+      "seal": true
+    },
+    "failed": []
+  },
+  {
+    "javaScript": false,
+    "projectSubpath": true,
+    "reducedMotion": true,
+    "state": {
+      "signature": "Deepak&Gomathi",
+      "css": 11,
+      "rootGold": "#ba8738",
+      "threadAnimation": "none",
+      "bloomAnimation": "none",
+      "overflow": false,
+      "controlsVisible": false,
+      "seal": false
+    },
+    "failed": []
+  }
+]

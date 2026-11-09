@@ -1,0 +1,416 @@
+[
+  {
+    "viewport": [
+      320,
+      844
+    ],
+    "frameWidth": 320,
+    "groom": {
+      "font": "\"Temple Calligraphy\", \"Temple Tamil\", serif",
+      "size": 25.6,
+      "weight": "400",
+      "style": "italic",
+      "lineHeight": "32px",
+      "textWidth": 153.8,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "bride": {
+      "font": "\"Temple Calligraphy\", \"Temple Tamil\", serif",
+      "size": 25.6,
+      "weight": "400",
+      "style": "italic",
+      "lineHeight": "32px",
+      "textWidth": 109.42,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "englishGroom": {
+      "font": "Georgia, serif",
+      "size": 9,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "11.7px",
+      "textWidth": 92.03,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "englishBride": {
+      "font": "Georgia, serif",
+      "size": 9,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "11.7px",
+      "textWidth": 54.11,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "caption": {
+      "font": "\"Temple Tamil\", serif",
+      "size": 10,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "15px",
+      "textWidth": 201.11,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "devotional": {
+      "font": "\"Temple Tamil\", serif",
+      "size": 7,
+      "weight": "400",
+      "style": "normal",
+      "lineHeight": "9.8px",
+      "textWidth": 183.7,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "loadedTamil": true,
+    "overflow": false
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "frameWidth": 390,
+    "groom": {
+      "font": "\"Temple Calligraphy\", \"Temple Tamil\", serif",
+      "size": 31.2,
+      "weight": "400",
+      "style": "italic",
+      "lineHeight": "39px",
+      "textWidth": 187.41,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "bride": {
+      "font": "\"Temple Calligraphy\", \"Temple Tamil\", serif",
+      "size": 31.2,
+      "weight": "400",
+      "style": "italic",
+      "lineHeight": "39px",
+      "textWidth": 133.33,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "englishGroom": {
+      "font": "Georgia, serif",
+      "size": 9,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "11.7px",
+      "textWidth": 92.03,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "englishBride": {
+      "font": "Georgia, serif",
+      "size": 9,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "11.7px",
+      "textWidth": 54.11,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "caption": {
+      "font": "\"Temple Tamil\", serif",
+      "size": 10,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "15px",
+      "textWidth": 201.11,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "devotional": {
+      "font": "\"Temple Tamil\", serif",
+      "size": 7,
+      "weight": "400",
+      "style": "normal",
+      "lineHeight": "9.8px",
+      "textWidth": 183.7,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "loadedTamil": true,
+    "overflow": false
+  },
+  {
+    "viewport": [
+      600,
+      844
+    ],
+    "frameWidth": 600,
+    "groom": {
+      "font": "\"Temple Calligraphy\", \"Temple Tamil\", serif",
+      "size": 48,
+      "weight": "400",
+      "style": "italic",
+      "lineHeight": "60px",
+      "textWidth": 288.44,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "bride": {
+      "font": "\"Temple Calligraphy\", \"Temple Tamil\", serif",
+      "size": 48,
+      "weight": "400",
+      "style": "italic",
+      "lineHeight": "60px",
+      "textWidth": 205.2,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "englishGroom": {
+      "font": "Georgia, serif",
+      "size": 12,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "15.6px",
+      "textWidth": 122.7,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "englishBride": {
+      "font": "Georgia, serif",
+      "size": 12,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "15.6px",
+      "textWidth": 72.14,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "caption": {
+      "font": "\"Temple Tamil\", serif",
+      "size": 14,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "21px",
+      "textWidth": 281.55,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "devotional": {
+      "font": "\"Temple Tamil\", serif",
+      "size": 9,
+      "weight": "400",
+      "style": "normal",
+      "lineHeight": "12.6px",
+      "textWidth": 236.19,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "loadedTamil": true,
+    "overflow": false
+  },
+  {
+    "viewport": [
+      601,
+      844
+    ],
+    "frameWidth": 475,
+    "groom": {
+      "font": "\"Temple Calligraphy\", \"Temple Tamil\", serif",
+      "size": 38,
+      "weight": "400",
+      "style": "italic",
+      "lineHeight": "47.5px",
+      "textWidth": 228.34,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "bride": {
+      "font": "\"Temple Calligraphy\", \"Temple Tamil\", serif",
+      "size": 38,
+      "weight": "400",
+      "style": "italic",
+      "lineHeight": "47.5px",
+      "textWidth": 162.45,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "englishGroom": {
+      "font": "Georgia, serif",
+      "size": 10.45,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "13.585px",
+      "textWidth": 106.77,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "englishBride": {
+      "font": "Georgia, serif",
+      "size": 10.45,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "13.585px",
+      "textWidth": 62.77,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "caption": {
+      "font": "\"Temple Tamil\", serif",
+      "size": 11.875,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "17.8125px",
+      "textWidth": 238.5,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "devotional": {
+      "font": "\"Temple Tamil\", serif",
+      "size": 7.6,
+      "weight": "400",
+      "style": "normal",
+      "lineHeight": "10.64px",
+      "textWidth": 199.28,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "loadedTamil": true,
+    "overflow": false
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "frameWidth": 576,
+    "groom": {
+      "font": "\"Temple Calligraphy\", \"Temple Tamil\", serif",
+      "size": 46.08,
+      "weight": "400",
+      "style": "italic",
+      "lineHeight": "57.6px",
+      "textWidth": 276.89,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "bride": {
+      "font": "\"Temple Calligraphy\", \"Temple Tamil\", serif",
+      "size": 46.08,
+      "weight": "400",
+      "style": "italic",
+      "lineHeight": "57.6px",
+      "textWidth": 196.98,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "englishGroom": {
+      "font": "Georgia, serif",
+      "size": 12,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "15.6px",
+      "textWidth": 122.7,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "englishBride": {
+      "font": "Georgia, serif",
+      "size": 12,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "15.6px",
+      "textWidth": 72.14,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "caption": {
+      "font": "\"Temple Tamil\", serif",
+      "size": 14,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "21px",
+      "textWidth": 281.55,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "devotional": {
+      "font": "\"Temple Tamil\", serif",
+      "size": 9,
+      "weight": "400",
+      "style": "normal",
+      "lineHeight": "12.6px",
+      "textWidth": 236.19,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "loadedTamil": true,
+    "overflow": false
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "frameWidth": 506,
+    "groom": {
+      "font": "\"Temple Calligraphy\", \"Temple Tamil\", serif",
+      "size": 40.48,
+      "weight": "400",
+      "style": "italic",
+      "lineHeight": "50.6px",
+      "textWidth": 243.19,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "bride": {
+      "font": "\"Temple Calligraphy\", \"Temple Tamil\", serif",
+      "size": 40.48,
+      "weight": "400",
+      "style": "italic",
+      "lineHeight": "50.6px",
+      "textWidth": 173.02,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "englishGroom": {
+      "font": "Georgia, serif",
+      "size": 11.132,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "14.4716px",
+      "textWidth": 113.78,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "englishBride": {
+      "font": "Georgia, serif",
+      "size": 11.132,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "14.4716px",
+      "textWidth": 66.89,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "caption": {
+      "font": "\"Temple Tamil\", serif",
+      "size": 12.65,
+      "weight": "500",
+      "style": "normal",
+      "lineHeight": "18.975px",
+      "textWidth": 254.22,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "devotional": {
+      "font": "\"Temple Tamil\", serif",
+      "size": 8.096,
+      "weight": "400",
+      "style": "normal",
+      "lineHeight": "11.3344px",
+      "textWidth": 212,
+      "lines": 1,
+      "withinFrame": true
+    },
+    "loadedTamil": true,
+    "overflow": false
+  }
+]

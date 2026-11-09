@@ -1,0 +1,717 @@
+{
+  "runAt": "2026-11-09T16:27:13.329Z",
+  "tests": [
+    {
+      "name": "Framed layout and controls 320x844",
+      "passed": true,
+      "milliseconds": 5522,
+      "evidence": {
+        "frame": 320,
+        "overflow": false,
+        "sections": [
+          {
+            "class": "temple-entrance is-offscreen",
+            "top": 0,
+            "height": 537.59375
+          },
+          {
+            "class": "formal-invitation",
+            "top": 537.59375,
+            "height": 802.3125
+          },
+          {
+            "class": "celebrations",
+            "top": 1339.90625,
+            "height": 978.375
+          },
+          {
+            "class": "wedding-closing",
+            "top": 2318.28125,
+            "height": 1030.984375
+          }
+        ],
+        "fonts": [
+          {
+            "family": "Temple Tamil",
+            "status": "loaded"
+          },
+          {
+            "family": "Temple Calligraphy",
+            "status": "loaded"
+          }
+        ],
+        "targets": [
+          {
+            "class": "entrance-next",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "class": "fi-events-link",
+            "width": 179.21875,
+            "height": 44
+          },
+          {
+            "class": "ce-calendar",
+            "width": 251,
+            "height": 54
+          },
+          {
+            "class": "ce-calendar",
+            "width": 251,
+            "height": 54
+          },
+          {
+            "class": "ce-directions",
+            "width": 246,
+            "height": 54
+          },
+          {
+            "class": "mp-btn",
+            "width": 50,
+            "height": 50
+          }
+        ],
+        "audioCount": 1,
+        "skyPaused": true
+      }
+    },
+    {
+      "name": "Framed layout and controls 390x844",
+      "passed": true,
+      "milliseconds": 5331,
+      "evidence": {
+        "frame": 390,
+        "overflow": false,
+        "sections": [
+          {
+            "class": "temple-entrance is-offscreen",
+            "top": 0,
+            "height": 655.1875
+          },
+          {
+            "class": "formal-invitation",
+            "top": 655.1875,
+            "height": 856.90625
+          },
+          {
+            "class": "celebrations",
+            "top": 1512.09375,
+            "height": 945.265625
+          },
+          {
+            "class": "wedding-closing",
+            "top": 2457.359375,
+            "height": 1077.84375
+          }
+        ],
+        "fonts": [
+          {
+            "family": "Temple Tamil",
+            "status": "loaded"
+          },
+          {
+            "family": "Temple Calligraphy",
+            "status": "loaded"
+          }
+        ],
+        "targets": [
+          {
+            "class": "entrance-next",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "class": "fi-events-link",
+            "width": 218.40625,
+            "height": 44
+          },
+          {
+            "class": "ce-calendar",
+            "width": 318,
+            "height": 54
+          },
+          {
+            "class": "ce-calendar",
+            "width": 318,
+            "height": 54
+          },
+          {
+            "class": "ce-directions",
+            "width": 300,
+            "height": 54
+          },
+          {
+            "class": "mp-btn",
+            "width": 50,
+            "height": 50
+          }
+        ],
+        "audioCount": 1,
+        "skyPaused": true
+      }
+    },
+    {
+      "name": "Framed layout and controls 768x1024",
+      "passed": true,
+      "milliseconds": 5975,
+      "evidence": {
+        "frame": 576,
+        "overflow": false,
+        "sections": [
+          {
+            "class": "temple-entrance is-offscreen",
+            "top": 0,
+            "height": 967.671875
+          },
+          {
+            "class": "formal-invitation",
+            "top": 967.671875,
+            "height": 1019.515625
+          },
+          {
+            "class": "celebrations",
+            "top": 1987.1875,
+            "height": 1048.59375
+          },
+          {
+            "class": "wedding-closing",
+            "top": 3035.78125,
+            "height": 1145.40625
+          }
+        ],
+        "fonts": [
+          {
+            "family": "Temple Tamil",
+            "status": "loaded"
+          },
+          {
+            "family": "Temple Calligraphy",
+            "status": "loaded"
+          }
+        ],
+        "targets": [
+          {
+            "class": "entrance-next",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "class": "fi-events-link",
+            "width": 322.5625,
+            "height": 44
+          },
+          {
+            "class": "ce-calendar",
+            "width": 320,
+            "height": 54
+          },
+          {
+            "class": "ce-calendar",
+            "width": 320,
+            "height": 54
+          },
+          {
+            "class": "ce-directions",
+            "width": 300,
+            "height": 54
+          },
+          {
+            "class": "mp-btn",
+            "width": 50,
+            "height": 50
+          }
+        ],
+        "audioCount": 1,
+        "skyPaused": true
+      }
+    },
+    {
+      "name": "Framed layout and controls 1440x900",
+      "passed": true,
+      "milliseconds": 7178,
+      "evidence": {
+        "frame": 506,
+        "overflow": false,
+        "sections": [
+          {
+            "class": "temple-entrance is-offscreen",
+            "top": 0,
+            "height": 850.078125
+          },
+          {
+            "class": "formal-invitation",
+            "top": 850.078125,
+            "height": 988.8125
+          },
+          {
+            "class": "celebrations",
+            "top": 1838.890625,
+            "height": 998.65625
+          },
+          {
+            "class": "wedding-closing",
+            "top": 2837.546875,
+            "height": 1131.375
+          }
+        ],
+        "fonts": [
+          {
+            "family": "Temple Tamil",
+            "status": "loaded"
+          },
+          {
+            "family": "Temple Calligraphy",
+            "status": "loaded"
+          }
+        ],
+        "targets": [
+          {
+            "class": "entrance-next",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "class": "fi-events-link",
+            "width": 283.375,
+            "height": 44
+          },
+          {
+            "class": "ce-calendar",
+            "width": 320,
+            "height": 54
+          },
+          {
+            "class": "ce-calendar",
+            "width": 320,
+            "height": 54
+          },
+          {
+            "class": "ce-directions",
+            "width": 300,
+            "height": 54
+          },
+          {
+            "class": "mp-btn",
+            "width": 50,
+            "height": 50
+          }
+        ],
+        "audioCount": 1,
+        "skyPaused": true
+      }
+    },
+    {
+      "name": "Bridge remount updates Calendar timestamps and preserves one audio player",
+      "passed": true,
+      "milliseconds": 904,
+      "evidence": {
+        "updatedRange": "20270312T023000Z/20270312T033000Z",
+        "restored": true
+      }
+    },
+    {
+      "name": "Invalid event dates never leave an old Calendar link active",
+      "passed": true,
+      "milliseconds": 1218,
+      "evidence": {
+        "invalidEndRejected": true,
+        "reversedRangeRejected": true,
+        "restored": true
+      }
+    },
+    {
+      "name": "Both real Google Calendar handoffs retain the exact event dates",
+      "passed": true,
+      "milliseconds": 6055,
+      "evidence": [
+        {
+          "event": "reception",
+          "hostname": "accounts.google.com",
+          "dates": "20270311T130000Z/20270311T130000Z",
+          "savePerformed": false
+        },
+        {
+          "event": "ceremony",
+          "hostname": "accounts.google.com",
+          "dates": "20270312T003000Z/20270312T020000Z",
+          "savePerformed": false
+        }
+      ]
+    },
+    {
+      "name": "JavaScript-disabled Calendar links and static wedding date",
+      "passed": true,
+      "milliseconds": 402,
+      "evidence": {
+        "nativeLinks": true
+      }
+    },
+    {
+      "name": "Guest timezone Asia/Kolkata and unavailable storage",
+      "passed": true,
+      "milliseconds": 584,
+      "evidence": {
+        "utcRanges": [
+          "20270311T130000Z/20270311T130000Z",
+          "20270312T003000Z/20270312T020000Z"
+        ]
+      }
+    },
+    {
+      "name": "Guest timezone America/Los_Angeles and unavailable storage",
+      "passed": true,
+      "milliseconds": 780,
+      "evidence": {
+        "utcRanges": [
+          "20270311T130000Z/20270311T130000Z",
+          "20270312T003000Z/20270312T020000Z"
+        ]
+      }
+    },
+    {
+      "name": "Muhurtham countdown switches at the exact IST boundary",
+      "passed": true,
+      "milliseconds": 1052,
+      "evidence": {
+        "boundary": "2027-03-12T06:00:00+05:30"
+      }
+    },
+    {
+      "name": "Full visual captures and music overlap evidence",
+      "passed": true,
+      "milliseconds": 5372,
+      "evidence": [
+        {
+          "width": 320,
+          "intersectingTextRects": 2
+        },
+        {
+          "width": 390,
+          "intersectingTextRects": 1
+        },
+        {
+          "width": 506,
+          "intersectingTextRects": 1
+        },
+        {
+          "width": 576,
+          "intersectingTextRects": 0
+        }
+      ]
+    }
+  ],
+  "views": [
+    {
+      "viewport": [
+        320,
+        844
+      ],
+      "frame": 320,
+      "overflow": false,
+      "sections": [
+        {
+          "class": "temple-entrance is-offscreen",
+          "top": 0,
+          "height": 537.59375
+        },
+        {
+          "class": "formal-invitation",
+          "top": 537.59375,
+          "height": 802.3125
+        },
+        {
+          "class": "celebrations",
+          "top": 1339.90625,
+          "height": 978.375
+        },
+        {
+          "class": "wedding-closing",
+          "top": 2318.28125,
+          "height": 1030.984375
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        },
+        {
+          "family": "Temple Calligraphy",
+          "status": "loaded"
+        }
+      ],
+      "targets": [
+        {
+          "class": "entrance-next",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "class": "fi-events-link",
+          "width": 179.21875,
+          "height": 44
+        },
+        {
+          "class": "ce-calendar",
+          "width": 251,
+          "height": 54
+        },
+        {
+          "class": "ce-calendar",
+          "width": 251,
+          "height": 54
+        },
+        {
+          "class": "ce-directions",
+          "width": 246,
+          "height": 54
+        },
+        {
+          "class": "mp-btn",
+          "width": 50,
+          "height": 50
+        }
+      ],
+      "audioCount": 1,
+      "skyPaused": true
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "frame": 390,
+      "overflow": false,
+      "sections": [
+        {
+          "class": "temple-entrance is-offscreen",
+          "top": 0,
+          "height": 655.1875
+        },
+        {
+          "class": "formal-invitation",
+          "top": 655.1875,
+          "height": 856.90625
+        },
+        {
+          "class": "celebrations",
+          "top": 1512.09375,
+          "height": 945.265625
+        },
+        {
+          "class": "wedding-closing",
+          "top": 2457.359375,
+          "height": 1077.84375
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        },
+        {
+          "family": "Temple Calligraphy",
+          "status": "loaded"
+        }
+      ],
+      "targets": [
+        {
+          "class": "entrance-next",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "class": "fi-events-link",
+          "width": 218.40625,
+          "height": 44
+        },
+        {
+          "class": "ce-calendar",
+          "width": 318,
+          "height": 54
+        },
+        {
+          "class": "ce-calendar",
+          "width": 318,
+          "height": 54
+        },
+        {
+          "class": "ce-directions",
+          "width": 300,
+          "height": 54
+        },
+        {
+          "class": "mp-btn",
+          "width": 50,
+          "height": 50
+        }
+      ],
+      "audioCount": 1,
+      "skyPaused": true
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "frame": 576,
+      "overflow": false,
+      "sections": [
+        {
+          "class": "temple-entrance is-offscreen",
+          "top": 0,
+          "height": 967.671875
+        },
+        {
+          "class": "formal-invitation",
+          "top": 967.671875,
+          "height": 1019.515625
+        },
+        {
+          "class": "celebrations",
+          "top": 1987.1875,
+          "height": 1048.59375
+        },
+        {
+          "class": "wedding-closing",
+          "top": 3035.78125,
+          "height": 1145.40625
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        },
+        {
+          "family": "Temple Calligraphy",
+          "status": "loaded"
+        }
+      ],
+      "targets": [
+        {
+          "class": "entrance-next",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "class": "fi-events-link",
+          "width": 322.5625,
+          "height": 44
+        },
+        {
+          "class": "ce-calendar",
+          "width": 320,
+          "height": 54
+        },
+        {
+          "class": "ce-calendar",
+          "width": 320,
+          "height": 54
+        },
+        {
+          "class": "ce-directions",
+          "width": 300,
+          "height": 54
+        },
+        {
+          "class": "mp-btn",
+          "width": 50,
+          "height": 50
+        }
+      ],
+      "audioCount": 1,
+      "skyPaused": true
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "frame": 506,
+      "overflow": false,
+      "sections": [
+        {
+          "class": "temple-entrance is-offscreen",
+          "top": 0,
+          "height": 850.078125
+        },
+        {
+          "class": "formal-invitation",
+          "top": 850.078125,
+          "height": 988.8125
+        },
+        {
+          "class": "celebrations",
+          "top": 1838.890625,
+          "height": 998.65625
+        },
+        {
+          "class": "wedding-closing",
+          "top": 2837.546875,
+          "height": 1131.375
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        },
+        {
+          "family": "Temple Calligraphy",
+          "status": "loaded"
+        }
+      ],
+      "targets": [
+        {
+          "class": "entrance-next",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "class": "fi-events-link",
+          "width": 283.375,
+          "height": 44
+        },
+        {
+          "class": "ce-calendar",
+          "width": 320,
+          "height": 54
+        },
+        {
+          "class": "ce-calendar",
+          "width": 320,
+          "height": 54
+        },
+        {
+          "class": "ce-directions",
+          "width": 300,
+          "height": 54
+        },
+        {
+          "class": "mp-btn",
+          "width": 50,
+          "height": 50
+        }
+      ],
+      "audioCount": 1,
+      "skyPaused": true
+    }
+  ],
+  "googleHandoffs": [
+    {
+      "event": "reception",
+      "hostname": "accounts.google.com",
+      "dates": "20270311T130000Z/20270311T130000Z",
+      "savePerformed": false
+    },
+    {
+      "event": "ceremony",
+      "hostname": "accounts.google.com",
+      "dates": "20270312T003000Z/20270312T020000Z",
+      "savePerformed": false
+    }
+  ],
+  "passed": true
+}

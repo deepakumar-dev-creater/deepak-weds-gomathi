@@ -1,0 +1,86 @@
+[
+  {
+    "viewport": [
+      320,
+      844
+    ],
+    "overflow": false,
+    "width": 320,
+    "groomFont": "italic 25.6px / 32px \"Temple Calligraphy\", \"Temple Tamil\", serif",
+    "brideFont": "italic 25.6px / 32px \"Temple Calligraphy\", \"Temple Tamil\", serif",
+    "caption": "சுப முகூர்த்த திருமண அழைப்பிதழ்",
+    "buttonWidth": 50,
+    "name": "matrix(1, 0, 0, 1, 0, 0)",
+    "temple": "matrix(1, 0, 0, 1, 0, 0)",
+    "ribbon": "assets/img/New-section/web/ribbon.webp",
+    "moved": {
+      "name": "matrix(1, 0, 0, 1, 0, 240.009)",
+      "temple": "matrix(1, 0, 0, 1, 0, -20.5898)",
+      "front": true
+    },
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "overflow": false,
+    "width": 390,
+    "groomFont": "italic 31.2px / 39px \"Temple Calligraphy\", \"Temple Tamil\", serif",
+    "brideFont": "italic 31.2px / 39px \"Temple Calligraphy\", \"Temple Tamil\", serif",
+    "caption": "சுப முகூர்த்த திருமண அழைப்பிதழ்",
+    "buttonWidth": 50,
+    "name": "matrix(1, 0, 0, 1, 0, 0)",
+    "temple": "matrix(1, 0, 0, 1, 0, 0)",
+    "ribbon": "assets/img/New-section/web/ribbon.webp",
+    "moved": {
+      "name": "matrix(1, 0, 0, 1, 0, 240)",
+      "temple": "matrix(1, 0, 0, 1, 0, -16.9113)",
+      "front": true
+    },
+    "errors": []
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "overflow": false,
+    "width": 576,
+    "groomFont": "italic 46.08px / 57.6px \"Temple Calligraphy\", \"Temple Tamil\", serif",
+    "brideFont": "italic 46.08px / 57.6px \"Temple Calligraphy\", \"Temple Tamil\", serif",
+    "caption": "சுப முகூர்த்த திருமண அழைப்பிதழ்",
+    "buttonWidth": 50,
+    "name": "matrix(1, 0, 0, 1, 0, 0)",
+    "temple": "matrix(1, 0, 0, 1, 0, 0)",
+    "ribbon": "assets/img/New-section/web/ribbon.webp",
+    "moved": {
+      "name": "matrix(1, 0, 0, 1, 0, 240.005)",
+      "temple": "matrix(1, 0, 0, 1, 0, -12.7844)",
+      "front": true
+    },
+    "errors": []
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "overflow": false,
+    "width": 506,
+    "groomFont": "italic 40.48px / 50.6px \"Temple Calligraphy\", \"Temple Tamil\", serif",
+    "brideFont": "italic 40.48px / 50.6px \"Temple Calligraphy\", \"Temple Tamil\", serif",
+    "caption": "சுப முகூர்த்த திருமண அழைப்பிதழ்",
+    "buttonWidth": 50,
+    "name": "matrix(1, 0, 0, 1, 0, 0)",
+    "temple": "matrix(1, 0, 0, 1, 0, 0)",
+    "ribbon": "assets/img/New-section/web/ribbon.webp",
+    "moved": {
+      "name": "matrix(1, 0, 0, 1, 0, 240)",
+      "temple": "matrix(1, 0, 0, 1, 0, -24.2424)",
+      "front": true
+    },
+    "errors": []
+  }
+]

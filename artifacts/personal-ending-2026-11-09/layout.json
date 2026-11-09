@@ -1,0 +1,38 @@
+[
+  {
+    "outer": 320,
+    "width": 320,
+    "overflow": false,
+    "sceneHeight": 761,
+    "names": "Deepak\n&\nGomathi",
+    "creditSize": "6px",
+    "buttonHeight": 48
+  },
+  {
+    "outer": 390,
+    "width": 390,
+    "overflow": false,
+    "sceneHeight": 807,
+    "names": "Deepak\n&\nGomathi",
+    "creditSize": "6px",
+    "buttonHeight": 48
+  },
+  {
+    "outer": 768,
+    "width": 576,
+    "overflow": false,
+    "sceneHeight": 853,
+    "names": "Deepak\n&\nGomathi",
+    "creditSize": "6px",
+    "buttonHeight": 48
+  },
+  {
+    "outer": 1440,
+    "width": 506,
+    "overflow": false,
+    "sceneHeight": 846,
+    "names": "Deepak\n&\nGomathi",
+    "creditSize": "6px",
+    "buttonHeight": 48
+  }
+]

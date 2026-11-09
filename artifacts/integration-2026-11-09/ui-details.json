@@ -1,0 +1,11 @@
+{
+  "offscreenCallbacks": 63,
+  "milliseconds": 1050,
+  "focus": {
+    "color": "rgb(217, 178, 94)",
+    "width": "2px",
+    "background": "rgb(255, 243, 225)",
+    "focused": true
+  },
+  "pauseRetained": true
+}

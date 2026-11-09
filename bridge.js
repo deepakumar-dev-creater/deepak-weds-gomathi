@@ -117,6 +117,7 @@
         var d = defaults.events[i % defaults.events.length] || {};
         return {
           id: e.id, title: e.title, date: e.date, time: e.time, venue: e.venue,
+          start: e.start, end: e.end,
           description: e.description || "", mapLink: e.mapLink || "",
           image: e.image || d.image
         };

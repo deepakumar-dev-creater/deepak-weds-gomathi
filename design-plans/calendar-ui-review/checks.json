@@ -1,0 +1,655 @@
+{
+  "views": [
+    {
+      "viewport": [
+        320,
+        844
+      ],
+      "frame": 320,
+      "overflow": false,
+      "sections": [
+        {
+          "selector": "temple-entrance is-offscreen",
+          "top": 0,
+          "height": 537.59375,
+          "width": 320
+        },
+        {
+          "selector": "formal-invitation",
+          "top": 537.59375,
+          "height": 894.6875,
+          "width": 320
+        },
+        {
+          "selector": "celebrations",
+          "top": 1432.28125,
+          "height": 1556.171875,
+          "width": 320
+        },
+        {
+          "selector": "wedding-closing",
+          "top": 2988.453125,
+          "height": 1366.328125,
+          "width": 320
+        }
+      ],
+      "calendars": [
+        {
+          "href": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Deepak+Kumar+%26+Gomathi+%E2%80%94+Wedding+Reception&dates=20270311T130000Z%2F20270311T130000Z&ctz=Asia%2FKolkata&location=En+Sesha+Mahal%2C+No.+71%2C+Peter%E2%80%99s+Road%2C+Ganapathy+Colony%2C+Royapettah%2C+Chennai+-+600014&details=%E0%AE%A4%E0%AF%80%E0%AE%AA%E0%AE%95%E0%AF%8D+%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AE%BE%E0%AE%B0%E0%AF%8D+%26+%E0%AE%95%E0%AF%8B%E0%AE%AE%E0%AE%A4%E0%AE%BF+%C2%B7+Deepak+Kumar+%26+Gomathi%0AWedding+Reception%0AThursday%2C+11+March+2027+%C2%B7+6%3A30+PM+onwards+IST%0A%E0%AE%A4%E0%AF%8A%E0%AE%9F%E0%AE%95%E0%AF%8D%E0%AE%95+%E0%AE%A8%E0%AF%87%E0%AE%B0+%E0%AE%A8%E0%AE%BF%E0%AE%A9%E0%AF%88%E0%AE%B5%E0%AF%82%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%B2%E0%AF%8D%3B+%E0%AE%A8%E0%AE%BF%E0%AE%B1%E0%AF%88%E0%AE%B5%E0%AF%81+%E0%AE%A8%E0%AF%87%E0%AE%B0%E0%AE%AE%E0%AF%8D+%E0%AE%95%E0%AF%81%E0%AE%B1%E0%AE%BF%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%BF%E0%AE%9F%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%9F%E0%AE%B5%E0%AE%BF%E0%AE%B2%E0%AF%8D%E0%AE%B2%E0%AF%88.%0AStart-time+reminder%3B+no+fixed+end+time.%0A%E0%AE%B5%E0%AE%B4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF+%C2%B7+Directions%3A+https%3A%2F%2Fshare.google%2F9cDnaaYRR4evNU4Ec",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "width": 251,
+          "height": 68.796875,
+          "ta": true,
+          "en": true
+        },
+        {
+          "href": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Deepak+Kumar+%26+Gomathi+%E2%80%94+Wedding+Ceremony+%28Muhurtham%29&dates=20270312T003000Z%2F20270312T020000Z&ctz=Asia%2FKolkata&location=En+Sesha+Mahal%2C+No.+71%2C+Peter%E2%80%99s+Road%2C+Ganapathy+Colony%2C+Royapettah%2C+Chennai+-+600014&details=%E0%AE%A4%E0%AF%80%E0%AE%AA%E0%AE%95%E0%AF%8D+%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AE%BE%E0%AE%B0%E0%AF%8D+%26+%E0%AE%95%E0%AF%8B%E0%AE%AE%E0%AE%A4%E0%AE%BF+%C2%B7+Deepak+Kumar+%26+Gomathi%0AWedding+Ceremony+%28Muhurtham%29%0AFriday%2C+12+March+2027+%C2%B7+6%3A00+AM+to+7%3A30+AM+IST%0A%E0%AE%B5%E0%AE%B4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF+%C2%B7+Directions%3A+https%3A%2F%2Fshare.google%2F9cDnaaYRR4evNU4Ec",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "width": 251,
+          "height": 68.796875,
+          "ta": true,
+          "en": true
+        }
+      ],
+      "controls": [
+        {
+          "class": "entrance-next",
+          "name": "Read the invitation · அழைப்பிதழைப் படிக்க",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "class": "fi-events-link",
+          "name": "நிகழ்வுகள்\n·\nView celebrations",
+          "width": 179.21875,
+          "height": 55.6875
+        },
+        {
+          "class": "ce-calendar",
+          "name": "நாள்காட்டியில் சேர்\nAdd to Google Calendar\nவரவேற்பு. புதிய தாவலில் திறக்கும். Reception. Opens in a new tab.",
+          "width": 251,
+          "height": 68.796875
+        },
+        {
+          "class": "ce-calendar",
+          "name": "நாள்காட்டியில் சேர்\nAdd to Google Calendar\nதிருமண விழா. புதிய தாவலில் திறக்கும். Ceremony. Opens in a new tab.",
+          "width": 251,
+          "height": 68.796875
+        },
+        {
+          "class": "ce-directions",
+          "name": "வழிகாட்டி\nGet directions\nபுதிய தாவலில் திறக்கும். Opens in a new tab.",
+          "width": 246,
+          "height": 65.09375
+        },
+        {
+          "class": "mp-btn",
+          "name": "Pause music · இசையை நிறுத்து",
+          "width": 50,
+          "height": 50
+        }
+      ],
+      "audioCount": 1,
+      "localFonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        },
+        {
+          "family": "Temple Calligraphy",
+          "status": "loaded"
+        }
+      ],
+      "offscreenSky": "paused",
+      "raf": 70,
+      "timer": "123\nநாட்கள்\nDays\n10\nமணி\nHours\n58\nநிமிடம்\nMinutes\n03\nவினாடி\nSeconds",
+      "start": {
+        "name": "matrix(1, 0, 0, 1, 0, 0)",
+        "temple": "matrix(1, 0, 0, 1, 0, 0)",
+        "sky": "24s",
+        "fonts": [
+          {
+            "family": "Temple Tamil",
+            "status": "loaded"
+          },
+          {
+            "family": "Temple Calligraphy",
+            "status": "loaded"
+          }
+        ],
+        "raf": 19
+      },
+      "moved": {
+        "name": "matrix(1, 0, 0, 1, 0, 200.007)",
+        "temple": "matrix(1, 0, 0, 1, 0, -17.1582)"
+      },
+      "rafOffscreen": 63,
+      "obstruction": {
+        "button": {
+          "x": 252,
+          "y": 776,
+          "width": 50,
+          "height": 50,
+          "top": 776,
+          "right": 302,
+          "bottom": 826,
+          "left": 252
+        },
+        "collisions": [
+          {
+            "text": ", No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+            "rect": {
+              "x": 164.21875,
+              "y": 775.96875,
+              "width": 100.328125,
+              "height": 22,
+              "top": 775.96875,
+              "right": 264.546875,
+              "bottom": 797.96875,
+              "left": 164.21875
+            }
+          },
+          {
+            "text": ", No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+            "rect": {
+              "x": 61.6875,
+              "y": 823.5625,
+              "width": 196.609375,
+              "height": 22,
+              "top": 823.5625,
+              "right": 258.296875,
+              "bottom": 845.5625,
+              "left": 61.6875
+            }
+          }
+        ]
+      },
+      "errors": [],
+      "failed": []
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "frame": 390,
+      "overflow": false,
+      "sections": [
+        {
+          "selector": "temple-entrance is-offscreen",
+          "top": 0,
+          "height": 655.1875,
+          "width": 390
+        },
+        {
+          "selector": "formal-invitation",
+          "top": 655.1875,
+          "height": 913.40625,
+          "width": 390
+        },
+        {
+          "selector": "celebrations",
+          "top": 1568.59375,
+          "height": 1369.421875,
+          "width": 390
+        },
+        {
+          "selector": "wedding-closing",
+          "top": 2938.015625,
+          "height": 1356.28125,
+          "width": 390
+        }
+      ],
+      "calendars": [
+        {
+          "href": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Deepak+Kumar+%26+Gomathi+%E2%80%94+Wedding+Reception&dates=20270311T130000Z%2F20270311T130000Z&ctz=Asia%2FKolkata&location=En+Sesha+Mahal%2C+No.+71%2C+Peter%E2%80%99s+Road%2C+Ganapathy+Colony%2C+Royapettah%2C+Chennai+-+600014&details=%E0%AE%A4%E0%AF%80%E0%AE%AA%E0%AE%95%E0%AF%8D+%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AE%BE%E0%AE%B0%E0%AF%8D+%26+%E0%AE%95%E0%AF%8B%E0%AE%AE%E0%AE%A4%E0%AE%BF+%C2%B7+Deepak+Kumar+%26+Gomathi%0AWedding+Reception%0AThursday%2C+11+March+2027+%C2%B7+6%3A30+PM+onwards+IST%0A%E0%AE%A4%E0%AF%8A%E0%AE%9F%E0%AE%95%E0%AF%8D%E0%AE%95+%E0%AE%A8%E0%AF%87%E0%AE%B0+%E0%AE%A8%E0%AE%BF%E0%AE%A9%E0%AF%88%E0%AE%B5%E0%AF%82%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%B2%E0%AF%8D%3B+%E0%AE%A8%E0%AE%BF%E0%AE%B1%E0%AF%88%E0%AE%B5%E0%AF%81+%E0%AE%A8%E0%AF%87%E0%AE%B0%E0%AE%AE%E0%AF%8D+%E0%AE%95%E0%AF%81%E0%AE%B1%E0%AE%BF%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%BF%E0%AE%9F%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%9F%E0%AE%B5%E0%AE%BF%E0%AE%B2%E0%AF%8D%E0%AE%B2%E0%AF%88.%0AStart-time+reminder%3B+no+fixed+end+time.%0A%E0%AE%B5%E0%AE%B4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF+%C2%B7+Directions%3A+https%3A%2F%2Fshare.google%2F9cDnaaYRR4evNU4Ec",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "width": 318,
+          "height": 68.796875,
+          "ta": true,
+          "en": true
+        },
+        {
+          "href": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Deepak+Kumar+%26+Gomathi+%E2%80%94+Wedding+Ceremony+%28Muhurtham%29&dates=20270312T003000Z%2F20270312T020000Z&ctz=Asia%2FKolkata&location=En+Sesha+Mahal%2C+No.+71%2C+Peter%E2%80%99s+Road%2C+Ganapathy+Colony%2C+Royapettah%2C+Chennai+-+600014&details=%E0%AE%A4%E0%AF%80%E0%AE%AA%E0%AE%95%E0%AF%8D+%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AE%BE%E0%AE%B0%E0%AF%8D+%26+%E0%AE%95%E0%AF%8B%E0%AE%AE%E0%AE%A4%E0%AE%BF+%C2%B7+Deepak+Kumar+%26+Gomathi%0AWedding+Ceremony+%28Muhurtham%29%0AFriday%2C+12+March+2027+%C2%B7+6%3A00+AM+to+7%3A30+AM+IST%0A%E0%AE%B5%E0%AE%B4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF+%C2%B7+Directions%3A+https%3A%2F%2Fshare.google%2F9cDnaaYRR4evNU4Ec",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "width": 318,
+          "height": 68.796875,
+          "ta": true,
+          "en": true
+        }
+      ],
+      "controls": [
+        {
+          "class": "entrance-next",
+          "name": "Read the invitation · அழைப்பிதழைப் படிக்க",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "class": "fi-events-link",
+          "name": "நிகழ்வுகள்\n·\nView celebrations",
+          "width": 218.40625,
+          "height": 44
+        },
+        {
+          "class": "ce-calendar",
+          "name": "நாள்காட்டியில் சேர்\nAdd to Google Calendar\nவரவேற்பு. புதிய தாவலில் திறக்கும். Reception. Opens in a new tab.",
+          "width": 318,
+          "height": 68.796875
+        },
+        {
+          "class": "ce-calendar",
+          "name": "நாள்காட்டியில் சேர்\nAdd to Google Calendar\nதிருமண விழா. புதிய தாவலில் திறக்கும். Ceremony. Opens in a new tab.",
+          "width": 318,
+          "height": 68.796875
+        },
+        {
+          "class": "ce-directions",
+          "name": "வழிகாட்டி\nGet directions\nபுதிய தாவலில் திறக்கும். Opens in a new tab.",
+          "width": 300,
+          "height": 65.09375
+        },
+        {
+          "class": "mp-btn",
+          "name": "Pause music · இசையை நிறுத்து",
+          "width": 50,
+          "height": 50
+        }
+      ],
+      "audioCount": 1,
+      "localFonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        },
+        {
+          "family": "Temple Calligraphy",
+          "status": "loaded"
+        }
+      ],
+      "offscreenSky": "paused",
+      "raf": 71,
+      "timer": "123\nநாட்கள்\nDays\n10\nமணி\nHours\n57\nநிமிடம்\nMinutes\n56\nவினாடி\nSeconds",
+      "start": {
+        "name": "matrix(1, 0, 0, 1, 0, 0)",
+        "temple": "matrix(1, 0, 0, 1, 0, 0)",
+        "sky": "24s",
+        "fonts": [
+          {
+            "family": "Temple Tamil",
+            "status": "loaded"
+          },
+          {
+            "family": "Temple Calligraphy",
+            "status": "loaded"
+          }
+        ],
+        "raf": 22
+      },
+      "moved": {
+        "name": "matrix(1, 0, 0, 1, 0, 200)",
+        "temple": "matrix(1, 0, 0, 1, 0, -14.0928)"
+      },
+      "rafOffscreen": 63,
+      "obstruction": {
+        "button": {
+          "x": 322,
+          "y": 776,
+          "width": 50,
+          "height": 50,
+          "top": 776,
+          "right": 372,
+          "bottom": 826,
+          "left": 322
+        },
+        "collisions": [
+          {
+            "text": ", No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+            "rect": {
+              "x": 58,
+              "y": 799.328125,
+              "width": 274,
+              "height": 22,
+              "top": 799.328125,
+              "right": 332,
+              "bottom": 821.328125,
+              "left": 58
+            }
+          }
+        ]
+      },
+      "errors": [],
+      "failed": []
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "frame": 576,
+      "overflow": false,
+      "sections": [
+        {
+          "selector": "temple-entrance is-offscreen",
+          "top": 0,
+          "height": 967.671875,
+          "width": 576
+        },
+        {
+          "selector": "formal-invitation",
+          "top": 967.671875,
+          "height": 1121.921875,
+          "width": 576
+        },
+        {
+          "selector": "celebrations",
+          "top": 2089.59375,
+          "height": 1377.5,
+          "width": 576
+        },
+        {
+          "selector": "wedding-closing",
+          "top": 3467.09375,
+          "height": 1678.546875,
+          "width": 576
+        }
+      ],
+      "calendars": [
+        {
+          "href": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Deepak+Kumar+%26+Gomathi+%E2%80%94+Wedding+Reception&dates=20270311T130000Z%2F20270311T130000Z&ctz=Asia%2FKolkata&location=En+Sesha+Mahal%2C+No.+71%2C+Peter%E2%80%99s+Road%2C+Ganapathy+Colony%2C+Royapettah%2C+Chennai+-+600014&details=%E0%AE%A4%E0%AF%80%E0%AE%AA%E0%AE%95%E0%AF%8D+%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AE%BE%E0%AE%B0%E0%AF%8D+%26+%E0%AE%95%E0%AF%8B%E0%AE%AE%E0%AE%A4%E0%AE%BF+%C2%B7+Deepak+Kumar+%26+Gomathi%0AWedding+Reception%0AThursday%2C+11+March+2027+%C2%B7+6%3A30+PM+onwards+IST%0A%E0%AE%A4%E0%AF%8A%E0%AE%9F%E0%AE%95%E0%AF%8D%E0%AE%95+%E0%AE%A8%E0%AF%87%E0%AE%B0+%E0%AE%A8%E0%AE%BF%E0%AE%A9%E0%AF%88%E0%AE%B5%E0%AF%82%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%B2%E0%AF%8D%3B+%E0%AE%A8%E0%AE%BF%E0%AE%B1%E0%AF%88%E0%AE%B5%E0%AF%81+%E0%AE%A8%E0%AF%87%E0%AE%B0%E0%AE%AE%E0%AF%8D+%E0%AE%95%E0%AF%81%E0%AE%B1%E0%AE%BF%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%BF%E0%AE%9F%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%9F%E0%AE%B5%E0%AE%BF%E0%AE%B2%E0%AF%8D%E0%AE%B2%E0%AF%88.%0AStart-time+reminder%3B+no+fixed+end+time.%0A%E0%AE%B5%E0%AE%B4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF+%C2%B7+Directions%3A+https%3A%2F%2Fshare.google%2F9cDnaaYRR4evNU4Ec",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "width": 320,
+          "height": 68.796875,
+          "ta": true,
+          "en": true
+        },
+        {
+          "href": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Deepak+Kumar+%26+Gomathi+%E2%80%94+Wedding+Ceremony+%28Muhurtham%29&dates=20270312T003000Z%2F20270312T020000Z&ctz=Asia%2FKolkata&location=En+Sesha+Mahal%2C+No.+71%2C+Peter%E2%80%99s+Road%2C+Ganapathy+Colony%2C+Royapettah%2C+Chennai+-+600014&details=%E0%AE%A4%E0%AF%80%E0%AE%AA%E0%AE%95%E0%AF%8D+%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AE%BE%E0%AE%B0%E0%AF%8D+%26+%E0%AE%95%E0%AF%8B%E0%AE%AE%E0%AE%A4%E0%AE%BF+%C2%B7+Deepak+Kumar+%26+Gomathi%0AWedding+Ceremony+%28Muhurtham%29%0AFriday%2C+12+March+2027+%C2%B7+6%3A00+AM+to+7%3A30+AM+IST%0A%E0%AE%B5%E0%AE%B4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF+%C2%B7+Directions%3A+https%3A%2F%2Fshare.google%2F9cDnaaYRR4evNU4Ec",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "width": 320,
+          "height": 68.796875,
+          "ta": true,
+          "en": true
+        }
+      ],
+      "controls": [
+        {
+          "class": "entrance-next",
+          "name": "Read the invitation · அழைப்பிதழைப் படிக்க",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "class": "fi-events-link",
+          "name": "நிகழ்வுகள்\n·\nView celebrations",
+          "width": 322.5625,
+          "height": 44
+        },
+        {
+          "class": "ce-calendar",
+          "name": "நாள்காட்டியில் சேர்\nAdd to Google Calendar\nவரவேற்பு. புதிய தாவலில் திறக்கும். Reception. Opens in a new tab.",
+          "width": 320,
+          "height": 68.796875
+        },
+        {
+          "class": "ce-calendar",
+          "name": "நாள்காட்டியில் சேர்\nAdd to Google Calendar\nதிருமண விழா. புதிய தாவலில் திறக்கும். Ceremony. Opens in a new tab.",
+          "width": 320,
+          "height": 68.796875
+        },
+        {
+          "class": "ce-directions",
+          "name": "வழிகாட்டி\nGet directions\nபுதிய தாவலில் திறக்கும். Opens in a new tab.",
+          "width": 300,
+          "height": 65.09375
+        },
+        {
+          "class": "mp-btn",
+          "name": "Pause music · இசையை நிறுத்து",
+          "width": 50,
+          "height": 50
+        }
+      ],
+      "audioCount": 1,
+      "localFonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        },
+        {
+          "family": "Temple Calligraphy",
+          "status": "loaded"
+        }
+      ],
+      "offscreenSky": "paused",
+      "raf": 112,
+      "timer": "123\nநாட்கள்\nDays\n10\nமணி\nHours\n57\nநிமிடம்\nMinutes\n47\nவினாடி\nSeconds",
+      "start": {
+        "name": "matrix(1, 0, 0, 1, 0, 0)",
+        "temple": "matrix(1, 0, 0, 1, 0, 0)",
+        "sky": "24s",
+        "fonts": [
+          {
+            "family": "Temple Tamil",
+            "status": "loaded"
+          },
+          {
+            "family": "Temple Calligraphy",
+            "status": "loaded"
+          }
+        ],
+        "raf": 27
+      },
+      "moved": {
+        "name": "matrix(1, 0, 0, 1, 0, 200.004)",
+        "temple": "matrix(1, 0, 0, 1, 0, -10.6536)"
+      },
+      "rafOffscreen": 63,
+      "obstruction": {
+        "button": {
+          "x": 508,
+          "y": 956,
+          "width": 50,
+          "height": 50,
+          "top": 956,
+          "right": 558,
+          "bottom": 1006,
+          "left": 508
+        },
+        "collisions": []
+      },
+      "errors": [],
+      "failed": []
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "frame": 506,
+      "overflow": false,
+      "sections": [
+        {
+          "selector": "temple-entrance is-offscreen",
+          "top": 0,
+          "height": 850.078125,
+          "width": 506
+        },
+        {
+          "selector": "formal-invitation",
+          "top": 850.078125,
+          "height": 1053.4375,
+          "width": 506
+        },
+        {
+          "selector": "celebrations",
+          "top": 1903.515625,
+          "height": 1338.890625,
+          "width": 506
+        },
+        {
+          "selector": "wedding-closing",
+          "top": 3242.40625,
+          "height": 1555.875,
+          "width": 506
+        }
+      ],
+      "calendars": [
+        {
+          "href": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Deepak+Kumar+%26+Gomathi+%E2%80%94+Wedding+Reception&dates=20270311T130000Z%2F20270311T130000Z&ctz=Asia%2FKolkata&location=En+Sesha+Mahal%2C+No.+71%2C+Peter%E2%80%99s+Road%2C+Ganapathy+Colony%2C+Royapettah%2C+Chennai+-+600014&details=%E0%AE%A4%E0%AF%80%E0%AE%AA%E0%AE%95%E0%AF%8D+%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AE%BE%E0%AE%B0%E0%AF%8D+%26+%E0%AE%95%E0%AF%8B%E0%AE%AE%E0%AE%A4%E0%AE%BF+%C2%B7+Deepak+Kumar+%26+Gomathi%0AWedding+Reception%0AThursday%2C+11+March+2027+%C2%B7+6%3A30+PM+onwards+IST%0A%E0%AE%A4%E0%AF%8A%E0%AE%9F%E0%AE%95%E0%AF%8D%E0%AE%95+%E0%AE%A8%E0%AF%87%E0%AE%B0+%E0%AE%A8%E0%AE%BF%E0%AE%A9%E0%AF%88%E0%AE%B5%E0%AF%82%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%B2%E0%AF%8D%3B+%E0%AE%A8%E0%AE%BF%E0%AE%B1%E0%AF%88%E0%AE%B5%E0%AF%81+%E0%AE%A8%E0%AF%87%E0%AE%B0%E0%AE%AE%E0%AF%8D+%E0%AE%95%E0%AF%81%E0%AE%B1%E0%AE%BF%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%BF%E0%AE%9F%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%9F%E0%AE%B5%E0%AE%BF%E0%AE%B2%E0%AF%8D%E0%AE%B2%E0%AF%88.%0AStart-time+reminder%3B+no+fixed+end+time.%0A%E0%AE%B5%E0%AE%B4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF+%C2%B7+Directions%3A+https%3A%2F%2Fshare.google%2F9cDnaaYRR4evNU4Ec",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "width": 320,
+          "height": 68.796875,
+          "ta": true,
+          "en": true
+        },
+        {
+          "href": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Deepak+Kumar+%26+Gomathi+%E2%80%94+Wedding+Ceremony+%28Muhurtham%29&dates=20270312T003000Z%2F20270312T020000Z&ctz=Asia%2FKolkata&location=En+Sesha+Mahal%2C+No.+71%2C+Peter%E2%80%99s+Road%2C+Ganapathy+Colony%2C+Royapettah%2C+Chennai+-+600014&details=%E0%AE%A4%E0%AF%80%E0%AE%AA%E0%AE%95%E0%AF%8D+%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AE%BE%E0%AE%B0%E0%AF%8D+%26+%E0%AE%95%E0%AF%8B%E0%AE%AE%E0%AE%A4%E0%AE%BF+%C2%B7+Deepak+Kumar+%26+Gomathi%0AWedding+Ceremony+%28Muhurtham%29%0AFriday%2C+12+March+2027+%C2%B7+6%3A00+AM+to+7%3A30+AM+IST%0A%E0%AE%B5%E0%AE%B4%E0%AE%BF%E0%AE%95%E0%AE%BE%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF+%C2%B7+Directions%3A+https%3A%2F%2Fshare.google%2F9cDnaaYRR4evNU4Ec",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "width": 320,
+          "height": 68.796875,
+          "ta": true,
+          "en": true
+        }
+      ],
+      "controls": [
+        {
+          "class": "entrance-next",
+          "name": "Read the invitation · அழைப்பிதழைப் படிக்க",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "class": "fi-events-link",
+          "name": "நிகழ்வுகள்\n·\nView celebrations",
+          "width": 283.375,
+          "height": 44
+        },
+        {
+          "class": "ce-calendar",
+          "name": "நாள்காட்டியில் சேர்\nAdd to Google Calendar\nவரவேற்பு. புதிய தாவலில் திறக்கும். Reception. Opens in a new tab.",
+          "width": 320,
+          "height": 68.796875
+        },
+        {
+          "class": "ce-calendar",
+          "name": "நாள்காட்டியில் சேர்\nAdd to Google Calendar\nதிருமண விழா. புதிய தாவலில் திறக்கும். Ceremony. Opens in a new tab.",
+          "width": 320,
+          "height": 68.796875
+        },
+        {
+          "class": "ce-directions",
+          "name": "வழிகாட்டி\nGet directions\nபுதிய தாவலில் திறக்கும். Opens in a new tab.",
+          "width": 300,
+          "height": 65.09375
+        },
+        {
+          "class": "mp-btn",
+          "name": "Pause music · இசையை நிறுத்து",
+          "width": 50,
+          "height": 50
+        }
+      ],
+      "audioCount": 1,
+      "localFonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        },
+        {
+          "family": "Temple Calligraphy",
+          "status": "loaded"
+        }
+      ],
+      "offscreenSky": "paused",
+      "raf": 177,
+      "timer": "123\nநாட்கள்\nDays\n10\nமணி\nHours\n57\nநிமிடம்\nMinutes\n38\nவினாடி\nSeconds",
+      "start": {
+        "name": "matrix(1, 0, 0, 1, 0, 0)",
+        "temple": "matrix(1, 0, 0, 1, 0, 0)",
+        "sky": "24s",
+        "fonts": [
+          {
+            "family": "Temple Tamil",
+            "status": "loaded"
+          },
+          {
+            "family": "Temple Calligraphy",
+            "status": "loaded"
+          }
+        ],
+        "raf": 61
+      },
+      "moved": {
+        "name": "matrix(1, 0, 0, 1, 0, 200)",
+        "temple": "matrix(1, 0, 0, 1, 0, -20.202)"
+      },
+      "rafOffscreen": 63,
+      "obstruction": {
+        "button": {
+          "x": 438,
+          "y": 832,
+          "width": 50,
+          "height": 50,
+          "top": 832,
+          "right": 488,
+          "bottom": 882,
+          "left": 438
+        },
+        "collisions": [
+          {
+            "text": ", No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
+            "rect": {
+              "x": 191.140625,
+              "y": 833.125,
+              "width": 247.4375,
+              "height": 25,
+              "top": 833.125,
+              "right": 438.578125,
+              "bottom": 858.125,
+              "left": 191.140625
+            }
+          }
+        ]
+      },
+      "errors": [],
+      "failed": []
+    }
+  ],
+  "scenarios": [
+    {
+      "case": "real Google Calendar navigation (signed out)",
+      "url": "https://accounts.google.com/v3/signin/identifier?continue=https://calendar.google.com/calendar/render?action%3DTEMPLATE%26text%3DDeepak%2BKumar%2B%2526%2BGomathi%2B%25E2%2580%2594%2BWedding%2BReception%26dates%3D20270311T130000Z/20270311T130000Z%26ctz%3DAsia/Kolkata%26location%3DEn%2BSesha%2BMahal,%2BNo.%2B71,%2BPeter%25E2%2580%2599s%2BRoad,%2BGanapathy%2BColony,%2BRoyapettah,%2BChennai%2B-%2B600014%26details%3D%25E0%25AE%25A4%25E0%25AF%2580%25E0%25AE%25AA%25E0%25AE%2595%25E0%25AF%258D%2B%25E0%25AE%2595%25E0%25AF%2581%25E0%25AE%25AE%25E0%25AE%25BE%25E0%25AE%25B0%25E0%25AF%258D%2B%2526%2B%25E0%25AE%2595%25E0%25AF%258B%25E0%25AE%25AE%25E0%25AE%25A4%25E0%25AE%25BF%2B%25C2%25B7%2BDeepak%2BKumar%2B%2526%2BGomathi%250AWedding%2BReception%250AThursday,%2B11%2BMarch%2B2027%2B%25C2%25B7%2B6:30%2BPM%2Bonwards%2BIST%250A%25E0%25AE%25A4%25E0%25AF%258A%25E0%25AE%259F%25E0%25AE%2595%25E0%25AF%258D%25E0%25AE%2595%2B%25E0%25AE%25A8%25E0%25AF%2587%25E0%25AE%25B0%2B%25E0%25AE%25A8%25E0%25AE%25BF%25E0%25AE%25A9%25E0%25AF%2588%25E0%25AE%25B5%25E0%25AF%2582%25E0%25AE%259F%25E0%25AF%258D%25E0%25AE%259F%25E0%25AE%25B2%25E0%25AF%258D;%2B%25E0%25AE%25A8%25E0%25AE%25BF%25E0%25AE%25B1%25E0%25AF%2588%25E0%25AE%25B5%25E0%25AF%2581%2B%25E0%25AE%25A8%25E0%25AF%2587%25E0%25AE%25B0%25E0%25AE%25AE%25E0%25AF%258D%2B%25E0%25AE%2595%25E0%25AF%2581%25E0%25AE%25B1%25E0%25AE%25BF%25E0%25AE%25AA%25E0%25AF%258D%25E0%25AE%25AA%25E0%25AE%25BF%25E0%25AE%259F%25E0%25AE%25AA%25E0%25AF%258D%25E0%25AE%25AA%25E0%25AE%259F%25E0%25AE%25B5%25E0%25AE%25BF%25E0%25AE%25B2%25E0%25AF%258D%25E0%25AE%25B2%25E0%25AF%2588.%250AStart-time%2Breminder;%2Bno%2Bfixed%2Bend%2Btime.%250A%25E0%25AE%25B5%25E0%25AE%25B4%25E0%25AE%25BF%25E0%25AE%2595%25E0%25AE%25BE%25E0%25AE%259F%25E0%25AF%258D%25E0%25AE%259F%25E0%25AE%25BF%2B%25C2%25B7%2BDirections:%2Bhttps://share.google/9cDnaaYRR4evNU4Ec&emr=1&followup=https://calendar.google.com/calendar/render?action%3DTEMPLATE%26text%3DDeepak%2BKumar%2B%2526%2BGomathi%2B%25E2%2580%2594%2BWedding%2BReception%26dates%3D20270311T130000Z/20270311T130000Z%26ctz%3DAsia/Kolkata%26location%3DEn%2BSesha%2BMahal,%2BNo.%2B71,%2BPeter%25E2%2580%2599s%2BRoad,%2BGanapathy%2BColony,%2BRoyapettah,%2BChennai%2B-%2B600014%26details%3D%25E0%25AE%25A4%25E0%25AF%2580%25E0%25AE%25AA%25E0%25AE%2595%25E0%25AF%258D%2B%25E0%25AE%2595%25E0%25AF%2581%25E0%25AE%25AE%25E0%25AE%25BE%25E0%25AE%25B0%25E0%25AF%258D%2B%2526%2B%25E0%25AE%2595%25E0%25AF%258B%25E0%25AE%25AE%25E0%25AE%25A4%25E0%25AE%25BF%2B%25C2%25B7%2BDeepak%2BKumar%2B%2526%2BGomathi%250AWedding%2BReception%250AThursday,%2B11%2BMarch%2B2027%2B%25C2%25B7%2B6:30%2BPM%2Bonwards%2BIST%250A%25E0%25AE%25A4%25E0%25AF%258A%25E0%25AE%259F%25E0%25AE%2595%25E0%25AF%258D%25E0%25AE%2595%2B%25E0%25AE%25A8%25E0%25AF%2587%25E0%25AE%25B0%2B%25E0%25AE%25A8%25E0%25AE%25BF%25E0%25AE%25A9%25E0%25AF%2588%25E0%25AE%25B5%25E0%25AF%2582%25E0%25AE%259F%25E0%25AF%258D%25E0%25AE%259F%25E0%25AE%25B2%25E0%25AF%258D;%2B%25E0%25AE%25A8%25E0%25AE%25BF%25E0%25AE%25B1%25E0%25AF%2588%25E0%25AE%25B5%25E0%25AF%2581%2B%25E0%25AE%25A8%25E0%25AF%2587%25E0%25AE%25B0%25E0%25AE%25AE%25E0%25AF%258D%2B%25E0%25AE%2595%25E0%25AF%2581%25E0%25AE%25B1%25E0%25AE%25BF%25E0%25AE%25AA%25E0%25AF%258D%25E0%25AE%25AA%25E0%25AE%25BF%25E0%25AE%259F%25E0%25AE%25AA%25E0%25AF%258D%25E0%25AE%25AA%25E0%25AE%259F%25E0%25AE%25B5%25E0%25AE%25BF%25E0%25AE%25B2%25E0%25AF%258D%25E0%25AE%25B2%25E0%25AF%2588.%250AStart-time%2Breminder;%2Bno%2Bfixed%2Bend%2Btime.%250A%25E0%25AE%25B5%25E0%25AE%25B4%25E0%25AE%25BF%25E0%25AE%2595%25E0%25AE%25BE%25E0%25AE%259F%25E0%25AF%258D%25E0%25AE%259F%25E0%25AE%25BF%2B%25C2%25B7%2BDirections:%2Bhttps://share.google/9cDnaaYRR4evNU4Ec&osid=1&passive=1209600&service=cl&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-1710701763:1794144725220717",
+      "title": "Google Calendar - Sign in to Access & Edit Your Schedule",
+      "saved": false
+    },
+    {
+      "case": "manual music pause stays paused",
+      "passed": true
+    },
+    {
+      "case": "JavaScript disabled, local font fallback, native calendar and directions links",
+      "passed": true
+    },
+    {
+      "case": "blocked storage and guest timezone Asia/Kolkata",
+      "passed": true
+    },
+    {
+      "case": "blocked storage and guest timezone America/Los_Angeles",
+      "passed": true
+    },
+    {
+      "case": "GitHub Pages project subpath",
+      "passed": true
+    }
+  ]
+}
