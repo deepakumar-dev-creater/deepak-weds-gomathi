@@ -1,0 +1,579 @@
+{
+  "passed": true,
+  "mode": "direct-file, no HTTP server",
+  "views": [
+    {
+      "outer": [
+        320,
+        568
+      ],
+      "frame": [
+        320,
+        568
+      ],
+      "hero": {
+        "width": 320,
+        "height": 568
+      },
+      "temple": {
+        "top": 215.828125,
+        "bottom": 699.515625,
+        "width": 320,
+        "height": 483.6875
+      },
+      "captionBottom": 242.703125,
+      "next": {
+        "top": 508,
+        "bottom": 552,
+        "height": 44
+      },
+      "secondTop": 568,
+      "overflow": false,
+      "names": [
+        {
+          "label": "தீபக் குமார் — Deepak Kumar",
+          "source": "assets/img/New-section/Gemini_Generated_Image_bwaciobwaciobwac.png",
+          "bounds": {
+            "x": 77.640625,
+            "right": 242.359375
+          }
+        },
+        {
+          "label": "கோமதி — Gomathi",
+          "source": "assets/img/New-section/Gomathi.png",
+          "bounds": {
+            "x": 77.640625,
+            "right": 242.359375
+          }
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        }
+      ],
+      "skyPaused": false,
+      "depth": {
+        "temple": -19.2308,
+        "names": 200.2564
+      }
+    },
+    {
+      "outer": [
+        320,
+        844
+      ],
+      "frame": [
+        320,
+        844
+      ],
+      "hero": {
+        "width": 320,
+        "height": 844
+      },
+      "temple": {
+        "top": 320.71875,
+        "bottom": 945.796875,
+        "width": 413.546875,
+        "height": 625.078125
+      },
+      "captionBottom": 314.65625,
+      "next": {
+        "top": 784,
+        "bottom": 828,
+        "height": 44
+      },
+      "secondTop": 844,
+      "overflow": false,
+      "names": [
+        {
+          "label": "தீபக் குமார் — Deepak Kumar",
+          "source": "assets/img/New-section/Gemini_Generated_Image_bwaciobwaciobwac.png",
+          "bounds": {
+            "x": 57.59375,
+            "right": 262.390625
+          }
+        },
+        {
+          "label": "கோமதி — Gomathi",
+          "source": "assets/img/New-section/Gomathi.png",
+          "bounds": {
+            "x": 57.59375,
+            "right": 262.390625
+          }
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        }
+      ],
+      "skyPaused": false,
+      "depth": {
+        "temple": -12.931,
+        "names": 200.0862
+      }
+    },
+    {
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        390,
+        844
+      ],
+      "hero": {
+        "width": 390,
+        "height": 844
+      },
+      "temple": {
+        "top": 320.71875,
+        "bottom": 945.796875,
+        "width": 413.546875,
+        "height": 625.078125
+      },
+      "captionBottom": 351.484375,
+      "next": {
+        "top": 784,
+        "bottom": 828,
+        "height": 44
+      },
+      "secondTop": 844,
+      "overflow": false,
+      "names": [
+        {
+          "label": "தீபக் குமார் — Deepak Kumar",
+          "source": "assets/img/New-section/Gemini_Generated_Image_bwaciobwaciobwac.png",
+          "bounds": {
+            "x": 72.625,
+            "right": 317.375
+          }
+        },
+        {
+          "label": "கோமதி — Gomathi",
+          "source": "assets/img/New-section/Gomathi.png",
+          "bounds": {
+            "x": 72.625,
+            "right": 317.375
+          }
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        }
+      ],
+      "skyPaused": false,
+      "depth": {
+        "temple": -12.931,
+        "names": 200.0862
+      }
+    },
+    {
+      "outer": [
+        430,
+        932
+      ],
+      "frame": [
+        430,
+        932
+      ],
+      "hero": {
+        "width": 430,
+        "height": 932
+      },
+      "temple": {
+        "top": 354.15625,
+        "bottom": 1044.421875,
+        "width": 456.671875,
+        "height": 690.265625
+      },
+      "captionBottom": 387.28125,
+      "next": {
+        "top": 870.8125,
+        "bottom": 914.8125,
+        "height": 44
+      },
+      "secondTop": 932,
+      "overflow": false,
+      "names": [
+        {
+          "label": "தீபக் குமார் — Deepak Kumar",
+          "source": "assets/img/New-section/Gemini_Generated_Image_bwaciobwaciobwac.png",
+          "bounds": {
+            "x": 79.859375,
+            "right": 350.125
+          }
+        },
+        {
+          "label": "கோமதி — Gomathi",
+          "source": "assets/img/New-section/Gomathi.png",
+          "bounds": {
+            "x": 79.859375,
+            "right": 350.125
+          }
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        }
+      ],
+      "skyPaused": false,
+      "depth": {
+        "temple": -11.6959,
+        "names": 199.844
+      }
+    },
+    {
+      "outer": [
+        768,
+        1024
+      ],
+      "frame": [
+        576,
+        1024
+      ],
+      "hero": {
+        "width": 576,
+        "height": 1024
+      },
+      "temple": {
+        "top": 389.109375,
+        "bottom": 1259.75,
+        "width": 576,
+        "height": 870.640625
+      },
+      "captionBottom": 427.84375,
+      "next": {
+        "top": 956.96875,
+        "bottom": 1000.96875,
+        "height": 44
+      },
+      "secondTop": 1024,
+      "overflow": false,
+      "names": [
+        {
+          "label": "தீபக் குமார் — Deepak Kumar",
+          "source": "assets/img/New-section/Gemini_Generated_Image_bwaciobwaciobwac.png",
+          "bounds": {
+            "x": 139.515625,
+            "right": 436.46875
+          }
+        },
+        {
+          "label": "கோமதி — Gomathi",
+          "source": "assets/img/New-section/Gomathi.png",
+          "bounds": {
+            "x": 139.515625,
+            "right": 436.46875
+          }
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        }
+      ],
+      "skyPaused": false,
+      "depth": {
+        "temple": -10.6572,
+        "names": 200.0711
+      }
+    },
+    {
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        506,
+        900
+      ],
+      "hero": {
+        "width": 506,
+        "height": 900
+      },
+      "temple": {
+        "top": 342,
+        "bottom": 1106.828125,
+        "width": 506,
+        "height": 764.828125
+      },
+      "captionBottom": 377.53125,
+      "next": {
+        "top": 835.765625,
+        "bottom": 879.765625,
+        "height": 44
+      },
+      "secondTop": 900,
+      "overflow": false,
+      "names": [
+        {
+          "label": "தீபக் குமார் — Deepak Kumar",
+          "source": "assets/img/New-section/Gemini_Generated_Image_bwaciobwaciobwac.png",
+          "bounds": {
+            "x": 122.5,
+            "right": 383.5
+          }
+        },
+        {
+          "label": "கோமதி — Gomathi",
+          "source": "assets/img/New-section/Gomathi.png",
+          "bounds": {
+            "x": 122.5,
+            "right": 383.5
+          }
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        }
+      ],
+      "skyPaused": false,
+      "depth": {
+        "temple": -20.202,
+        "names": 200
+      }
+    },
+    {
+      "outer": [
+        844,
+        390
+      ],
+      "frame": [
+        219,
+        390
+      ],
+      "hero": {
+        "width": 219,
+        "height": 390
+      },
+      "temple": {
+        "top": 148.1875,
+        "bottom": 479.203125,
+        "width": 219,
+        "height": 331.015625
+      },
+      "captionBottom": 171.984375,
+      "next": {
+        "top": 330,
+        "bottom": 374,
+        "height": 44
+      },
+      "secondTop": 390,
+      "overflow": false,
+      "names": [
+        {
+          "label": "தீபக் குமார் — Deepak Kumar",
+          "source": "assets/img/New-section/Gemini_Generated_Image_bwaciobwaciobwac.png",
+          "bounds": {
+            "x": 52.953125,
+            "right": 166.046875
+          }
+        },
+        {
+          "label": "கோமதி — Gomathi",
+          "source": "assets/img/New-section/Gomathi.png",
+          "bounds": {
+            "x": 52.953125,
+            "right": 166.046875
+          }
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        }
+      ],
+      "skyPaused": false,
+      "depth": {
+        "temple": -46.5116,
+        "names": 199.5349
+      }
+    },
+    {
+      "outer": [
+        390,
+        320
+      ],
+      "frame": [
+        390,
+        320
+      ],
+      "hero": {
+        "width": 390,
+        "height": 320
+      },
+      "temple": {
+        "top": 121.59375,
+        "bottom": 711.09375,
+        "width": 390,
+        "height": 589.5
+      },
+      "captionBottom": 156.765625,
+      "next": {
+        "top": 260,
+        "bottom": 304,
+        "height": 44
+      },
+      "secondTop": 320,
+      "overflow": false,
+      "names": [
+        {
+          "label": "தீபக் குமார் — Deepak Kumar",
+          "source": "assets/img/New-section/Gemini_Generated_Image_bwaciobwaciobwac.png",
+          "bounds": {
+            "x": 148.59375,
+            "right": 241.390625
+          }
+        },
+        {
+          "label": "கோமதி — Gomathi",
+          "source": "assets/img/New-section/Gomathi.png",
+          "bounds": {
+            "x": 148.59375,
+            "right": 241.390625
+          }
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        }
+      ],
+      "skyPaused": false,
+      "depth": {
+        "temple": -30,
+        "names": 200
+      }
+    },
+    {
+      "outer": [
+        390,
+        660
+      ],
+      "frame": [
+        390,
+        660
+      ],
+      "hero": {
+        "width": 390,
+        "height": 660
+      },
+      "temple": {
+        "top": 250.796875,
+        "bottom": 840.296875,
+        "width": 390,
+        "height": 589.5
+      },
+      "captionBottom": 278.96875,
+      "next": {
+        "top": 600,
+        "bottom": 644,
+        "height": 44
+      },
+      "secondTop": 660,
+      "overflow": false,
+      "names": [
+        {
+          "label": "தீபக் குமார் — Deepak Kumar",
+          "source": "assets/img/New-section/Gemini_Generated_Image_bwaciobwaciobwac.png",
+          "bounds": {
+            "x": 99.296875,
+            "right": 290.6875
+          }
+        },
+        {
+          "label": "கோமதி — Gomathi",
+          "source": "assets/img/New-section/Gomathi.png",
+          "bounds": {
+            "x": 99.296875,
+            "right": 290.6875
+          }
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        }
+      ],
+      "skyPaused": false,
+      "depth": {
+        "temple": -16.5289,
+        "names": 200
+      }
+    },
+    {
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        390,
+        844
+      ],
+      "hero": {
+        "width": 390,
+        "height": 844
+      },
+      "temple": {
+        "top": 320.71875,
+        "bottom": 945.796875,
+        "width": 413.546875,
+        "height": 625.078125
+      },
+      "captionBottom": 351.484375,
+      "next": {
+        "top": 784,
+        "bottom": 828,
+        "height": 44
+      },
+      "secondTop": 844,
+      "overflow": false,
+      "names": [
+        {
+          "label": "தீபக் குமார் — Deepak Kumar",
+          "source": "assets/img/New-section/Gemini_Generated_Image_bwaciobwaciobwac.png",
+          "bounds": {
+            "x": 72.625,
+            "right": 317.375
+          }
+        },
+        {
+          "label": "கோமதி — Gomathi",
+          "source": "assets/img/New-section/Gomathi.png",
+          "bounds": {
+            "x": 72.625,
+            "right": 317.375
+          }
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Temple Tamil",
+          "status": "loaded"
+        }
+      ],
+      "skyPaused": false,
+      "depth": {
+        "temple": -12.931,
+        "names": 200.0862
+      }
+    }
+  ],
+  "reducedMotion": true,
+  "noJavaScript": true,
+  "errors": []
+}

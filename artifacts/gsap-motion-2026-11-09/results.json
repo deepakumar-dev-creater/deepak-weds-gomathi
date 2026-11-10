@@ -1,0 +1,216 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "name": "GSAP-only scene lifecycle 320x844",
+      "passed": true,
+      "evidence": {
+        "initial": {
+          "version": "3.15.1",
+          "triggers": 16,
+          "cloudDuration": 24,
+          "cloud": {
+            "id": "temple-clouds",
+            "xPercent": 2,
+            "yPercent": 0.5,
+            "scale": 1.08,
+            "duration": 24,
+            "repeat": -1,
+            "yoyo": true,
+            "immediateRender": true,
+            "startAt": {
+              "xPercent": -2,
+              "yPercent": -0.5,
+              "scale": 1.08
+            },
+            "overwrite": false,
+            "delay": 0
+          },
+          "cssAnimations": 0
+        },
+        "depth": {
+          "temple": -17.1429,
+          "names": 199.8286,
+          "limit": 30
+        },
+        "reduced": {
+          "transform": "none",
+          "cssAnimations": 0,
+          "activeTweens": 0
+        },
+        "finalCount": 2,
+        "resized": {
+          "y": -50,
+          "cap": 50,
+          "overflow": false
+        },
+        "once": true
+      }
+    },
+    {
+      "name": "GSAP-only scene lifecycle 390x844",
+      "passed": true,
+      "evidence": {
+        "initial": {
+          "version": "3.15.1",
+          "triggers": 16,
+          "cloudDuration": 24,
+          "cloud": {
+            "id": "temple-clouds",
+            "xPercent": 2,
+            "yPercent": 0.5,
+            "scale": 1.08,
+            "duration": 24,
+            "repeat": -1,
+            "yoyo": true,
+            "immediateRender": true,
+            "startAt": {
+              "xPercent": -2,
+              "yPercent": -0.5,
+              "scale": 1.08
+            },
+            "overwrite": false,
+            "delay": 0
+          },
+          "cssAnimations": 0
+        },
+        "depth": {
+          "temple": -14.0845,
+          "names": 199.8826,
+          "limit": 30
+        },
+        "reduced": {
+          "transform": "none",
+          "cssAnimations": 0,
+          "activeTweens": 0
+        },
+        "finalCount": 2,
+        "resized": {
+          "y": -50,
+          "cap": 50,
+          "overflow": false
+        },
+        "once": true
+      }
+    },
+    {
+      "name": "GSAP-only scene lifecycle 768x1024",
+      "passed": true,
+      "evidence": {
+        "initial": {
+          "version": "3.15.1",
+          "triggers": 16,
+          "cloudDuration": 24,
+          "cloud": {
+            "id": "temple-clouds",
+            "xPercent": 2,
+            "yPercent": 0.5,
+            "scale": 1.08,
+            "duration": 24,
+            "repeat": -1,
+            "yoyo": true,
+            "immediateRender": true,
+            "startAt": {
+              "xPercent": -2,
+              "yPercent": -0.5,
+              "scale": 1.08
+            },
+            "overwrite": false,
+            "delay": 0
+          },
+          "cssAnimations": 0
+        },
+        "depth": {
+          "temple": -10.6572,
+          "names": 200.0711,
+          "limit": 30
+        },
+        "reduced": {
+          "transform": "none",
+          "cssAnimations": 0,
+          "activeTweens": 0
+        },
+        "finalCount": 2,
+        "resized": {
+          "y": -44.405,
+          "cap": 50,
+          "overflow": false
+        },
+        "once": true
+      }
+    },
+    {
+      "name": "GSAP-only scene lifecycle 1440x900",
+      "passed": true,
+      "evidence": {
+        "initial": {
+          "version": "3.15.1",
+          "triggers": 16,
+          "cloudDuration": 24,
+          "cloud": {
+            "id": "temple-clouds",
+            "xPercent": 2,
+            "yPercent": 0.5,
+            "scale": 1.08,
+            "duration": 24,
+            "repeat": -1,
+            "yoyo": true,
+            "immediateRender": true,
+            "startAt": {
+              "xPercent": -2,
+              "yPercent": -0.5,
+              "scale": 1.08
+            },
+            "overwrite": false,
+            "delay": 0
+          },
+          "cssAnimations": 0
+        },
+        "depth": {
+          "temple": -20.202,
+          "names": 200,
+          "limit": 50
+        },
+        "reduced": {
+          "transform": "none",
+          "cssAnimations": 0,
+          "activeTweens": 0
+        },
+        "finalCount": 2,
+        "resized": {
+          "y": -30,
+          "cap": 30,
+          "overflow": false
+        },
+        "once": true
+      }
+    },
+    {
+      "name": "Missing GSAP leaves readable static invitation and a still blessing",
+      "passed": true,
+      "evidence": {
+        "staticContent": true,
+        "flowers": 3,
+        "errors": []
+      }
+    },
+    {
+      "name": "Missing ScrollTrigger leaves sections static and GSAP shower usable",
+      "passed": true,
+      "evidence": {
+        "staticSections": true,
+        "gsapShower": true
+      }
+    },
+    {
+      "name": "No Web Animations API dependency; paused player and GSAP bars stay paused",
+      "passed": true,
+      "evidence": {
+        "nativeAnimateUnavailable": true,
+        "gsapShower": true,
+        "pausedMusic": true,
+        "pausedBars": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "passed": true,
+  "mode": "headed Chromium, virtual display, direct file, no HTTP server",
+  "headless": false,
+  "headlessFlagPresent": false,
+  "display": ":99",
+  "tests": [
+    {
+      "name": "Headed hierarchy/contrast/keyboard 320x568",
+      "passed": true,
+      "metrics": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568,
+          "right": 320,
+          "bottom": 568
+        },
+        "banner": {
+          "x": 60.59375,
+          "y": 59.625,
+          "width": 198.796875,
+          "height": 137.75,
+          "right": 259.390625,
+          "bottom": 197.375
+        },
+        "caption": {
+          "x": 16,
+          "y": 212.375,
+          "width": 288,
+          "height": 18,
+          "right": 304,
+          "bottom": 230.375,
+          "font": 12,
+          "color": "rgb(255, 243, 225)",
+          "ink": {
+            "x": 70.53125,
+            "y": 211.375,
+            "width": 178.921875,
+            "height": 19
+          },
+          "sampledContrast": 4.8
+        },
+        "next": {
+          "x": 97.171875,
+          "y": 503,
+          "width": 125.65625,
+          "height": 44,
+          "right": 222.828125,
+          "bottom": 547
+        },
+        "music": {
+          "x": 252,
+          "y": 500,
+          "width": 50,
+          "height": 50,
+          "right": 302,
+          "bottom": 550
+        },
+        "labelVisible": true,
+        "heading": "தீபக் குமார் மற்றும் கோமதி — Deepak Kumar & Gomathi",
+        "bannerHidden": "true",
+        "headingLink": "entrance-title",
+        "overflow": false,
+        "devotionalContrast": 4.93,
+        "contrastDriftPhases": [
+          0,
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "name": "Headed hierarchy/contrast/keyboard 390x844",
+      "passed": true,
+      "metrics": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "right": 390,
+          "bottom": 844
+        },
+        "banner": {
+          "x": 50.703125,
+          "y": 88.609375,
+          "width": 288.59375,
+          "height": 199.984375,
+          "right": 339.296875,
+          "bottom": 288.59375
+        },
+        "caption": {
+          "x": 19.5,
+          "y": 304.390625,
+          "width": 351,
+          "height": 18,
+          "right": 370.5,
+          "bottom": 322.390625,
+          "font": 12,
+          "color": "rgb(255, 243, 225)",
+          "ink": {
+            "x": 105.53125,
+            "y": 303.390625,
+            "width": 178.921875,
+            "height": 19
+          },
+          "sampledContrast": 5.21
+        },
+        "next": {
+          "x": 132.171875,
+          "y": 779,
+          "width": 125.65625,
+          "height": 44,
+          "right": 257.828125,
+          "bottom": 823
+        },
+        "music": {
+          "x": 322,
+          "y": 776,
+          "width": 50,
+          "height": 50,
+          "right": 372,
+          "bottom": 826
+        },
+        "labelVisible": true,
+        "heading": "தீபக் குமார் மற்றும் கோமதி — Deepak Kumar & Gomathi",
+        "bannerHidden": "true",
+        "headingLink": "entrance-title",
+        "overflow": false,
+        "devotionalContrast": 4.95,
+        "contrastDriftPhases": [
+          0,
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "name": "Headed hierarchy/contrast/keyboard 768x1024",
+      "passed": true,
+      "metrics": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 576,
+          "height": 1024,
+          "right": 576,
+          "bottom": 1024
+        },
+        "banner": {
+          "x": 108.796875,
+          "y": 107.515625,
+          "width": 358.390625,
+          "height": 248.34375,
+          "right": 467.1875,
+          "bottom": 355.859375
+        },
+        "caption": {
+          "x": 28.796875,
+          "y": 372.453125,
+          "width": 518.390625,
+          "height": 21,
+          "right": 547.1875,
+          "bottom": 393.453125,
+          "font": 14,
+          "color": "rgb(255, 243, 225)",
+          "ink": {
+            "x": 183.625,
+            "y": 371.453125,
+            "width": 208.734375,
+            "height": 22
+          },
+          "sampledContrast": 5.19
+        },
+        "next": {
+          "x": 225.171875,
+          "y": 959,
+          "width": 125.65625,
+          "height": 44,
+          "right": 350.828125,
+          "bottom": 1003
+        },
+        "music": {
+          "x": 508,
+          "y": 956,
+          "width": 50,
+          "height": 50,
+          "right": 558,
+          "bottom": 1006
+        },
+        "labelVisible": true,
+        "heading": "தீபக் குமார் மற்றும் கோமதி — Deepak Kumar & Gomathi",
+        "bannerHidden": "true",
+        "headingLink": "entrance-title",
+        "overflow": false,
+        "devotionalContrast": 4.88,
+        "contrastDriftPhases": [
+          0,
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "name": "Headed hierarchy/contrast/keyboard 1440x900",
+      "passed": true,
+      "metrics": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 506,
+          "height": 900,
+          "right": 506,
+          "bottom": 900
+        },
+        "banner": {
+          "x": 95.5,
+          "y": 94.5,
+          "width": 315,
+          "height": 218.28125,
+          "right": 410.5,
+          "bottom": 312.78125
+        },
+        "caption": {
+          "x": 25.296875,
+          "y": 328.828125,
+          "width": 455.390625,
+          "height": 19.734375,
+          "right": 480.6875,
+          "bottom": 348.5625,
+          "font": 13.156,
+          "color": "rgb(255, 243, 225)",
+          "ink": {
+            "x": 155.03125,
+            "y": 327.828125,
+            "width": 195.921875,
+            "height": 20
+          },
+          "sampledContrast": 5.12
+        },
+        "next": {
+          "x": 190.171875,
+          "y": 835,
+          "width": 125.65625,
+          "height": 44,
+          "right": 315.828125,
+          "bottom": 879
+        },
+        "music": {
+          "x": 438,
+          "y": 832,
+          "width": 50,
+          "height": 50,
+          "right": 488,
+          "bottom": 882
+        },
+        "labelVisible": true,
+        "heading": "தீபக் குமார் மற்றும் கோமதி — Deepak Kumar & Gomathi",
+        "bannerHidden": "true",
+        "headingLink": "entrance-title",
+        "overflow": false,
+        "devotionalContrast": 4.95,
+        "contrastDriftPhases": [
+          0,
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "name": "Headed hierarchy/contrast/keyboard 844x390",
+      "passed": true,
+      "metrics": {
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 219,
+          "height": 390,
+          "right": 219,
+          "bottom": 390
+        },
+        "banner": {
+          "x": 49.046875,
+          "y": 52,
+          "width": 120.890625,
+          "height": 83.765625,
+          "right": 169.9375,
+          "bottom": 135.765625
+        },
+        "caption": {
+          "x": 4.375,
+          "y": 143.765625,
+          "width": 210.234375,
+          "height": 13.5,
+          "right": 214.609375,
+          "bottom": 157.265625,
+          "font": 9,
+          "color": "rgb(255, 243, 225)",
+          "ink": {
+            "x": 42.390625,
+            "y": 142.765625,
+            "width": 134.1875,
+            "height": 14
+          },
+          "sampledContrast": 4.86
+        },
+        "next": {
+          "x": 87.5,
+          "y": 325,
+          "width": 44,
+          "height": 44,
+          "right": 131.5,
+          "bottom": 369
+        },
+        "music": {
+          "x": 151,
+          "y": 322,
+          "width": 50,
+          "height": 50,
+          "right": 201,
+          "bottom": 372
+        },
+        "labelVisible": false,
+        "heading": "தீபக் குமார் மற்றும் கோமதி — Deepak Kumar & Gomathi",
+        "bannerHidden": "true",
+        "headingLink": "entrance-title",
+        "overflow": false,
+        "devotionalContrast": 4.92,
+        "contrastDriftPhases": [
+          0,
+          0.5,
+          1
+        ]
+      }
+    },
+    {
+      "name": "Headed live scroll, focus, anchor, audio continuity and reduced motion recording",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "x": 0,
+    "y": 0,
+    "width": 390,
+    "height": 844,
+    "top": 0,
+    "right": 390,
+    "bottom": 844,
+    "left": 0
+  },
+  "banner": {
+    "x": 62.40625,
+    "y": 88.609375,
+    "width": 265.1875,
+    "height": 183.765625,
+    "top": 88.609375,
+    "right": 327.59375,
+    "bottom": 272.375,
+    "left": 62.40625
+  },
+  "caption": {
+    "rect": {
+      "x": 19.5,
+      "y": 288.171875,
+      "width": 351,
+      "height": 15,
+      "top": 288.171875,
+      "right": 370.5,
+      "bottom": 303.171875,
+      "left": 19.5
+    },
+    "font": "10px",
+    "color": "rgb(255, 240, 203)"
+  },
+  "next": {
+    "rect": {
+      "x": 173,
+      "y": 784,
+      "width": 44,
+      "height": 44,
+      "top": 784,
+      "right": 217,
+      "bottom": 828,
+      "left": 173
+    },
+    "text": ""
+  },
+  "h1": "தீபக் குமார் மற்றும் கோமதி — Deepak Kumar & Gomathi",
+  "accessibleBanner": "img",
+  "svgLabel": "தீபக் குமார் மற்றும் கோமதி — Deepak Kumar & Gomathi"
+}

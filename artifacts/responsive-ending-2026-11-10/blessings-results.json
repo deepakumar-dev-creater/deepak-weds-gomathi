@@ -1,0 +1,153 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "name": "Flower shower, rapid taps, repeat and keyboard 320x844",
+      "passed": true,
+      "evidence": {
+        "target": {
+          "x": 35,
+          "y": 591.578125,
+          "width": 250,
+          "height": 48
+        },
+        "count": 16,
+        "rapidTapGuard": true,
+        "cleanup": true,
+        "repeatByKeyboard": true,
+        "audioStayedPaused": true
+      }
+    },
+    {
+      "name": "Flower shower, rapid taps, repeat and keyboard 390x844",
+      "passed": true,
+      "evidence": {
+        "target": {
+          "x": 70,
+          "y": 611.375,
+          "width": 250,
+          "height": 48
+        },
+        "count": 16,
+        "rapidTapGuard": true,
+        "cleanup": true,
+        "repeatByKeyboard": true,
+        "audioStayedPaused": true
+      }
+    },
+    {
+      "name": "Flower shower, rapid taps, repeat and keyboard 768x1024",
+      "passed": true,
+      "evidence": {
+        "target": {
+          "x": 259,
+          "y": 720.921875,
+          "width": 250,
+          "height": 48
+        },
+        "count": 16,
+        "rapidTapGuard": true,
+        "cleanup": true,
+        "repeatByKeyboard": true,
+        "audioStayedPaused": true
+      }
+    },
+    {
+      "name": "Flower shower, rapid taps, repeat and keyboard 1440x900",
+      "passed": true,
+      "evidence": {
+        "target": {
+          "x": 594.875,
+          "y": 652.671875,
+          "width": 250,
+          "height": 48
+        },
+        "count": 16,
+        "rapidTapGuard": true,
+        "cleanup": true,
+        "repeatByKeyboard": true,
+        "audioStayedPaused": true
+      }
+    },
+    {
+      "name": "Reduced motion uses still flowers and a polite acknowledgement",
+      "passed": true,
+      "evidence": {
+        "staticFlowers": 3,
+        "animations": 0,
+        "keyboardSpace": true
+      }
+    },
+    {
+      "name": "Resize, scrolling away, and changing motion preference cancel cleanly",
+      "passed": true,
+      "evidence": {
+        "resize": true,
+        "offscreen": true,
+        "preferenceChange": true
+      }
+    },
+    {
+      "name": "Playing music continues through a flower shower",
+      "passed": true,
+      "evidence": {
+        "playing": true,
+        "audioCount": 1
+      }
+    },
+    {
+      "name": "Unavailable GSAP fallback and JavaScript-disabled invitation",
+      "passed": true,
+      "evidence": {
+        "staticFallback": true,
+        "noJsButtonHidden": true
+      }
+    },
+    {
+      "name": "Prepared flower sheet has real alpha; original remains unchanged",
+      "passed": true,
+      "evidence": {
+        "prepared": {
+          "width": 1451,
+          "height": 1084,
+          "corner": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "flower": [
+            143,
+            89,
+            38,
+            253
+          ]
+        },
+        "original": {
+          "width": 2400,
+          "height": 1792,
+          "corner": [
+            24,
+            26,
+            21,
+            255
+          ],
+          "flower": [
+            137,
+            84,
+            34,
+            255
+          ]
+        }
+      }
+    },
+    {
+      "name": "Missing flower artwork leaves the original invitation readable",
+      "passed": true,
+      "evidence": {
+        "hiddenUntilArtworkReady": true,
+        "staticBlessingVisible": true
+      }
+    }
+  ]
+}

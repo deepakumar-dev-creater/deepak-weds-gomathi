@@ -18,7 +18,7 @@ async function open(options = {}, framed = true, setup) {
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
   if (setup) await setup(page);
-  await page.goto(framed ? base + '/' : base + '/invite.html?standalone=true', { waitUntil: 'domcontentloaded' });
+  await page.goto(framed ? base + '/index.html' : base + '/invite.html?standalone=true', { waitUntil: 'domcontentloaded' });
   const frame = framed ? await (await page.locator('iframe').elementHandle()).contentFrame() : page;
   if (options.javaScriptEnabled !== false) {
     await frame.waitForSelector('.mp-btn');
@@ -36,7 +36,7 @@ async function ready(frame) {
   await frame.waitForFunction(() => document.querySelector('#blessings-button').getAttribute('aria-disabled') === 'false');
 }
 (async () => {
-  browser = await chromium.launch({ ...(process.env.CHROMIUM_EXECUTABLE ? { executablePath: process.env.CHROMIUM_EXECUTABLE } : {}), args: ['--no-sandbox'] });
+  browser = await chromium.launch({ headless:process.env.QA_HEADED!=='1', ...(process.env.CHROMIUM_EXECUTABLE ? { executablePath: process.env.CHROMIUM_EXECUTABLE } : {}), args: ['--no-sandbox',...(base.startsWith('file:')?['--allow-file-access-from-files']:[])] });
   try {
     for (const [width, height] of [[320,844],[390,844],[768,1024],[1440,900]]) {
       await step(`Flower shower, rapid taps, repeat and keyboard ${width}x${height}`, async () => {
@@ -108,8 +108,8 @@ async function ready(frame) {
         return { playing:true, audioCount:1 };
       } finally { await page.close(); }
     });
-    await step('Animation API fallback and JavaScript-disabled invitation', async () => {
-      const { page, frame } = await open({viewport:{width:390,height:844}},false,p=>p.addInitScript(()=>{Element.prototype.animate=undefined;}));
+    await step('Unavailable GSAP fallback and JavaScript-disabled invitation', async () => {
+      const { page, frame } = await open({viewport:{width:390,height:844}},false,p=>p.route('**/assets/vendor/gsap/gsap.min.js', route=>route.abort()));
       try { await position(frame); await frame.locator('#blessings-button').click(); assert.equal(await frame.locator('.blessing-petal').count(),3); await ready(frame); }
       finally { await page.close(); }
       const plain = await open({viewport:{width:390,height:844},javaScriptEnabled:false},false);

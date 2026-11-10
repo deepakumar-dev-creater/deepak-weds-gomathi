@@ -4,11 +4,11 @@ The first section follows the supplied blue-sky and antique-gold reference, with
 
 ## Composition
 
-Ganesha → small devotional HTML blessing → Deepak Kumar → the supplied gold Tamil ribbon → Gomathi → Tamil invitation caption → existing temple and foreground foliage. Both names are HTML in the same locally hosted Tiro Tamil Italic face, with identical gold gradients, shadows, type size, and English label styling. Tamil and English appear together; there is no language switch.
+Ganesha → small devotional HTML blessing → the supplied combined gold Tamil/English name banner → short Tamil invitation caption → existing temple and foreground foliage. `Golden Tamil Wedding Name Banner.png` now replaces the separate Deepak and Gomathi images and live connector. A semantic HTML heading names the hero region; the duplicate banner image is decorative to avoid repeating the names to screen readers. There is no language switch.
 
-The hero remains 1.68 times its actual iframe width. Ganesha is 5.5 container-width units wide; the devotional text remains a quiet 7–9px. Both Tamil names use 8 container-width units. The supplied ribbon keeps its compact footprint; its SVG view box focuses on the central ribbon and word instead of the distant side flourishes. The invitation caption uses live Noto Serif Tamil text at 10–14px for clearer small lettering.
+The hero fills the actual iframe viewport using `100dvh`, with a `100vh` fallback. Ganesha and the devotional line remain small. The combined banner width is capped by both the container width and height to fit short and tall screens. Its intrinsic lettering, ribbon, and ornaments remain a single proportional composition. The invitation caption uses live Noto Serif Tamil text at 12–14px on normal frames, with a 9px compact treatment in very narrow frames.
 
-The temple starts at 53 container-width units, three units higher than before the audit refinements. This reduces the visual gap beneath the caption. The existing music control retains its 50px touch target and keyboard focus outline, with a quieter maroon surface, thin gold border, and softer shadow. Original source assets remain untouched.
+The temple starts at 36% of the hero height and uses the larger of the available width and 49% of the hero height for its width. Its intrinsic aspect ratio is preserved; excess lower artwork is cropped by the hero, with foliage covering the bottom. This fills tall screens without vertically stretching the tower. The existing music control retains its 50px touch target and keyboard focus outline, with a quieter maroon surface, thin gold border, and softer shadow. Original source assets remain untouched.
 
 Typography and placement use container units, preserving proportions inside the existing desktop portrait iframe and on phones. A semantic HTML heading preserves the couple’s names for assistive technology. Font licenses are included.
 
@@ -20,35 +20,35 @@ Original files in `assets/img/New-section/` remain untouched. Five complete imag
 | --- | --- | --- |
 | `ddrzq0ddrzq0ddrz.png` | `web/ganesha.webp` | Ganesha ornament |
 | `nwupc8nwupc8nwup.png` | `web/blessing.webp` | Retained derivative; replaced in the UI by crisp HTML text |
-| `4wqjkt4wqjkt4wqj.png` | `web/groom.webp` | Retained derivative; both names now use matching HTML typography |
-| `h8auslh8auslh8au.png` | `web/ribbon.webp` | Supplied ornate “மற்றும்” ribbon, replacing the CSS ribbon |
+| `4wqjkt4wqjkt4wqj.png` | `web/groom.webp` | Retained derivative; replaced by the newly requested Deepak artwork |
+| `h8auslh8auslh8au.png` | `web/ribbon.webp` | Retained artwork; replaced in the hero by a quiet HTML connector |
 | `pmpjt0pmpjt0pmpj.png` | `web/invitation.webp` | Retained derivative; caption now uses crisp HTML Tamil |
 | `lt5voylt5voylt5v.png` | unused | Alternate blessing with duplicated lines |
-| `bwaciobwaciobwac.png` | unused | Alternate Deepak lettering |
+| `bwaciobwaciobwac.png` | retained source | Previous separate Deepak lettering; no longer used in the hero |
+| `Gomathi.png` | retained source | Previous separate Gomathi lettering; no longer used in the hero |
+| `Golden Tamil Wedding Name Banner.png` | original PNG | Current combined lettering; SVG crop `240 0 1280 887`, preserving original alpha |
 
 Existing artwork: `xZKlIX9XaacbmAvyKmu8rqVXE.webp` (sky), `J6YiMAQTDPTAlfG2On7An1Q5lB4.webp` (temple), `VrdsdVM2OwyjQkw6YWOB0OowTQ.webp` (trees).
 
 ## Motion and controls
 
-The sky alternates over 24 seconds with ease-in-out, ±2% horizontal and ±0.5% vertical motion, at scale 1.08. An IntersectionObserver pauses it offscreen. The names, ribbon, and invitation caption move together in a dedicated parallax layer.
+All active decorative motion is now implemented with locally hosted GSAP 3.15.1 and ScrollTrigger. `temple-hero.js` owns the sky and layered entrance; `wedding-theme.js` owns one-time section choreography, the wedding-thread trace, and music bars; `blessings.js` owns the guest-triggered shower and seal bloom. Native scroll timelines, CSS keyframes for the active scene, WAAPI petal animation, and the legacy perpetual animation polling loop have been removed.
 
-Scroll parallax runs on desktop and mobile. Native root scroll timelines avoid the legacy template’s nested overflow containers. The range is 65% of the hero height or 55% of the viewport height, whichever is smaller, with a 200px minimum. The sky moves down by up to 18px on desktop / 10px on mobile, while the temple rises by up to 50px / 30px. Trees rise by up to 30px / 18px.
+The sky alternates over 24 seconds with the original CSS ease-in-out curve, ±2% horizontal and ±0.5% vertical motion, at scale 1.08. IntersectionObserver and page visibility pause its GSAP tween offscreen and in background tabs. ScrollTrigger uses the iframe’s own window without pinning, scroll locking, or smoothing. The parallax range remains 65% of the hero height or 55% of the viewport height, whichever is smaller, with a 200px minimum. The sky moves down by up to 18px on desktop / 10px on mobile, while the temple rises by up to 50px / 30px. Trees rise by up to 30px / 18px. The name group moves down by that range so the opaque temple covers the lettering as before.
 
-The name group translates down by the scroll distance over that range, keeping the names in view as the temple rises in front of them. The temple is above the name group in the stacking order, so its opaque artwork physically covers the lettering during the scroll. Trees remain above both. The names, ribbon, and invitation caption share one wrapper to preserve spacing and centering. This is ordinary scrolling with no scroll lock or pinned section.
+The small gold kolam ornaments draw once. Invitation groups enter with restrained 14px motion, celebrations reveal their marker, heading, details, and illustration in sequence, and a maroon thread traces the existing timeline. In the closing alcove, the arch, jasmine crest, couple, lamps, and signature enter as a coordinated scene. Essential text is visible in static HTML and remains readable if either library fails. Focusing an in-progress entrance completes it immediately.
 
-Browsers without native timelines use a passive scroll listener scheduling one animation frame only when needed. Reduced motion disables all parallax and sky drift and presents the original readable name arrangement. Distances update after viewport and preference changes. No animation library is required.
-
-The existing music player now has a dedicated persistent host and English accessible play/pause labels. Its existing autoplay and interaction retry behavior is retained. The chevron links to the original formal invitation; keyboard focus is visible.
+GSAP matchMedia reverts all decorative scene and scroll animations when reduced motion is enabled. The flower button then uses three stationary petals and the same acknowledgement. Resize refreshes measured scroll ranges, including changes to the outer viewport while the portrait iframe retains its width. The persistent music player still owns actual playback; its GSAP bars pause with music or page visibility. English accessible music labels and focus visibility remain intact.
 
 ## Files and hosting
 
-`invite.html` contains the entrance markup; `temple-hero.css` and `temple-hero.js` scope its appearance and motion. All assets use relative paths. GitHub Pages serves these files directly with no framework or build step. Include the two new files, fonts, and `New-section/web/` alongside the existing site when deploying. No publishing, committing, or pushing is performed here.
+`invite.html` contains the entrance markup; `temple-hero.css` and `temple-hero.js` scope its appearance and motion. All assets use relative paths. GitHub Pages serves these files directly with no framework or build step. Include the entrance/theme/closing scripts and styles, `blessings.js`, local fonts, artwork, and the two `assets/vendor/gsap/` browser distributions when deploying. No publishing, committing, or pushing is performed here.
 
 Review screenshots and browser-check results are in `artifacts/temple-hero/`.
 
 ## Verification
 
-Chromium screenshots were inspected at 320×844, 390×844, 768×1024, and 1440×900. Checks passed for horizontal overflow, local Tamil font loading, one persistent audio element, bilingual music labels, manual pause after another interaction, and desktop scroll transforms. Scroll transforms for both the name group and temple were verified on mobile, tablet, and desktop. Reduced-motion changes stopped motion immediately. The event-driven fallback was also exercised with native scroll timelines disabled, including its reduced-motion state. Desktop → phone → desktop resizing recalculated eligibility correctly. Direct access, JavaScript-disabled rendering, and simulated GitHub Pages project-subpath asset loading passed. No page JavaScript errors were observed; JavaScript syntax checks passed. The existing reformatted invitation file has unrelated trailing-whitespace warnings; those lines were preserved.
+Chromium screenshots were inspected at 320×844, 390×844, 768×1024, and 1440×900. Checks passed for horizontal overflow, local Tamil font loading, one persistent audio element, bilingual music labels, manual pause after another interaction, and desktop scroll transforms. Scroll transforms for both the name group and temple were verified on mobile, tablet, and desktop. Reduced-motion changes stopped motion immediately. The current GSAP pass verifies readable static fallbacks when GSAP or ScrollTrigger is unavailable, as well as zero active decorative GSAP tweens and triggers in reduced-motion mode. Desktop → phone → desktop resizing recalculated eligibility correctly. Direct access, JavaScript-disabled rendering, and simulated GitHub Pages project-subpath asset loading passed. No page JavaScript errors were observed; JavaScript syntax checks passed. The existing reformatted invitation file has unrelated trailing-whitespace warnings; those lines were preserved.
 
 Autoplay succeeded in the test browser; browser-specific blocking policies still apply, with the existing player retrying after interaction. Browser QA used Chromium; other rendering engines were not exercised.
 
@@ -95,9 +95,9 @@ The closing section now uses semantic static HTML and `closing.css`, with a comp
 
 The four countdown units have single English labels and tabular numerals. `initClosingCountdown` in `site.js` consumes the existing wedding configuration and formats the target in Asia/Kolkata. The target remains `2027-03-12T06:00:00+05:30`. Before runtime initialization, guests see the real wedding date and time; the timer stays hidden instead of presenting false zeros. The date, blessings, artwork, and credits remain readable with JavaScript disabled. At the target, the timer is replaced by an English wedding-day message and heading; its interval stops. Seconds are not announced as a live region.
 
-The artwork scene uses the original `sdAKyTg4o5WmZhgAcUR0DbKY-1024.webp` couple cutout, keeping its intrinsic proportions. The former sky and full-height temple/lotus backdrop remain in the asset directory but are no longer downloaded by the closing section. A static clip excludes extraneous edge pixels on the couple cutout. The couple no longer uses the legacy document-scroll offset or negative positioning, so normal motion, reduced motion, and static access show the same composition. No decorative movement was added to this closing scene; the approved entrance parallax and persistent music player remain intact.
+The artwork scene uses the original `sdAKyTg4o5WmZhgAcUR0DbKY-1024.webp` couple cutout, keeping its intrinsic proportions. The former sky and full-height temple/lotus backdrop remain in the asset directory but are no longer downloaded by the closing section. A static clip excludes extraneous edge pixels on the couple cutout. The couple no longer uses the legacy document-scroll offset or negative positioning, so normal motion, reduced motion, and static access show the same composition. Its one-time GSAP entrance coordinates the arch, jasmine crest, couple, lamps, and signature; reduced motion shows their final positions immediately. The approved entrance parallax and persistent music player remain intact.
 
-The closing footer contains one Tamil blessing and a short English personal sign-off, with bottom clearance for the floating music control. The compliments credit was removed. Arun Nagarajan’s copyright is the last line, outside the main reading footer, at 6px in a faint color as explicitly requested. It adds no repeated venue logistics or new guest actions.
+The closing footer contains one Tamil blessing and a short English personal sign-off, with bottom clearance for the floating music control. The compliments credit was removed. Arun Nagarajan’s copyright is the last line, outside the main reading footer, at 6px in a faint color as explicitly requested. It adds no repeated venue logistics; the optional blessing action remains local to the closing scene.
 
 Validation covers outer viewports 320×844, 390×844, 768×1024, and 1440×900; direct portrait widths 320, 390, 506, and 576; no horizontal overflow; illustration containment during scrolling and resize; reduced motion; no JavaScript; one persistent audio element; the exact IST countdown boundary and completion state; blocked remote fonts; and a simulated GitHub Pages project subpath. Screenshots and checks are under `artifacts/closing/`. Include `closing.css` with the existing relative assets when hosting on GitHub Pages; no build step is required. Changes remain local and unpublished.
 
@@ -116,7 +116,7 @@ At 390px, the revised celebrations section measures 945px high, compared with 13
 
 The closing illustration now has a small English `Shower your blessings` button below it. One tap releases 16 jasmine/rose sprites over the couple for roughly 2.6 seconds and announces `உங்கள் ஆசிகளுக்கு நன்றி` through a polite Tamil status region. The interaction is local and decorative; it does not submit guest information. Repeated taps are guarded until cleanup, and keyboard focus stays on the native button so it can be used again.
 
-`blessings.js` owns the interaction independently of the configuration bridge and persistent audio player. The overlay is an absolutely positioned child of `.closing-scene`, with pointer events disabled and no full-viewport canvas. The browser animates only small transforms and opacity; no animation-frame polling loop is added. Completion, a three-second safety timeout, resize, off-screen visibility, page hiding, and preference changes clean up pending animation state. Reduced motion and missing animation API support show three stationary flowers briefly with the same acknowledgement. Without JavaScript or if flower artwork cannot load, the original illustration/blessing remains readable and the optional action is hidden. The sprite is loaded before the action appears so a first tap does not outrun its image download.
+`blessings.js` owns the interaction independently of the configuration bridge and persistent audio player. The overlay is an absolutely positioned child of `.closing-scene`, with pointer events disabled and no full-viewport canvas. The browser animates only small transforms and opacity; no animation-frame polling loop is added. Completion, a three-second safety timeout, resize, off-screen visibility, page hiding, and preference changes clean up pending animation state. Reduced motion and unavailable GSAP show three stationary flowers briefly with the same acknowledgement. Without JavaScript or if flower artwork cannot load, the original illustration/blessing remains readable and the optional action is hidden. The sprite is loaded before the action appears so a first tap does not outrun its image download.
 
 ### Flower asset mapping
 
@@ -136,7 +136,7 @@ Below the illustration, `Deepak & Gomathi` forms the main ivory italic signature
 
 The existing flower button is now inside the closing scene; its transparent jasmine and rose sprites shower the whole personal panel without blocking the text or controls. The button retains its keyboard operation, status announcement, rapid-tap guard, static reduced-motion fallback, and cleanup behavior. Its light-gold surface and ivory focus outline contrast with the dark background. The music player and entrance parallax are unchanged. Arun Nagarajan’s requested faint 6px copyright remains the final line.
 
-The alcove scales with the actual iframe width. The illustration is capped at 320px wide; names and Tamil copy remain live HTML in normal flow. The optional flower controls stay hidden until the sprite loads and remain hidden without JavaScript. Current ending previews and verification evidence are under `artifacts/personal-ending-2026-11-09/`. Work remains local, without committing or publishing.
+The alcove scales with the actual iframe width and viewport height. The illustration is capped at 320px wide and becomes smaller on shorter screens, without changing its aspect ratio; names and Tamil copy remain live HTML in normal flow. The optional flower controls stay hidden until the sprite loads and remain hidden without JavaScript. Current ending previews and verification evidence are under `artifacts/personal-ending-2026-11-09/`. Work remains local, without committing or publishing.
 
 
 ## A shared ceremonial theme — 9 November 2026
@@ -147,6 +147,70 @@ A reusable inline SVG wedding-thread/kolam motif connects the invitation, celebr
 
 The ending gains a delicate jasmine crest and a dotted gold border. Its D/G seal is surrounded by eight outlined jasmine blossoms. Tapping the existing flower button fills this wreath with ivory blossoms, leaving a visible acknowledgement after the falling petals finish. This state lasts for the current page visit only; no guest information is collected or stored. The native button, existing polite Tamil acknowledgement, manual music state, and all cleanup/fallback behavior remain intact.
 
-`wedding-theme.js` uses IntersectionObserver for a brief, one-time opacity/translation entrance on the small thread ornaments. Content is visible before JavaScript and with unsupported observers. Reduced motion disables both this entrance and the small seal-bloom motion, while still showing the completed blossom state after a tap. No new scroll listener, animation polling loop, package, or build step is added.
+`wedding-theme.js` now uses GSAP ScrollTrigger for one-time gold-thread drawing and section entrances. Content is visible before JavaScript and with unsupported observers. Reduced motion disables both this entrance and the small seal-bloom motion, while still showing the completed blossom state after a tap. The GSAP browser distributions are hosted locally; no application-owned polling loop or build step is added.
 
 Deploy `wedding-theme.css` and `wedding-theme.js` alongside the existing static files. The stylesheet is linked by both entry points; all internal links and artwork remain relative for GitHub Pages project hosting. Current visual previews, flower-interaction results, integration results, and shared-paper/overflow measurements are under `artifacts/ceremonial-theme-2026-11-09/`. Changes remain uncommitted and unpublished.
+
+
+## GSAP choreography — 9 November 2026
+
+The requested GSAP-only motion pass adds intentional movement to the existing design without altering its content or artwork proportions. Motion is limited to the temple depth/sky, small one-time ceremonial entrances, a timeline thread, the persistent playback indicator, and the guest-triggered flower/seal interaction. Countdown digits do not flip every second, and reading sections are not pinned or automatically scrolled.
+
+The pinned files `assets/vendor/gsap/gsap.min.js` and `ScrollTrigger.min.js` load before the local animation scripts using ordered `defer` tags. The original license banners are preserved; provenance and the standard license link are in the vendor README. Shipping local distributions keeps the website compatible with GitHub Pages and avoids a runtime CDN dependency. If GSAP fails, the page shows the complete static invitation, directions, calendar links, date, names, and closing blessing. If only ScrollTrigger fails, the optional GSAP flower shower still works.
+
+Implementation references: [GSAP matchMedia](https://gsap.com/docs/v3/GSAP/gsap.matchMedia()/), [GSAP context](https://gsap.com/docs/v3/GSAP/gsap.context()/), and [ScrollTrigger](https://gsap.com/docs/v3/Plugins/ScrollTrigger/), consulted through Context7 and official documentation. The only stroke painting is on small gold ornament paths; larger scenes animate transforms and opacity. Native CSS animation and Web Animations API motion no longer run on the active invitation.
+
+Fresh browser evidence is under `artifacts/gsap-motion-2026-11-09/`, including phone/tablet/desktop captures, reduced-motion and missing-library fallbacks, actual GSAP lifecycle checks, regression results, and a short phone journey recording. The new GSAP pass remains local until explicitly committed/pushed.
+
+
+## Full-viewport hero and supplied name artwork — 9 November 2026
+
+The former width-derived `10/16.8` aspect ratio made the hero shorter than tall phone screens and the desktop iframe. The hero now uses the visible viewport height, while the desktop portrait frame dimensions stay unchanged. A normal-flow name stack inside the moving name layer keeps the supplied lettering, live connector, and short Tamil caption together. The tower is proportionally centered and sized to extend below the viewport; sky and foliage fill the remaining scene. Small container queries prevent devotional/caption wrapping from colliding with the name artwork in short, narrow frames. A static foreground mask on very short screens keeps foliage below the name/caption area. All existing GSAP depth caps, sky timing, foreground stacking, and temple-over-name behavior remain intact.
+
+The original `Gemini_Generated_Image_bwaciobwaciobwac.png` and `Gomathi.png` are used directly and preserved untouched. SVG view boxes exclude empty margins and corner marks; the existing alpha filter removes the dark background. The raster name art has explicit Tamil/English accessible names, and the semantic H1 remains real HTML. The unused Tiro face is no longer requested for the hero; live devotional/caption/body text continues to use locally hosted Noto Serif Tamil.
+
+At the user’s request, verification used direct `file://` browser previews with local-file access enabled in Chromium; no HTTP preview server was used after that instruction. `scripts/hero-browser.cjs` verifies ten size/resize cases: 320×568, 320×844, 390×844, 430×932, 768×1024, 1440×900, 844×390, 390×320, 390×660, and back to 390×844. Checks cover exact viewport height, the next section beginning below it, artwork proportions, image labels/sources, loaded fonts, no overflow, touch target placement, GSAP depth after scrolling, reduced motion, and static no-JavaScript content. The seven GSAP lifecycle scenarios also pass against a direct-file URL. Screenshots and reports are under `artifacts/full-height-hero-2026-11-09/`.
+
+
+## Hero wording refinement — 9 November 2026
+
+The devotional line is now the concise `ஸ்ரீ கணபதியே துணை`. The former mixed devotional/invitation phrase was incomplete. Beneath the supplied name artwork, `எங்கள் திருமணத்திற்கு அன்புடன் அழைக்கிறோம்` provides a complete personal invitation (“We warmly invite you to our wedding”). The chosen name images, full-height composition, and GSAP motion remain unchanged. The existing accessible English invitation expresses the same meaning without duplicating a visible translated line.
+
+
+## Calmer hero name block — 9 November 2026
+
+The name block has been simplified in response to the crowded appearance. The decorative ribbon has been removed from the active composition. A small HTML `மற்றும்` with two fine side rules joins the names; the source ribbon file remains untouched. The supplied Deepak artwork is slightly smaller, and Gomathi has a narrower width to balance its taller letterforms. The invitation line is shortened to `அன்புடன் அழைக்கிறோம்`, with normal weight, no heavy shadow, and a clear gap beneath the names. The temple moves up from 38% to 36% of the viewport height to keep the text and architecture connected.
+
+No new decorative effect is added. The complete name block still participates in the existing GSAP depth sequence, and the hero continues to fill the viewport. Ten direct-file browser size/resize checks pass, including very short screens, parallax, reduced motion, and JavaScript disabled. Screenshots and results are in `artifacts/calm-hero-2026-11-09/`; no HTTP preview server is used.
+
+
+## Combined supplied name banner — 10 November 2026
+
+The newly supplied `assets/img/New-section/Golden Tamil Wedding Name Banner.png` replaces both separate name artworks and the HTML `மற்றும்` divider in the active hero. Its ribbon already joins the names, so no second connector is added. The original 1774×887 PNG is preserved untouched. A `240 0 1280 887` SVG view box excludes the unused side margins while retaining the gold composition’s proportions and its existing transparency; the former dark-background-removal filter is not applied to this asset.
+
+The banner width is now `min(74cqw, 35cqh)`, with a smaller height cap on very short frames. The short `அன்புடன் அழைக்கிறோம்` caption, devotional line, semantic heading, full-viewport hero, temple/foliage layers, and existing GSAP name-layer movement remain. Superseded images stay in the assets directory but are no longer referenced by the hero. `scripts/hero-browser.cjs` now checks the single supplied banner and its accessible name. Direct-file screenshots and the ten viewport/resize checks are saved under `artifacts/combined-banner-2026-11-10/`; no HTTP server is used.
+
+
+## Headed Playwright hero audit — 10 November 2026
+
+The audit used non-headless Chromium (`headless: false`) through Playwright on Xvfb because the remote workspace has no physical desktop display. Navigation uses direct local `file://` URLs with local-file access enabled; no HTTP server is started. This is a real headed browser session on a virtual display, not a window opened on the user’s computer. The audit runner verifies Chromium’s launch command has no `--headless` flag and saves the virtual display identifier and a browser recording.
+
+### Findings and fixes
+
+- The 390px frame’s invitation caption was 10px. Its pale text/base-sky color pair had approximately 3.04:1 contrast. It now uses 12px or larger text on normal frames, stronger weight, ivory lettering, and a static blue tint behind the upper copy. The tint preserves the sky imagery without adding another badge behind the caption. The small devotional line remains small as requested, with stronger background contrast.
+- The combined name banner was 265px wide in the 390px frame. Its width cap is now slightly larger, giving the names a clearer primary role and reducing the loose space before the temple. Artwork proportions and the user’s supplied PNG remain intact.
+- The scroll arrow had no visible action label. Normal frames now show `Read invitation` in a 44px-high maroon control, aligned vertically with the persistent music button. Compact frames retain a 44px icon-only control with the same accessible name. The two targets keep at least an 8px gap in the checked layouts. Safe-area insets are included in their bottom placement.
+- The name banner’s accessible image label duplicated the semantic H1. The banner is now decorative; the hero region uses `aria-labelledby="entrance-title"` to reference the real HTML heading once. The control’s accessible name matches its visible label.
+
+The recording exercises native wheel scrolling, the gopuram covering the name layer, keyboard focus, Enter navigation into the actual invitation, manual audio pause through that navigation, and a live switch to reduced motion. Normal screenshots cover 320×568, 390×844, 768×1024, 1440×900, and the compact 844×390 landscape frame. Contrast checks sample actual sky pixels behind both text lines at the cloud drift endpoints and midpoint. The geometry/resize and GSAP lifecycle suites also run in headed mode through `QA_HEADED=1`.
+
+Results, before/after screenshots, contrast measurements, browser-mode evidence, and `headed-hero-review.webm` are saved in `artifacts/hero-headed-audit-2026-11-10/`. Chromium was exercised; other browser engines and real-device safe-area behavior were not tested. Work remains local and uncommitted.
+
+
+## Adaptive closing scene — 10 November 2026
+
+The maroon closing scene now uses the actual iframe viewport height, with a minimum height of `100dvh - 14px` to accommodate the final copyright line. The countdown remains a separate prelude above it. The illustration responds to both available height and width; the couple, double arch, and jasmine crest retain their original proportions. A single grid gap replaces stacked footer margins, the monogram is smaller, and the English sign-off wraps naturally. The decorative uppercase tagline is omitted below 700px viewport height so the names, Tamil blessing, and action have priority.
+
+The scene has no fixed height or internal scrolling. Very short landscape windows and enlarged text expand the document and remain reachable through normal page scrolling. Grid columns may shrink below their content’s intrinsic width, keeping the flower button within the panel on narrow portrait frames. Bottom padding reserves space for the persistent music button and safe-area inset. Existing focus outlines, polite acknowledgement, reduced-motion behavior, and manually paused music are preserved. The scene is a named semantic section; the faint 6px copyright remains last.
+
+Headed Chromium verification uses local `file://` entry points and Xvfb, without an HTTP server. `scripts/closing-browser.cjs` checks phone, tablet, desktop and short landscape frames, live resizing, text enlargement, keyboard activation, music clearance, proportional artwork, reduced motion and JavaScript-disabled content. Evidence and a headed recording are in `artifacts/responsive-ending-2026-11-10/`. No committing, pushing, or publishing is included.

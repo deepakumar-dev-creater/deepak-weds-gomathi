@@ -84,15 +84,6 @@
     }
   };
 
-  var EFFECTS = {
-    // [selector, speed%] – element moves at speed% of the scroll speed
-    parallax: [[".framer-1pwvksq",35],[".framer-1jgx9kw",35],[".framer-64h8lc",35],[".framer-qqlkw5",35],[".framer-zrqetc",110],[".framer-k9a895",70]],
-    // [selector, target {x,y,rotate,scale}, seconds, repeatType, delay] – endless back-and-forth motion
-    loops: [[".framer-uhifu",{"x":299,"y":0,"rotate":0,"scale":1},7,"mirror",0],[".framer-j3lu80",{"x":299,"y":0,"rotate":0,"scale":1},7,"mirror",0],[".framer-3wh34t",{"x":200,"y":0,"rotate":0,"scale":1},7,"mirror",0],[".framer-wtw5t7",{"x":200,"y":0,"rotate":0,"scale":1},7,"mirror",0],[".framer-k8o81x",{"x":299,"y":0,"rotate":0,"scale":1},7,"mirror",0]],
-    // No fixed nudges; the closing illustration now stays inside its own scene.
-    nudges: []
-  };
-
   // ===================================================================
   //  Helpers
   // ===================================================================
@@ -107,151 +98,8 @@
     new IntersectionObserver(function (en) { cb(en[0].isIntersecting); }, { threshold: amount }).observe(el);
   };
 
-  function cubicBezier(x1, y1, x2, y2) {
-    var bx = function (t) { return 3 * (1 - t) * (1 - t) * t * x1 + 3 * (1 - t) * t * t * x2 + t * t * t; };
-    var by = function (t) { return 3 * (1 - t) * (1 - t) * t * y1 + 3 * (1 - t) * t * t * y2 + t * t * t; };
-    return function (x) {
-      if (x <= 0) return 0;
-      if (x >= 1) return 1;
-      var lo = 0, hi = 1, t = x;
-      for (var i = 0; i < 24; i++) {
-        t = (lo + hi) / 2;
-        if (bx(t) < x) lo = t; else hi = t;
-      }
-      return by(t);
-    };
-  }
-  var EASE_APPEAR = cubicBezier(0.12, 0.23, 0.17, 0.99);
-
-  // ===================================================================
-  //  Motion engine: appear-on-scroll, parallax, endless loops
-  // ===================================================================
-  var states = new Map();
-  var tweens = [];
-
-  function stateOf(el) {
-    var s = states.get(el);
-    if (s) return s;
-    var tf = el.style.transform || "";
-    var prefix = (tf.match(/^translate\(-50%, -50%\)|^translateX\(-50%\)|^translateY\(-50%\)/) || [""])[0];
-    var rotate = (tf.match(/rotate\([^)]*\)/) || [""])[0];
-    s = { prefix: prefix, rotate: rotate, enterY: 0, parY: 0, lx: 0, ly: 0, lr: 0, ls: 1, speed: null, loop: null, nudge: "", last: null };
-    states.set(el, s);
-    return s;
-  }
-
-  function applyTransform(el, s) {
-    var y = s.enterY + s.parY + s.ly;
-    var parts = [s.prefix];
-    if (s.lx) parts.push("translateX(" + s.lx.toFixed(2) + "px)");
-    if (y) parts.push("translateY(" + y.toFixed(2) + "px)");
-    if (s.ls !== 1) parts.push("scale(" + s.ls.toFixed(4) + ")");
-    parts.push(s.rotate);
-    if (s.lr) parts.push("rotate(" + s.lr.toFixed(2) + "deg)");
-    parts.push(s.nudge);
-    var tf = parts.filter(Boolean).join(" ") || "none";
-    if (tf !== s.last) {
-      el.style.transform = tf;
-      s.last = tf;
-    }
-  }
-
-  function tween(opts) {
-    tweens.push({ start: performance.now() + (opts.delay || 0) * 1000, dur: opts.duration * 1000, ease: opts.ease, step: opts.step });
-  }
-
-  // "half visible" is judged vertically, so boxes wider than the screen (e.g. 1200px name boxes) still trigger
-  var appearObserver = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (!entry.isIntersecting) return;
-      var visibleH = entry.intersectionRect.height, fullH = Math.min(entry.boundingClientRect.height, window.innerHeight);
-      if (entry.intersectionRatio < 0.5 && visibleH < fullH * 0.5) return;
-      var el = entry.target;
-      appearObserver.unobserve(el);
-      var s = stateOf(el);
-      tween({
-        delay: el.dataset.appearDelay ? +el.dataset.appearDelay : 0.2, duration: 1, ease: EASE_APPEAR,
-        step: function (p) { s.enterY = 40 * (1 - p); el.style.opacity = p; }
-      });
-    });
-  }, { threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5] });
-
-  function initAppear() {
-    $$("[style*='translateY(40px)']").forEach(function (el) {
-      if (!/opacity:\s*0(;|$)/.test(el.getAttribute("style"))) return;
-      var s = stateOf(el);
-      s.enterY = 40;
-      if (reducedMotion) { s.enterY = 0; el.style.opacity = 1; return; }
-      appearObserver.observe(el);
-    });
-  }
-
-  function initMotion() {
-    EFFECTS.parallax.forEach(function (p) { $$(p[0]).forEach(function (el) { stateOf(el).speed = p[1]; }); });
-    (EFFECTS.nudges || []).forEach(function (n) { $$(n[0]).forEach(function (el) { stateOf(el).nudge = n[1]; }); });
-    if (!reducedMotion) {
-      EFFECTS.loops.forEach(function (l) { $$(l[0]).forEach(function (el) { stateOf(el).loop = { to: l[1], dur: l[2] * 1000, type: l[3], delay: (l[4] || 0) * 1000 }; }); });
-    }
-    var t0 = performance.now();
-    function frame(now) {
-      var sy = window.scrollY;
-      for (var i = tweens.length - 1; i >= 0; i--) {
-        var tw = tweens[i];
-        if (now < tw.start) continue;
-        var p = tw.dur ? Math.min(1, (now - tw.start) / tw.dur) : 1;
-        tw.step(tw.ease(p));
-        if (p >= 1) tweens.splice(i, 1);
-      }
-      states.forEach(function (s, el) {
-        if (s.speed !== null && !reducedMotion) s.parY = sy * (1 - s.speed / 100);
-        if (s.loop) {
-          var t = Math.max(0, now - t0 - s.loop.delay) / s.loop.dur;
-          var k = s.loop.type === "loop" ? t % 1 : (t % 2 <= 1 ? t % 2 : 2 - t % 2);
-          s.lx = (s.loop.to.x || 0) * k;
-          s.ly = (s.loop.to.y || 0) * k;
-          s.lr = (s.loop.to.rotate || 0) * k;
-          s.ls = 1 + ((s.loop.to.scale === undefined ? 1 : s.loop.to.scale) - 1) * k;
-        }
-        applyTransform(el, s);
-      });
-      requestAnimationFrame(frame);
-    }
-    requestAnimationFrame(frame);
-  }
-
-  // ===================================================================
-  //  Text effects: names / tag lines reveal word-by-word (or line-by-line)
-  //  from a soft blur when the page opens.
-  // ===================================================================
-  var TEXT_EFFECTS = [
-    // pieces that start blurred 4px & 12px low → per word, 0.8s, no start delay
-    { blur: 4, y: 12, startDelay: 0, stagger: 0.05, duration: 0.8 },
-    // pieces that start blurred 10px & 20px low → per line, 0.7s, after 0.2s
-    { blur: 10, y: 20, startDelay: 0.2, stagger: 0.05, duration: 0.7 }
-  ];
-  function initTextEffects() {
-    var groups = new Map();
-    $$("span[style*='opacity:0.001'][style*='filter:blur']").forEach(function (span) {
-      var box = span.closest("[data-framer-component-type='RichTextContainer']") || span.parentNode;
-      if (!groups.has(box)) groups.set(box, []);
-      groups.get(box).push(span);
-    });
-    groups.forEach(function (spans) {
-      spans.forEach(function (span, i) {
-        var blur = parseFloat((span.style.filter.match(/blur\(([\d.]+)px\)/) || [0, 0])[1]);
-        var cfg = TEXT_EFFECTS.reduce(function (a, b) { return Math.abs(b.blur - blur) < Math.abs(a.blur - blur) ? b : a; });
-        var from = { opacity: 0.001, filter: span.style.filter, transform: span.style.transform };
-        var to = { opacity: 1, filter: "blur(0px)", transform: "none" };
-        if (reducedMotion) { Object.assign(span.style, to); return; }
-        span.animate([from, to], {
-          duration: cfg.duration * 1000,
-          delay: (cfg.startDelay + i * cfg.stagger) * 1000,
-          easing: "cubic-bezier(.12,.23,.17,.98)",
-          fill: "both"
-        }).onfinish = function () { Object.assign(span.style, to); };
-      });
-    });
-  }
+  // Decorative motion is owned by GSAP in temple-hero.js, wedding-theme.js,
+  // and blessings.js. The legacy polling/WAAPI engine is intentionally removed.
 
   // ===================================================================
   //  Fit-text: Framer scales some texts inside an <svg viewBox>.
@@ -655,8 +503,10 @@
           var n = document.createElement("div");
           n.style.cssText = "position:absolute;left:" + (D / 2 - size / 2) + "px;top:" + (D / 2 - size / 2) + "px;width:" + size + "px;height:" + size + "px;pointer-events:none;background:url('" + SPARK + "') center/contain no-repeat";
           layer.appendChild(n);
-          n.animate([{ transform: "translate(0,0) scale(1)", opacity: 1 }, { transform: "translate(" + Math.cos(a) * v + "px," + (Math.sin(a) * v - 40) + "px) rotate(90deg) scale(.6)", opacity: 0 }],
-            { duration: 800, easing: "cubic-bezier(.2,.7,.3,1)" }).onfinish = function () { this.effect.target.remove(); };
+          if (window.gsap && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            window.gsap.to(n, { x: Math.cos(a) * v, y: Math.sin(a) * v - 40, rotation: 90, scale: .6, opacity: 0,
+              duration: .8, ease: 'power2.out', onComplete: function () { this.targets()[0].remove(); } });
+          } else n.remove();
         }
         if (CONFIG.mapsLink) window.open(CONFIG.mapsLink, "_blank", "noopener");
       });
@@ -737,7 +587,7 @@
   B.register({
     CONFIG: CONFIG,
     DEFAULTS: DEFAULTS,
-    statics: [initAppear, initMotion, initTextEffects],
+    statics: [],
     music: initMusic,
     widgets: [initEvents, initFrameSlider, initCountdown, initClosingCountdown, initRsvp, initLocationButton, initCountdownNote],
     fitTexts: fitTexts

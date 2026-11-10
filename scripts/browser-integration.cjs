@@ -93,7 +93,7 @@ async function sendEvents(frame, events) {
             fonts: [...document.fonts].filter(f => f.family.includes('Temple')).map(f => ({ family: f.family, status: f.status })),
             targets: [...document.querySelectorAll('.entrance-next,.fi-events-link,.ce-calendar,.ce-directions,.mp-btn')].map(e => ({ class: e.className, width: e.getBoundingClientRect().width, height: e.getBoundingClientRect().height })),
             audioCount: document.querySelectorAll('audio').length,
-            skyPaused: getComputedStyle(document.querySelector('.entrance-sky')).animationPlayState === 'paused'
+            skyPaused: !window.gsap || !gsap.getById('temple-clouds') || gsap.getById('temple-clouds').paused()
           }));
           assert(!metrics.overflow); assert.equal(metrics.audioCount, 1); assert(metrics.skyPaused);
           assert(metrics.fonts.every(f => f.status === 'loaded'));
@@ -104,7 +104,7 @@ async function sendEvents(frame, events) {
           await page.keyboard.press('Tab');
           assert(await frame.locator('.ce-calendar').nth(1).evaluate(e => document.activeElement === e));
           await page.emulateMedia({ reducedMotion: 'reduce' });
-          assert.equal(await frame.locator('.entrance-temple').evaluate(e => getComputedStyle(e).transform), 'none');
+          await frame.waitForFunction(() => getComputedStyle(document.querySelector('.entrance-temple')).transform === 'none');
           assert.equal(await frame.locator('.wedding-closing').evaluate(e => e.getAnimations({ subtree: true }).length), 0);
           await page.setViewportSize({ width: width === 320 ? 390 : 320, height });
           await page.waitForTimeout(250); assert(!await frame.evaluate(() => document.documentElement.scrollWidth > innerWidth));

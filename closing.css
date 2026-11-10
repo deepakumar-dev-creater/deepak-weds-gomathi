@@ -16,30 +16,40 @@
 .closing-unit-label [lang="en"]{font-size:12px}
 .closing-arrival{display:grid;gap:8px;margin:20px 24px 26px!important;padding:18px 12px;border-block:1px solid #ba873866;font-size:16px}
 /* A personal ceremonial alcove, distinct from the blue-sky entrance. */
-.closing-scene{position:relative;overflow:hidden;isolation:isolate;padding:22px clamp(20px,6cqw,38px) 0;background:radial-gradient(ellipse at 50% 18%,#8b3c46 0,transparent 58%),linear-gradient(160deg,#632638,#451b2b);color:#fff3e1}
-.closing-scene::before{content:"";position:absolute;inset:12px 12px 30px;border:1px solid #e4c58b45;border-radius:160px 160px 0 0;pointer-events:none;z-index:-1}
-.closing-vignette{position:relative;width:100%;max-width:320px;aspect-ratio:320/330;margin:0 auto}
+.closing-scene{position:relative;overflow:hidden;isolation:isolate;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:calc(100vh - 14px);min-height:calc(100dvh - 14px);padding:clamp(12px,2dvh,22px) clamp(18px,6cqw,38px) calc(50px + max(18px,env(safe-area-inset-bottom)));--closing-seal-size:52px;background:radial-gradient(ellipse at 50% 18%,#8b3c46 0,transparent 58%),linear-gradient(160deg,#632638,#451b2b);color:#fff3e1}
+.closing-scene::before{content:"";position:absolute;inset:12px 12px 18px;border:1px solid #e4c58b45;border-radius:160px 160px 0 0;pointer-events:none;z-index:-1}
+.closing-vignette{position:relative;flex:none;width:min(100%,clamp(88px,calc(100dvh - 390px),320px));aspect-ratio:320/330;margin:0 auto}
 .closing-arch{position:absolute;inset:0;width:100%;height:100%;color:#e0bc79;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
 .closing-lamp{fill:#dfb96c22}
 .closing-couple{position:absolute;bottom:-7%;left:50%;width:69%;height:auto;transform:translateX(-50%);filter:drop-shadow(0 6px 7px #29121c40);clip-path:polygon(0 0,100% 0,100% 64%,93% 64%,93% 85%,86% 85%,86% 93%,0 93%)}
-.closing-footer{position:relative;padding:10px 0 62px}
+.closing-footer{position:relative;flex:none;display:grid;grid-template-columns:minmax(0,1fr);justify-items:center;align-content:start;gap:clamp(6px,.8dvh,10px);width:100%;max-width:440px;padding:0}
 .closing-eyebrow{color:#edd3aa;font:400 clamp(11px,2.7cqw,12px)/1.7 Georgia,serif;letter-spacing:.08em;text-transform:uppercase}
-.closing-signature{display:flex;justify-content:center;align-items:baseline;flex-wrap:wrap;gap:0 .22em;margin:12px 0 0;font:italic 400 clamp(31px,8.6cqw,49px)/1.3 Georgia,serif;letter-spacing:-.045em;color:#fff3e1;text-wrap:balance}
+.closing-signature{display:flex;justify-content:center;align-items:baseline;flex-wrap:wrap;max-width:100%;gap:0 .22em;margin:0;font:italic 400 clamp(29px,7.6cqw,42px)/1.2 Georgia,serif;letter-spacing:-.045em;color:#fff3e1;text-wrap:balance}
+.closing-signature span{min-width:0;max-width:100%;overflow-wrap:anywhere}
 .closing-ampersand{color:#e9c785;font-size:.68em}
-.closing-seal{display:flex;align-items:center;justify-content:center;gap:14px;margin:18px auto 17px;max-width:250px;color:#e3c080}
+.closing-seal{display:flex;align-items:center;justify-content:center;gap:14px;margin:0;max-width:250px;color:#e3c080}
 .closing-seal span{width:65px;height:1px;background:currentColor;opacity:.5}
 .closing-seal svg{flex:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
-.closing-blessing{font-size:clamp(13px,3.4cqw,17px);line-height:1.9;color:#fff0d7;text-wrap:balance}
-.closing-note{margin:13px 0 23px!important;font:italic 400 clamp(13px,3.3cqw,16px)/1.7 Georgia,serif;color:#e8cfbe}
-.closing-credit{margin:0;padding:3px 18px 7px;font-size:6px;line-height:1.5;color:#b9ad9d}
+.closing-blessing{font-size:clamp(13px,3.2cqw,15px);line-height:1.7;color:#fff0d7;text-wrap:balance}
+.closing-note{margin:0!important;max-width:100%;text-wrap:balance;font:italic 400 clamp(13px,3.2cqw,15px)/1.65 Georgia,serif;color:#e8cfbe}
+.closing-credit{margin:0;padding:2px 18px 3px;font-size:6px;line-height:9px;color:#b9ad9d}
 
 /* A guest-triggered shower stays inside the illustration and cannot block controls. */
 .blessing-petals{position:absolute;inset:0;z-index:2;overflow:hidden;pointer-events:none}
 .blessing-petal{position:absolute;top:0;display:block;overflow:hidden;pointer-events:none;user-select:none}
-.blessing-controls{display:grid;justify-items:center;gap:8px;margin:0 auto;max-width:270px}
-.blessings-btn{display:flex;justify-content:center;align-items:center;gap:8px;width:100%;max-width:250px;min-height:48px;padding:10px 12px;border:1px solid #ba8738;border-radius:30px;background:#f5dfb3;color:#551b2b;font:400 14px/1.5 'Temple Tamil',Georgia,serif;cursor:pointer}
+.blessing-controls{display:grid;grid-template-columns:minmax(0,1fr);min-width:0;justify-items:center;gap:6px;width:100%;margin:0 auto;max-width:270px}
+.blessings-btn{display:flex;min-width:0;justify-content:center;align-items:center;gap:8px;width:100%;max-width:250px;min-height:48px;padding:10px 12px;border:1px solid #ba8738;border-radius:30px;background:#f5dfb3;color:#551b2b;font:400 14px/1.5 'Temple Tamil',Georgia,serif;cursor:pointer}
+.blessings-btn span{min-width:0;overflow-wrap:break-word}
 .blessings-btn svg{width:20px;height:20px;flex:none}
 .blessings-btn:hover{background:#fff3e1}
 .blessings-btn:focus-visible{outline:3px solid #fff3e1;outline-offset:4px}
 .blessings-btn[aria-disabled="true"]{background:#e5c792;cursor:wait}
 .blessings-status{min-height:3.4em;font:400 12px/1.7 'Temple Tamil',serif;color:#f5dfb3}
+
+/* Compact screens spend space on the names, blessing and action, rather than a second tagline. */
+@media(max-height:700px){
+ .closing-scene{--closing-seal-size:36px}
+ .closing-eyebrow{display:none}
+ .closing-footer{gap:6px}
+}
+/* Content grows naturally on very short/zoomed screens; no fixed height clips the ending. */

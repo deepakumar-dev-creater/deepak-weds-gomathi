@@ -1,0 +1,29 @@
+[
+  {
+    "js": true,
+    "projectSubpath": true,
+    "reducedMotion": true,
+    "state": {
+      "signature": "Deepak&Gomathi",
+      "version": "3.15.1",
+      "triggerCount": 0,
+      "cssAnimations": 0,
+      "active": 0,
+      "overflow": false,
+      "controls": true
+    },
+    "failed": []
+  },
+  {
+    "js": false,
+    "projectSubpath": true,
+    "reducedMotion": true,
+    "state": {
+      "signature": "Deepak&Gomathi",
+      "cssAnimations": 0,
+      "overflow": false,
+      "controls": false
+    },
+    "failed": []
+  }
+]

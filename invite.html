@@ -4479,6 +4479,8 @@
 <link rel="stylesheet" href="celebrations.css">
 <link rel="stylesheet" href="closing.css">
 <link rel="stylesheet" href="wedding-theme.css">
+    <script src="assets/vendor/gsap/gsap.min.js" defer></script>
+    <script src="assets/vendor/gsap/ScrollTrigger.min.js" defer></script>
     <script src="temple-hero.js" defer></script>
     <script src="blessings.js" defer></script>
     <script src="wedding-theme.js" defer></script>
@@ -4503,26 +4505,24 @@
         </style>
         <div data-framer-root class="framer-m7ulU framer-72rtr7" style="min-height:100vh;width:auto">
             <div class="framer-ji2yub" data-framer-name="MAIN FRAME">
-                <section class="temple-entrance" aria-label="Deepak Kumar and Gomathi — தீபக் குமார் மற்றும் கோமதி">
+                <section class="temple-entrance" aria-labelledby="entrance-title">
                     <div class="entrance-atmosphere" aria-hidden="true">
                         <div class="entrance-sky"></div>
                     </div>
                     <div class="entrance-copy">
                         <div class="entrance-art entrance-ganesha" aria-hidden="true"><svg viewBox="340 50 720 920"><defs><filter id="entrance-remove-ink" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  1.4 1.4 1.4 0 -0.24"/></filter></defs><image filter="url(#entrance-remove-ink)" href="assets/img/New-section/web/ganesha.webp" width="1400" height="1045"/></svg></div>
                         <p
-                            class="entrance-blessing" lang="ta">ஸ்ரீ மகா கணபதி துணை அன்புடன் அழைக்கும்</p>
+                            class="entrance-blessing" lang="ta">ஸ்ரீ கணபதியே துணை</p>
                             <div class="entrance-name-layer">
-                                <p class="entrance-couple-name entrance-groom"><span class="entrance-english" lang="en">DEEPAK KUMAR</span><span class="entrance-tamil" lang="ta">தீபக் குமார்</span></p>
-                                <h1 class="entrance-sr"><span lang="ta">தீபக் குமார் மற்றும் கோமதி</span> — Deepak Kumar &amp; Gomathi</h1>
-                                <div class="entrance-art entrance-ribbon" aria-hidden="true"><svg viewBox="180 340 1060 390"><image filter="url(#entrance-remove-ink)" href="assets/img/New-section/web/ribbon.webp" width="1400" height="1045"/></svg></div>
-                                <p class="entrance-couple-name entrance-bride"><span class="entrance-english" lang="en">GOMATHI</span><span class="entrance-tamil" lang="ta">கோமதி</span></p>
-                                <p class="entrance-invitation" lang="ta">சுப முகூர்த்த திருமண அழைப்பிதழ்</p>
+                                <svg class="entrance-name-art entrance-name-banner" viewBox="240 0 1280 887" aria-hidden="true" focusable="false"><image href="assets/img/New-section/Golden Tamil Wedding Name Banner.png" width="1774" height="887"/></svg>
+                                <h1 id="entrance-title" class="entrance-sr"><span lang="ta">தீபக் குமார் மற்றும் கோமதி</span> — Deepak Kumar &amp; Gomathi</h1>
+                                <p class="entrance-invitation" lang="ta">அன்புடன் அழைக்கிறோம்</p>
                                 <p class="entrance-sr" lang="en">With love, we invite you to our wedding.</p>
                             </div>
                     </div>
                     <img class="entrance-temple" src="assets/img/J6YiMAQTDPTAlfG2On7An1Q5lB4.webp" alt="" width="1300" height="1965" fetchpriority="high">
-                    <img class="entrance-trees" src="assets/img/VrdsdVM2OwyjQkw6YWOB0OowTQ.webp" alt="" width="1300" height="1965">
-                    <a class="entrance-next" href="#formal-invitation" aria-label="Read the invitation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 7 7 7 7-7M5 13l7 7 7-7"/></svg></a>
+                    <div class="entrance-foreground" aria-hidden="true"><img class="entrance-trees" src="assets/img/VrdsdVM2OwyjQkw6YWOB0OowTQ.webp" alt="" width="1300" height="1965"></div>
+                    <a class="entrance-next" href="#formal-invitation" aria-label="Read invitation"><span class="entrance-next-label" lang="en">Read invitation</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 7 7 7 7-7M5 13l7 7 7-7"/></svg></a>
                 </section>
                 <section id="formal-invitation" class="formal-invitation" data-framer-name="PAGE 2" aria-labelledby="formal-invitation-title">
   <img class="fi-arch" src="assets/img/invitation-frame/arch.webp" width="1300" height="572" alt="" loading="lazy">
@@ -4560,6 +4560,7 @@
     <h2 id="celebrations-title"><span lang="en" data-ce-heading>The Celebrations</span></h2>
     <p class="ce-zone"><span lang="en">All times in IST (UTC+05:30)</span></p>
   </header>
+  <div class="ce-timeline-wrap"><span class="ce-thread-progress" aria-hidden="true"></span>
   <ol class="ce-timeline" aria-label="Wedding events">
     <li class="ce-event">
       <article data-event-key="reception" aria-labelledby="reception-title">
@@ -4601,6 +4602,7 @@
       </article>
     </li>
   </ol>
+  </div>
   <section class="ce-venue" aria-labelledby="celebrations-venue-title">
     <svg class="wedding-thread" viewBox="0 0 160 36" width="160" height="36" fill="none" aria-hidden="true" focusable="false"><use href="#wedding-thread"/></svg>
     <h3 id="celebrations-venue-title"><span lang="en">One venue, both celebrations</span></h3>
@@ -4625,7 +4627,7 @@
         <div class="closing-unit"><span class="closing-number" data-closing-unit="seconds">—</span><span class="closing-unit-label"><span lang="en">Seconds</span></span></div>
       </div>
       <p class="closing-arrival" hidden><span lang="en">Our wedding day is here. Bless our new beginning!</span></p>
-      <div class="closing-scene">
+      <section class="closing-scene" aria-labelledby="closing-signature">
         <div class="closing-vignette" aria-hidden="true">
           <svg class="closing-arch" viewBox="0 0 320 330" fill="none" focusable="false">
             <path d="M36 292V119C36 80 69 64 98 64C112 33 139 22 160 15C181 22 208 33 222 64C251 64 284 80 284 119V292"/>
@@ -4655,7 +4657,7 @@
             <span></span>
           </div>
           <p class="closing-blessing" lang="ta">உங்கள் வருகையும் வாழ்த்தும்<br>எங்கள் மகிழ்ச்சி.</p>
-          <p class="closing-note" lang="en">Come for the celebration.<br>Stay in our story, always.</p>
+          <p class="closing-note" lang="en">Come for the celebration. Stay in our story, always.</p>
           <div class="blessing-controls" hidden>
             <button id="blessings-button" class="blessings-btn" type="button" aria-disabled="false">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M12 12C3 11 6 2 12 8C18 2 21 11 12 12ZM12 12C21 13 18 22 12 16C6 22 3 13 12 12Z"/><circle cx="12" cy="12" r="2"/></svg>
@@ -4665,7 +4667,7 @@
           </div>
         </footer>
         <div class="blessing-petals" aria-hidden="true"></div>
-      </div>
+      </section>
       <p class="closing-credit" lang="en">© Copyright &amp; Reserved by Arun Nagarajan</p>
     </section>
     <div class="framer-jc4od1" data-framer-name="PAGE 5" style="display: none !important;">

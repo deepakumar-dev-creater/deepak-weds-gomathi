@@ -1,4 +1,4 @@
-/* A brief, section-scoped flower shower. No canvas or permanent animation loop. */
+/* A brief, section-scoped GSAP flower shower with a static failure fallback. */
 (function () {
   'use strict';
   var scene = document.querySelector('.closing-scene');
@@ -10,6 +10,8 @@
 
   // View boxes isolate the six supplied flowers without altering the source sheet.
   var flowers = ['128 72 309 304', '1010 72 314 304', '156 420 260 266', '1040 420 270 266', '146 740 274 278', '1028 740 290 278'];
+  var gsap = window.gsap;
+  var blossoms = scene.querySelectorAll('.seal-blossoms use');
   var motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   var message = 'உங்கள் ஆசிகளுக்கு நன்றி';
   var active = false;
@@ -24,9 +26,10 @@
     active = false;
     clearTimeout(cleanupTimer);
     clearTimeout(statusTimer);
-    animations.forEach(function (animation) { animation.cancel(); });
+    animations.forEach(function (animation) { animation.kill(); });
     animations = [];
     layer.replaceChildren();
+    if (gsap) gsap.set(blossoms, { clearProps: 'transform,opacity' });
     button.setAttribute('aria-disabled', 'false');
     button.removeAttribute('aria-busy');
     status.textContent = message;
@@ -61,7 +64,7 @@
       if (active && run === token) status.textContent = message;
     }, 40);
 
-    var still = motion.matches || typeof Element.prototype.animate !== 'function';
+    var still = motion.matches || !gsap;
     var count = still ? 3 : 16;
     var fragment = document.createDocumentFragment();
     var pending = [];
@@ -78,12 +81,8 @@
         var drift = (Math.random() - 0.5) * Math.min(76, rect.width * 0.19);
         var rotation = Math.random() * 120 - 60;
         var turn = (i % 2 ? 1 : -1) * (100 + Math.random() * 150);
-        pending.push({ img: img, frames: [
-          { offset: 0, opacity: 0, transform: 'translate3d(0,-28px,0) rotate(' + rotation + 'deg) scale(.8)' },
-          { offset: 0.12, opacity: 1, transform: 'translate3d(' + drift * 0.2 + 'px,' + rect.height * 0.08 + 'px,0) rotate(' + (rotation + turn * 0.12) + 'deg) scale(1)' },
-          { offset: 0.6, opacity: 1, transform: 'translate3d(' + -drift * 0.45 + 'px,' + rect.height * 0.52 + 'px,0) rotate(' + (rotation + turn * 0.6) + 'deg) scale(.95)' },
-          { offset: 1, opacity: 0, transform: 'translate3d(' + drift + 'px,' + rect.height * 0.92 + 'px,0) rotate(' + (rotation + turn) + 'deg) scale(.8)' }
-        ], duration: 1900 + Math.random() * 380, delay: i * 20 });
+        pending.push({ img: img, drift: drift, rotation: rotation, turn: turn,
+          duration: 1.9 + Math.random() * .38, delay: i * .02 });
       }
       fragment.appendChild(img);
     }
@@ -93,12 +92,24 @@
       return;
     }
     try {
-      animations = pending.map(function (petal) {
-        return petal.img.animate(petal.frames, { duration: petal.duration, delay: petal.delay, easing: 'linear', fill: 'both' });
+      var timeline = gsap.timeline({ onComplete: function () { finish(token); } });
+      animations.push(timeline);
+      timeline.fromTo(blossoms, { scale: .7, opacity: .3 }, {
+        scale: 1, opacity: 1, duration: .45, stagger: .045, ease: 'power2.out', clearProps: 'transform,opacity'
+      }, 0);
+      pending.forEach(function (petal) {
+        var d = petal.duration;
+        timeline.fromTo(petal.img, { x: 0, y: -28, rotation: petal.rotation, scale: .8, opacity: 0 }, {
+          x: petal.drift * .2, y: rect.height * .08, rotation: petal.rotation + petal.turn * .12,
+          scale: 1, opacity: 1, duration: d * .12, ease: 'none'
+        }, petal.delay).to(petal.img, {
+          x: -petal.drift * .45, y: rect.height * .52, rotation: petal.rotation + petal.turn * .6,
+          scale: .95, opacity: 1, duration: d * .48, ease: 'sine.inOut'
+        }, petal.delay + d * .12).to(petal.img, {
+          x: petal.drift, y: rect.height * .92, rotation: petal.rotation + petal.turn,
+          scale: .8, opacity: 0, duration: d * .4, ease: 'sine.in'
+        }, petal.delay + d * .6);
       });
-      Promise.all(animations.map(function (animation) {
-        return animation.finished.catch(function () { /* Resize/visibility cancellation is expected. */ });
-      })).then(function () { finish(token); });
       cleanupTimer = setTimeout(function () { finish(token); }, 3000);
     } catch (error) {
       finish(token); // Keep the acknowledgement usable if browser animation fails.

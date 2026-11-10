@@ -29,23 +29,17 @@
 .closing-header{padding-top:31px}
 .closing-number{background:var(--w-ivory);border-color:var(--w-line);border-radius:40px 40px 5px 5px;min-height:71px}
 .closing-unit-label{color:var(--w-ink)}
-.closing-scene{padding-top:26px;background:radial-gradient(ellipse at 50% 12%,#914652 0,transparent 58%),linear-gradient(160deg,#632638,#451b2b)}
+.closing-scene{background:radial-gradient(ellipse at 50% 12%,#914652 0,transparent 58%),linear-gradient(160deg,#632638,#451b2b)}
 .closing-scene::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle,#e3c08038 1px,transparent 1.5px);background-size:28px 28px;mask-image:linear-gradient(to right,#000,transparent 15%,transparent 85%,#000)}
 .closing-garland{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:#e3c080;stroke-width:.7;pointer-events:none}
 .closing-garland g{fill:#fff3e1;stroke:#ddbd7c}
 .closing-signature{font-family:var(--w-display)}
-.closing-seal{gap:12px;margin:14px auto;max-width:260px}
-.closing-seal svg{width:82px;height:82px}
+.closing-seal{gap:12px;margin:0;max-width:260px}
+.closing-seal svg{width:var(--closing-seal-size,52px);height:var(--closing-seal-size,52px)}
 .seal-orbit{stroke-dasharray:1 5;stroke-linecap:round;opacity:.6}
 .seal-blossoms{fill:#6d2d3f;stroke:#caa36a;stroke-width:.8}
 .seal-blossoms use{transform-box:fill-box;transform-origin:center}
 .has-blessing .seal-blossoms{fill:#fff3e1;stroke:#e8c47c}
-.has-blessing .seal-blossoms use{animation:seal-bloom 550ms ease-out both}
-.has-blessing .seal-blossoms use:nth-child(2n){animation-delay:90ms}
-.has-blessing .seal-blossoms use:nth-child(3n){animation-delay:180ms}
-@keyframes seal-bloom{from{opacity:.3;transform:scale(.7)}to{opacity:1;transform:scale(1)}}
-.wedding-thread.thread-arriving{animation:thread-arrive 650ms ease-out both}
-@keyframes thread-arrive{from{opacity:.25;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 .closing-credit{background:var(--w-paper)}
 .entrance-next{background:#6b1730bd;box-shadow:0 0 0 1px #e3c08080}
 #temple-music .mp-btn:focus-visible{outline:3px solid #fff3e1;outline-offset:3px;box-shadow:0 0 0 7px #6b1730}
@@ -53,4 +47,9 @@
 .hinv-root::before{inset:0;background:radial-gradient(ellipse at 50% 0,#414c65 0,transparent 60%),linear-gradient(125deg,#381c2b,#6b303e 50%,#301827);filter:none}
 .hinv-root::after{background:radial-gradient(ellipse,transparent 25%,#190e1c70)}
 .hinv-frame{box-shadow:0 0 0 1px #ba873866,0 12px 70px #160c2059}
-@media(prefers-reduced-motion:reduce){.wedding-thread.thread-arriving,.has-blessing .seal-blossoms use{animation:none}}
+
+
+/* The gold thread gains a maroon trace as guests reach each celebration. */
+.ce-timeline-wrap{position:relative}
+.ce-thread-progress{position:absolute;top:0;bottom:28px;left:9px;width:1px;background:var(--w-maroon);transform-origin:top;pointer-events:none}
+.closing-garland g use{transform-box:fill-box;transform-origin:center}
