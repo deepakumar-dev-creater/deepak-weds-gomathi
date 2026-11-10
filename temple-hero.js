@@ -53,7 +53,7 @@
   media.add('(prefers-reduced-motion: no-preference)', function () {
     clouds = gsap.fromTo(sky, { xPercent: -2, yPercent: -.5, scale: 1.08 }, {
       id: 'temple-clouds', xPercent: 2, yPercent: .5, scale: 1.08,
-      duration: 24, repeat: -1, yoyo: true, ease: skyEase
+      duration: 4, repeat: -1, yoyo: true, ease: skyEase
     });
     syncSky();
     gsap.timeline({
