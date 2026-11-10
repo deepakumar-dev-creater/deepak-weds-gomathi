@@ -20,6 +20,10 @@
   var cleanupTimer;
   var statusTimer;
 
+  function acknowledge() {
+    status.textContent = message;
+  }
+
   function finish(token) {
     if (!active || token !== run) return;
     run += 1;
@@ -32,7 +36,7 @@
     if (gsap) gsap.set(blossoms, { clearProps: 'transform,opacity' });
     button.setAttribute('aria-disabled', 'false');
     button.removeAttribute('aria-busy');
-    status.textContent = message;
+    acknowledge();
   }
 
   function flower(index) {
@@ -57,11 +61,13 @@
     var token = ++run;
     active = true;
     scene.classList.add('has-blessing');
+    var nextBlossom = scene.querySelector('.seal-blossoms use:not(.is-blessed)');
+    if (nextBlossom) nextBlossom.classList.add('is-blessed');
     button.setAttribute('aria-disabled', 'true');
     button.setAttribute('aria-busy', 'true');
     status.textContent = '';
     statusTimer = setTimeout(function () {
-      if (active && run === token) status.textContent = message;
+      if (active && run === token) acknowledge();
     }, 40);
 
     var still = motion.matches || !gsap;

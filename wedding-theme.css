@@ -39,7 +39,7 @@
 .seal-orbit{stroke-dasharray:1 5;stroke-linecap:round;opacity:.6}
 .seal-blossoms{fill:#6d2d3f;stroke:#caa36a;stroke-width:.8}
 .seal-blossoms use{transform-box:fill-box;transform-origin:center}
-.has-blessing .seal-blossoms{fill:#fff3e1;stroke:#e8c47c}
+.seal-blossoms use.is-blessed{fill:#fff3e1;stroke:#e8c47c}
 .closing-credit{background:var(--w-paper)}
 .entrance-next{background:#6b1730bd;box-shadow:0 0 0 1px #e3c08080}
 #temple-music .mp-btn:focus-visible{outline:3px solid #fff3e1;outline-offset:3px;box-shadow:0 0 0 7px #6b1730}

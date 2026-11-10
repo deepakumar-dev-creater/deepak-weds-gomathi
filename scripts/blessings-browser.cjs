@@ -54,9 +54,12 @@ async function ready(frame) {
           assert.equal(await layer.evaluate(e => getComputedStyle(e).pointerEvents), 'none');
           assert(await layer.evaluate(e => e.parentElement.classList.contains('closing-scene')));
           assert(await frame.locator('.closing-scene').evaluate(e => e.classList.contains('has-blessing')));
-          assert.equal(await frame.locator('.seal-blossoms').evaluate(e => getComputedStyle(e).fill), 'rgb(255, 243, 225)');
+          assert.equal(await frame.locator('.seal-blossoms .is-blessed').count(), 1);
+          assert.equal(await frame.locator('.seal-blossoms .is-blessed').first().evaluate(e => getComputedStyle(e).fill), 'rgb(255, 243, 225)');
+          assert(await button.locator('[lang=ta]').innerText() === 'மலர் தூவி வாழ்த்துங்கள்');
           await page.waitForTimeout(750);
           assert((await frame.locator('#blessings-status').innerText()).includes('உங்கள் ஆசிகளுக்கு நன்றி'));
+          assert.equal(await frame.locator('#blessings-status').innerText(), 'உங்கள் ஆசிகளுக்கு நன்றி');
           await page.screenshot({ path: path.join(output, `shower-${width}.png`) });
           await ready(frame);
           assert.equal(await layer.locator('.blessing-petal').count(),0);
@@ -67,6 +70,8 @@ async function ready(frame) {
           await page.keyboard.press('Enter');
           assert.equal(await layer.locator('.blessing-petal').count(),16);
           await ready(frame);
+          assert.equal(await frame.locator('.seal-blossoms .is-blessed').count(), 2);
+          assert.equal(await frame.locator('#blessings-status').innerText(), 'உங்கள் ஆசிகளுக்கு நன்றி');
           assert(await button.evaluate(e => document.activeElement === e));
           assert(!await frame.evaluate(() => document.documentElement.scrollWidth > innerWidth));
           assert.deepEqual(errors,[]);

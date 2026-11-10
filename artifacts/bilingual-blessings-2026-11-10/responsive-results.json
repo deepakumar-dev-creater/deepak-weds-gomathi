@@ -1,0 +1,940 @@
+{
+  "passed": true,
+  "headless": false,
+  "headlessFlagPresent": false,
+  "display": ":99",
+  "entry": "file:///workspaces/deepak-weds-gomathi/index.html",
+  "tests": [
+    {
+      "name": "Responsive ending 320x568",
+      "passed": true,
+      "metrics": {
+        "frame": [
+          320,
+          568
+        ],
+        "scene": {
+          "top": -0.28125,
+          "bottom": 553.71875,
+          "left": 0,
+          "right": 320,
+          "width": 320,
+          "height": 554
+        },
+        "art": {
+          "top": 18.421875,
+          "bottom": 165.890625,
+          "left": 88.5,
+          "right": 231.5,
+          "width": 143,
+          "height": 147.46875
+        },
+        "footer": {
+          "top": 169.890625,
+          "bottom": 479,
+          "left": 19.1875,
+          "right": 300.8125,
+          "width": 281.625,
+          "height": 309.109375
+        },
+        "names": {
+          "top": 169.890625,
+          "bottom": 204.6875,
+          "left": 60.046875,
+          "right": 259.9375,
+          "width": 199.890625,
+          "height": 34.796875
+        },
+        "blessing": {
+          "top": 252.6875,
+          "bottom": 296.875,
+          "left": 51.296875,
+          "right": 268.703125,
+          "width": 217.40625,
+          "height": 44.1875
+        },
+        "note": {
+          "top": 302.875,
+          "bottom": 324.3125,
+          "left": 25.84375,
+          "right": 294.140625,
+          "width": 268.296875,
+          "height": 21.4375
+        },
+        "button": {
+          "top": 330.3125,
+          "bottom": 411.8125,
+          "left": 35,
+          "right": 285,
+          "width": 250,
+          "height": 81.5
+        },
+        "music": null,
+        "credit": {
+          "top": 553.71875,
+          "bottom": 567.71875,
+          "left": 0,
+          "right": 320,
+          "width": 320,
+          "height": 14
+        },
+        "overflow": false,
+        "sceneOverflow": "hidden"
+      }
+    },
+    {
+      "name": "Responsive ending 360x640",
+      "passed": true,
+      "metrics": {
+        "frame": [
+          360,
+          640
+        ],
+        "scene": {
+          "top": 0.265625,
+          "bottom": 626.265625,
+          "left": 0,
+          "right": 360,
+          "width": 360,
+          "height": 626
+        },
+        "art": {
+          "top": 18.25,
+          "bottom": 239.96875,
+          "left": 72.5,
+          "right": 287.5,
+          "width": 215,
+          "height": 221.71875
+        },
+        "footer": {
+          "top": 243.96875,
+          "bottom": 553.078125,
+          "left": 21.59375,
+          "right": 338.40625,
+          "width": 316.8125,
+          "height": 309.109375
+        },
+        "names": {
+          "top": 243.96875,
+          "bottom": 278.765625,
+          "left": 80.046875,
+          "right": 279.9375,
+          "width": 199.890625,
+          "height": 34.796875
+        },
+        "blessing": {
+          "top": 326.765625,
+          "bottom": 370.953125,
+          "left": 71.296875,
+          "right": 288.703125,
+          "width": 217.40625,
+          "height": 44.1875
+        },
+        "note": {
+          "top": 376.953125,
+          "bottom": 398.390625,
+          "left": 45.84375,
+          "right": 314.140625,
+          "width": 268.296875,
+          "height": 21.4375
+        },
+        "button": {
+          "top": 404.390625,
+          "bottom": 485.890625,
+          "left": 55,
+          "right": 305,
+          "width": 250,
+          "height": 81.5
+        },
+        "music": null,
+        "credit": {
+          "top": 626.265625,
+          "bottom": 640.265625,
+          "left": 0,
+          "right": 360,
+          "width": 360,
+          "height": 14
+        },
+        "overflow": false,
+        "sceneOverflow": "hidden"
+      }
+    },
+    {
+      "name": "Responsive ending 390x660",
+      "passed": true,
+      "metrics": {
+        "frame": [
+          390,
+          660
+        ],
+        "scene": {
+          "top": 0.34375,
+          "bottom": 646.34375,
+          "left": 0,
+          "right": 390,
+          "width": 390,
+          "height": 646
+        },
+        "art": {
+          "top": 17.828125,
+          "bottom": 260.171875,
+          "left": 77.5,
+          "right": 312.5,
+          "width": 235,
+          "height": 242.34375
+        },
+        "footer": {
+          "top": 264.171875,
+          "bottom": 574.046875,
+          "left": 23.390625,
+          "right": 366.609375,
+          "width": 343.21875,
+          "height": 309.875
+        },
+        "names": {
+          "top": 264.171875,
+          "bottom": 299.734375,
+          "left": 92.890625,
+          "right": 297.09375,
+          "width": 204.203125,
+          "height": 35.5625
+        },
+        "blessing": {
+          "top": 347.734375,
+          "bottom": 391.921875,
+          "left": 86.296875,
+          "right": 303.703125,
+          "width": 217.40625,
+          "height": 44.1875
+        },
+        "note": {
+          "top": 397.921875,
+          "bottom": 419.359375,
+          "left": 60.84375,
+          "right": 329.140625,
+          "width": 268.296875,
+          "height": 21.4375
+        },
+        "button": {
+          "top": 425.359375,
+          "bottom": 506.859375,
+          "left": 70,
+          "right": 320,
+          "width": 250,
+          "height": 81.5
+        },
+        "music": null,
+        "credit": {
+          "top": 646.34375,
+          "bottom": 660.34375,
+          "left": 0,
+          "right": 390,
+          "width": 390,
+          "height": 14
+        },
+        "overflow": false,
+        "sceneOverflow": "hidden"
+      }
+    },
+    {
+      "name": "Responsive ending 390x844",
+      "passed": true,
+      "metrics": {
+        "frame": [
+          390,
+          844
+        ],
+        "scene": {
+          "top": 0.34375,
+          "bottom": 830.34375,
+          "left": 0,
+          "right": 390,
+          "width": 390,
+          "height": 830
+        },
+        "art": {
+          "top": 45.625,
+          "bottom": 375.625,
+          "left": 35,
+          "right": 355,
+          "width": 320,
+          "height": 330
+        },
+        "footer": {
+          "top": 379.625,
+          "bottom": 733.9375,
+          "left": 23.390625,
+          "right": 366.609375,
+          "width": 343.21875,
+          "height": 354.3125
+        },
+        "names": {
+          "top": 405.0625,
+          "bottom": 440.625,
+          "left": 92.890625,
+          "right": 297.09375,
+          "width": 204.203125,
+          "height": 35.5625
+        },
+        "blessing": {
+          "top": 506.125,
+          "bottom": 550.3125,
+          "left": 86.296875,
+          "right": 303.703125,
+          "width": 217.40625,
+          "height": 44.1875
+        },
+        "note": {
+          "top": 557.0625,
+          "bottom": 578.5,
+          "left": 60.84375,
+          "right": 329.140625,
+          "width": 268.296875,
+          "height": 21.4375
+        },
+        "button": {
+          "top": 585.25,
+          "bottom": 666.75,
+          "left": 70,
+          "right": 320,
+          "width": 250,
+          "height": 81.5
+        },
+        "music": null,
+        "credit": {
+          "top": 830.34375,
+          "bottom": 844.34375,
+          "left": 0,
+          "right": 390,
+          "width": 390,
+          "height": 14
+        },
+        "overflow": false,
+        "sceneOverflow": "hidden"
+      }
+    },
+    {
+      "name": "Responsive ending 430x932",
+      "passed": true,
+      "metrics": {
+        "frame": [
+          430,
+          932
+        ],
+        "scene": {
+          "top": -0.390625,
+          "bottom": 917.609375,
+          "left": 0,
+          "right": 430,
+          "width": 430,
+          "height": 918
+        },
+        "art": {
+          "top": 83.71875,
+          "bottom": 413.71875,
+          "left": 55,
+          "right": 375,
+          "width": 320,
+          "height": 330
+        },
+        "footer": {
+          "top": 417.71875,
+          "bottom": 784.109375,
+          "left": 25.796875,
+          "right": 404.203125,
+          "width": 378.40625,
+          "height": 366.390625
+        },
+        "names": {
+          "top": 444.90625,
+          "bottom": 484.125,
+          "left": 102.390625,
+          "right": 327.59375,
+          "width": 225.203125,
+          "height": 39.21875
+        },
+        "blessing": {
+          "top": 551.03125,
+          "bottom": 597.8125,
+          "left": 100.015625,
+          "right": 329.96875,
+          "width": 229.953125,
+          "height": 46.78125
+        },
+        "note": {
+          "top": 605.265625,
+          "bottom": 627.96875,
+          "left": 73.109375,
+          "right": 356.875,
+          "width": 283.765625,
+          "height": 22.703125
+        },
+        "button": {
+          "top": 635.421875,
+          "bottom": 716.921875,
+          "left": 90,
+          "right": 340,
+          "width": 250,
+          "height": 81.5
+        },
+        "music": null,
+        "credit": {
+          "top": 917.609375,
+          "bottom": 931.609375,
+          "left": 0,
+          "right": 430,
+          "width": 430,
+          "height": 14
+        },
+        "overflow": false,
+        "sceneOverflow": "hidden"
+      }
+    },
+    {
+      "name": "Responsive ending 768x1024",
+      "passed": true,
+      "metrics": {
+        "frame": [
+          576,
+          1024
+        ],
+        "scene": {
+          "top": 0.171875,
+          "bottom": 1010.171875,
+          "left": 0,
+          "right": 576,
+          "width": 576,
+          "height": 1010
+        },
+        "art": {
+          "top": 120.328125,
+          "bottom": 450.328125,
+          "left": 128,
+          "right": 448,
+          "width": 320,
+          "height": 330
+        },
+        "footer": {
+          "top": 454.328125,
+          "bottom": 842.484375,
+          "left": 68,
+          "right": 508,
+          "width": 440,
+          "height": 388.15625
+        },
+        "names": {
+          "top": 482.90625,
+          "bottom": 533.296875,
+          "left": 143.25,
+          "right": 432.75,
+          "width": 289.5,
+          "height": 50.390625
+        },
+        "blessing": {
+          "top": 601.671875,
+          "bottom": 652.671875,
+          "left": 162.5625,
+          "right": 413.421875,
+          "width": 250.859375,
+          "height": 51
+        },
+        "note": {
+          "top": 660.859375,
+          "bottom": 685.609375,
+          "left": 133.21875,
+          "right": 442.78125,
+          "width": 309.5625,
+          "height": 24.75
+        },
+        "button": {
+          "top": 693.796875,
+          "bottom": 775.296875,
+          "left": 163,
+          "right": 413,
+          "width": 250,
+          "height": 81.5
+        },
+        "music": null,
+        "credit": {
+          "top": 1010.171875,
+          "bottom": 1024.171875,
+          "left": 0,
+          "right": 576,
+          "width": 576,
+          "height": 14
+        },
+        "overflow": false,
+        "sceneOverflow": "hidden"
+      }
+    },
+    {
+      "name": "Responsive ending 1440x900",
+      "passed": true,
+      "metrics": {
+        "frame": [
+          506,
+          900
+        ],
+        "scene": {
+          "top": -0.21875,
+          "bottom": 885.78125,
+          "left": 0,
+          "right": 506,
+          "width": 506,
+          "height": 886
+        },
+        "art": {
+          "top": 61.328125,
+          "bottom": 391.328125,
+          "left": 93,
+          "right": 413,
+          "width": 320,
+          "height": 330
+        },
+        "footer": {
+          "top": 395.328125,
+          "bottom": 774.234375,
+          "left": 33,
+          "right": 473,
+          "width": 440,
+          "height": 378.90625
+        },
+        "names": {
+          "top": 422.90625,
+          "bottom": 469.046875,
+          "left": 120.53125,
+          "right": 385.46875,
+          "width": 264.9375,
+          "height": 46.140625
+        },
+        "blessing": {
+          "top": 535.421875,
+          "bottom": 586.421875,
+          "left": 127.5625,
+          "right": 378.421875,
+          "width": 250.859375,
+          "height": 51
+        },
+        "note": {
+          "top": 593.609375,
+          "bottom": 618.359375,
+          "left": 98.21875,
+          "right": 407.78125,
+          "width": 309.5625,
+          "height": 24.75
+        },
+        "button": {
+          "top": 625.546875,
+          "bottom": 707.046875,
+          "left": 128,
+          "right": 378,
+          "width": 250,
+          "height": 81.5
+        },
+        "music": null,
+        "credit": {
+          "top": 885.78125,
+          "bottom": 899.78125,
+          "left": 0,
+          "right": 506,
+          "width": 506,
+          "height": 14
+        },
+        "overflow": false,
+        "sceneOverflow": "hidden"
+      }
+    },
+    {
+      "name": "Responsive ending 1774x988",
+      "passed": true,
+      "metrics": {
+        "frame": [
+          556,
+          988
+        ],
+        "scene": {
+          "top": 0.15625,
+          "bottom": 974.15625,
+          "left": 0,
+          "right": 556,
+          "width": 556,
+          "height": 974
+        },
+        "art": {
+          "top": 102.6875,
+          "bottom": 432.6875,
+          "left": 118,
+          "right": 438,
+          "width": 320,
+          "height": 330
+        },
+        "footer": {
+          "top": 436.6875,
+          "bottom": 823.359375,
+          "left": 58,
+          "right": 498,
+          "width": 440,
+          "height": 386.671875
+        },
+        "names": {
+          "top": 464.96875,
+          "bottom": 515.359375,
+          "left": 133.25,
+          "right": 422.75,
+          "width": 289.5,
+          "height": 50.390625
+        },
+        "blessing": {
+          "top": 583.140625,
+          "bottom": 634.140625,
+          "left": 152.5625,
+          "right": 403.421875,
+          "width": 250.859375,
+          "height": 51
+        },
+        "note": {
+          "top": 642.03125,
+          "bottom": 666.78125,
+          "left": 123.21875,
+          "right": 432.78125,
+          "width": 309.5625,
+          "height": 24.75
+        },
+        "button": {
+          "top": 674.671875,
+          "bottom": 756.171875,
+          "left": 153,
+          "right": 403,
+          "width": 250,
+          "height": 81.5
+        },
+        "music": null,
+        "credit": {
+          "top": 974.15625,
+          "bottom": 988.15625,
+          "left": 0,
+          "right": 556,
+          "width": 556,
+          "height": 14
+        },
+        "overflow": false,
+        "sceneOverflow": "hidden"
+      }
+    },
+    {
+      "name": "Responsive ending 844x390",
+      "passed": true,
+      "metrics": {
+        "frame": [
+          219,
+          390
+        ],
+        "scene": {
+          "top": -185.859375,
+          "bottom": 376.328125,
+          "left": 0,
+          "right": 219,
+          "width": 219,
+          "height": 562.1875
+        },
+        "art": {
+          "top": -173.859375,
+          "bottom": -83.109375,
+          "left": 65.5,
+          "right": 153.5,
+          "width": 88,
+          "height": 90.75
+        },
+        "footer": {
+          "top": -79.109375,
+          "bottom": 308.328125,
+          "left": 18,
+          "right": 201,
+          "width": 183,
+          "height": 387.4375
+        },
+        "names": {
+          "top": -79.109375,
+          "bottom": -9.515625,
+          "left": 18,
+          "right": 201,
+          "width": 183,
+          "height": 69.59375
+        },
+        "blessing": {
+          "top": 38.484375,
+          "bottom": 104.765625,
+          "left": 18,
+          "right": 201,
+          "width": 183,
+          "height": 66.28125
+        },
+        "note": {
+          "top": 110.765625,
+          "bottom": 153.640625,
+          "left": 18,
+          "right": 201,
+          "width": 183,
+          "height": 42.875
+        },
+        "button": {
+          "top": 159.640625,
+          "bottom": 241.140625,
+          "left": 18,
+          "right": 201,
+          "width": 183,
+          "height": 81.5
+        },
+        "music": null,
+        "credit": {
+          "top": 376.328125,
+          "bottom": 390.328125,
+          "left": 0,
+          "right": 219,
+          "width": 219,
+          "height": 14
+        },
+        "overflow": false,
+        "sceneOverflow": "hidden"
+      }
+    },
+    {
+      "name": "reduced-motion",
+      "passed": true,
+      "metrics": {
+        "frame": [
+          390,
+          844
+        ],
+        "scene": {
+          "top": 0.34375,
+          "bottom": 830.34375,
+          "left": 0,
+          "right": 390,
+          "width": 390,
+          "height": 830
+        },
+        "art": {
+          "top": 45.625,
+          "bottom": 375.625,
+          "left": 35,
+          "right": 355,
+          "width": 320,
+          "height": 330
+        },
+        "footer": {
+          "top": 379.625,
+          "bottom": 733.9375,
+          "left": 23.390625,
+          "right": 366.609375,
+          "width": 343.21875,
+          "height": 354.3125
+        },
+        "names": {
+          "top": 405.0625,
+          "bottom": 440.625,
+          "left": 92.890625,
+          "right": 297.09375,
+          "width": 204.203125,
+          "height": 35.5625
+        },
+        "blessing": {
+          "top": 506.125,
+          "bottom": 550.3125,
+          "left": 86.296875,
+          "right": 303.703125,
+          "width": 217.40625,
+          "height": 44.1875
+        },
+        "note": {
+          "top": 557.0625,
+          "bottom": 578.5,
+          "left": 60.84375,
+          "right": 329.140625,
+          "width": 268.296875,
+          "height": 21.4375
+        },
+        "button": {
+          "top": 585.25,
+          "bottom": 666.75,
+          "left": 70,
+          "right": 320,
+          "width": 250,
+          "height": 81.5
+        },
+        "music": null,
+        "credit": {
+          "top": 830.34375,
+          "bottom": 844.34375,
+          "left": 0,
+          "right": 390,
+          "width": 390,
+          "height": 14
+        },
+        "overflow": false,
+        "sceneOverflow": "hidden"
+      }
+    },
+    {
+      "name": "no-javascript",
+      "passed": true,
+      "metrics": {
+        "frame": [
+          390,
+          844
+        ],
+        "scene": {
+          "top": 0.34375,
+          "bottom": 830.34375,
+          "left": 0,
+          "right": 390,
+          "width": 390,
+          "height": 830
+        },
+        "art": {
+          "top": 123.34375,
+          "bottom": 453.34375,
+          "left": 35,
+          "right": 355,
+          "width": 320,
+          "height": 330
+        },
+        "footer": {
+          "top": 457.34375,
+          "bottom": 656.21875,
+          "left": 23.390625,
+          "right": 366.609375,
+          "width": 343.21875,
+          "height": 198.875
+        },
+        "names": {
+          "top": 482.78125,
+          "bottom": 518.34375,
+          "left": 92.890625,
+          "right": 297.09375,
+          "width": 204.203125,
+          "height": 35.5625
+        },
+        "blessing": {
+          "top": 583.84375,
+          "bottom": 628.03125,
+          "left": 86.296875,
+          "right": 303.703125,
+          "width": 217.40625,
+          "height": 44.1875
+        },
+        "note": {
+          "top": 634.78125,
+          "bottom": 656.21875,
+          "left": 60.84375,
+          "right": 329.140625,
+          "width": 268.296875,
+          "height": 21.4375
+        },
+        "button": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0,
+          "width": 0,
+          "height": 0
+        },
+        "music": null,
+        "credit": {
+          "top": 830.34375,
+          "bottom": 844.34375,
+          "left": 0,
+          "right": 390,
+          "width": 390,
+          "height": 14
+        },
+        "overflow": false,
+        "sceneOverflow": "hidden"
+      }
+    },
+    {
+      "name": "Keyboard blessing, paused audio, live resizing and larger text fallback",
+      "passed": true,
+      "enlarged": {
+        "frame": [
+          390,
+          844
+        ],
+        "scene": {
+          "top": -379.46875,
+          "bottom": 830.125,
+          "left": 0,
+          "right": 390,
+          "width": 390,
+          "height": 1209.59375
+        },
+        "art": {
+          "top": -362.59375,
+          "bottom": -32.59375,
+          "left": 35,
+          "right": 355,
+          "width": 320,
+          "height": 330
+        },
+        "footer": {
+          "top": -28.59375,
+          "bottom": 762.125,
+          "left": 23.390625,
+          "right": 366.609375,
+          "width": 343.21875,
+          "height": 790.71875
+        },
+        "names": {
+          "top": -3.15625,
+          "bottom": 198.4375,
+          "left": 23.390625,
+          "right": 366.609375,
+          "width": 343.21875,
+          "height": 201.59375
+        },
+        "blessing": {
+          "top": 263.9375,
+          "bottom": 416.9375,
+          "left": 23.390625,
+          "right": 366.609375,
+          "width": 343.21875,
+          "height": 153
+        },
+        "note": {
+          "top": 423.6875,
+          "bottom": 522.6875,
+          "left": 23.390625,
+          "right": 366.609375,
+          "width": 343.21875,
+          "height": 99
+        },
+        "button": {
+          "top": 529.4375,
+          "bottom": 694.9375,
+          "left": 70,
+          "right": 320,
+          "width": 250,
+          "height": 165.5
+        },
+        "music": {
+          "top": 776,
+          "bottom": 826,
+          "left": 322,
+          "right": 372,
+          "width": 50,
+          "height": 50
+        },
+        "credit": {
+          "top": 830.125,
+          "bottom": 844.125,
+          "left": 0,
+          "right": 390,
+          "width": 390,
+          "height": 14
+        },
+        "overflow": false,
+        "sceneOverflow": "hidden"
+      }
+    }
+  ]
+}

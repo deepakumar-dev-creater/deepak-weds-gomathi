@@ -19,7 +19,7 @@
       volume: 0.7,
       autoplay: true
     },
-    mapsLink: "https://share.google/9cDnaaYRR4evNU4Ec",
+    mapsLink: "https://maps.app.goo.gl/os8TrKyKjXFEnBTZ9",
     rsvp: {
       endpoint: "",
       deadlineText: "Kindly respond by 25 February 2027",
@@ -38,7 +38,7 @@
         venue: "En Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
         description: "An evening with family and friends.",
         image: "assets/img/reception_blue.jpg",
-        mapLink: "https://share.google/9cDnaaYRR4evNU4Ec"
+        mapLink: "https://maps.app.goo.gl/os8TrKyKjXFEnBTZ9"
       },
       {
         id: "wedding",
@@ -50,7 +50,7 @@
         venue: "En Sesha Mahal, No. 71, Peter’s Road, Ganapathy Colony, Royapettah, Chennai - 600014",
         description: "Celebrate the beginning of their married life.",
         image: "assets/img/couple_muhurtham.jpg",
-        mapLink: "https://share.google/9cDnaaYRR4evNU4Ec"
+        mapLink: "https://maps.app.goo.gl/os8TrKyKjXFEnBTZ9"
       }
     ],
     frameSlider: {
